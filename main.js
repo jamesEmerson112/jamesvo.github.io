@@ -20,10 +20,10 @@ const cars=generateAICars(N, NEURONLEVELNUM, constantSpeed);
 
 
 let bestCar=cars[0];
- if(localStorage.getItem("bestBrain")){
-   bestCar.brain=JSON.parse(
-    localStorage.getItem("bestBrain"));
- }
+// if(localStorage.getItem("bestBrain")){
+ //  bestCar.brain=JSON.parse(
+//    localStorage.getItem("bestBrain"));
+// }
 
 console.log("get " + localStorage.getItem("bestBrain"))
 if(localStorage.getItem("bestBrain")){
