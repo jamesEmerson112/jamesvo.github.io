@@ -39,7 +39,7 @@ function Sidebar() {
 
             {/** Button -> Tweet */}
             <Button variant="outlined" className="sidebar__tweet" fullWidth>Press one of the above links!</Button>
-            
+
         </div>
     );
 

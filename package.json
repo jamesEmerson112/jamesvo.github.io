@@ -1,6 +1,6 @@
 {
-  "name": "tweetfolio-js",
   "homepage": "https://jamesemerson112.github.io/jamesvo.github.io/",
+  "name": "tweetfolio-js",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
