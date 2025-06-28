@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Svelte Hello World - GitHub Pages
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple Svelte "Hello World" application deployed to GitHub Pages using GitHub Actions.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+Once deployed, the site will be available at: https://jamesvo.github.io
 
-### `npm start`
+## 📦 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ⚡️ Svelte + Vite for fast development
+- 🎨 Beautiful gradient background with animations
+- 📱 Responsive design
+- 🚀 Automated deployment with GitHub Actions
+- 🌐 Hosted on GitHub Pages
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Local Development
 
-### `npm test`
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-### `npm run build`
+3. Open your browser to `http://localhost:5173`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🏗️ Building for Production
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To build the app for production:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm run build
+```
 
-### `npm run eject`
+The built files will be in the `dist` directory.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📝 Deployment Setup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### GitHub Pages Configuration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Go to your repository settings
+2. Navigate to "Pages" section
+3. Under "Build and deployment", select "GitHub Actions" as the source
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Automatic Deployment
 
-## Learn More
+The project includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Triggers on every push to the `main` branch
+- Builds the Svelte application
+- Deploys it to GitHub Pages
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Manual Deployment
 
-### Code Splitting
+You can also trigger the deployment manually:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Go to the "Actions" tab in your repository
+2. Select "Deploy to GitHub Pages" workflow
+3. Click "Run workflow"
 
-### Analyzing the Bundle Size
+## 📁 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+.
+├── .github/
+│   └── workflows/
+│       └── deploy.yml      # GitHub Actions workflow
+├── src/
+│   ├── App.svelte         # Main Svelte component
+│   └── main.js            # App entry point
+├── index.html             # HTML template
+├── package.json           # Dependencies and scripts
+├── vite.config.js         # Vite configuration
+├── .gitignore            # Git ignore file
+└── README.md             # This file
+```
 
-### Making a Progressive Web App
+## 🔧 Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [Svelte](https://svelte.dev/) - Cybernetically enhanced web apps
+- [Vite](https://vitejs.dev/) - Next generation frontend tooling
+- [GitHub Pages](https://pages.github.com/) - Static site hosting
+- [GitHub Actions](https://github.com/features/actions) - CI/CD automation
 
-### Advanced Configuration
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open source and available under the MIT License.
