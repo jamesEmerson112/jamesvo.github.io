@@ -12,7 +12,7 @@
   <div class="hero">
     <h1>Hello, I'm {name}! 👋</h1>
     <p class="subtitle">Full Stack Developer & Creative Technologist</p>
-    <p class="description">Welcome to my personal website built with Svelte and deployed on GitHub Pages</p>
+    <p class="description">Welcome to my personal website built with Svelte and deployed on GitHub Pages ✨</p>
     <div class="time">Current time: {currentTime}</div>
   </div>
 
