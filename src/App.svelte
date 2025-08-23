@@ -1,5 +1,5 @@
 <script>
-  import { currentTheme, darkMode } from './stores/theme.js';
+  import { darkMode } from './stores/theme.js';
   import ThemeSwitcher from './components/ThemeSwitcher.svelte';
   import './styles/themes.css';
 
@@ -11,9 +11,8 @@
     currentTime = new Date().toLocaleString();
   }, 1000);
 
-  // Update the data-theme and data-dark attributes when state changes
+  // Update the data-dark attribute when dark mode changes
   $: if (typeof document !== 'undefined') {
-    document.documentElement.setAttribute('data-theme', $currentTheme);
     document.documentElement.setAttribute('data-dark', $darkMode.toString());
   }
 </script>

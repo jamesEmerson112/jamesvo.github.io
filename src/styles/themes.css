@@ -1,77 +1,13 @@
-/* CSS Custom Properties for Theme System */
+/* CSS Custom Properties for Adaptive Theme System */
 
 :root {
   /* Transition settings */
   --theme-transition: all 0.3s ease;
 }
 
-/* Professional Clean Theme (default) */
+/* Light Mode (Professional Serif) */
 :root,
-:root[data-theme="professional"] {
-  /* Background */
-  --bg-primary: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-  --bg-secondary: #ffffff;
-  --bg-card: #ffffff;
-  --bg-card-hover: #f8fafc;
-  
-  /* Text colors */
-  --text-primary: #1e293b;
-  --text-secondary: #475569;
-  --text-muted: #64748b;
-  
-  /* Borders */
-  --border-primary: #e2e8f0;
-  --border-secondary: #f1f5f9;
-  
-  /* Shadows */
-  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  
-  /* Effects */
-  --backdrop-blur: none;
-  --card-border-radius: 8px;
-  
-  /* Typography */
-  --font-family-primary: 'Georgia', 'Times New Roman', serif;
-  --font-weight-normal: 400;
-  --font-weight-medium: 500;
-  --font-weight-bold: 700;
-}
-
-/* Professional Clean Theme */
-:root[data-theme="professional"] {
-  /* Background */
-  --bg-primary: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-  --bg-secondary: #ffffff;
-  --bg-card: #ffffff;
-  --bg-card-hover: #f8fafc;
-  
-  /* Text colors */
-  --text-primary: #1e293b;
-  --text-secondary: #475569;
-  --text-muted: #64748b;
-  
-  /* Borders */
-  --border-primary: #e2e8f0;
-  --border-secondary: #f1f5f9;
-  
-  /* Shadows */
-  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  
-  /* Effects */
-  --backdrop-blur: none;
-  --card-border-radius: 8px;
-  
-  /* Typography */
-  --font-family-primary: 'Georgia', 'Times New Roman', serif;
-  --font-weight-normal: 400;
-  --font-weight-medium: 500;
-  --font-weight-bold: 700;
-}
-
-/* Professional Minimal Theme */
-:root[data-theme="minimal"] {
+:root[data-dark="false"] {
   /* Background */
   --bg-primary: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
   --bg-secondary: #ffffff;
@@ -90,6 +26,38 @@
   /* Shadows */
   --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-hover: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  /* Effects */
+  --backdrop-blur: none;
+  --card-border-radius: 4px;
+  
+  /* Typography */
+  --font-family-primary: 'Georgia', 'Times New Roman', serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+/* Dark Mode (Professional Minimal) */
+:root[data-dark="true"] {
+  /* Background */
+  --bg-primary: linear-gradient(135deg, #000000 0%, #111111 100%);
+  --bg-secondary: #1a1a1a;
+  --bg-card: #222222;
+  --bg-card-hover: #1a1a1a;
+  
+  /* Text colors */
+  --text-primary: #ffffff;
+  --text-secondary: #e5e5e5;
+  --text-muted: #999999;
+  
+  /* Borders */
+  --border-primary: #333333;
+  --border-secondary: #262626;
+  
+  /* Shadows */
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 2px 4px rgba(0, 0, 0, 0.4);
   
   /* Effects */
   --backdrop-blur: none;
@@ -100,106 +68,6 @@
   --font-weight-normal: 300;
   --font-weight-medium: 400;
   --font-weight-bold: 600;
-}
-
-/* Professional Serif Theme */
-:root[data-theme="serif"] {
-  /* Background */
-  --bg-primary: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
-  --bg-secondary: #ffffff;
-  --bg-card: #ffffff;
-  --bg-card-hover: #fafafa;
-  
-  /* Text colors */
-  --text-primary: #000000;
-  --text-secondary: #333333;
-  --text-muted: #666666;
-  
-  /* Borders */
-  --border-primary: #e5e5e5;
-  --border-secondary: #f0f0f0;
-  
-  /* Shadows */
-  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-hover: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
-  /* Effects */
-  --backdrop-blur: none;
-  --card-border-radius: 4px;
-  
-  /* Typography */
-  --font-family-primary: 'Georgia', 'Times New Roman', serif;
-  --font-weight-normal: 400;
-  --font-weight-medium: 500;
-  --font-weight-bold: 700;
-}
-
-/* DARK MODE VARIANTS */
-
-/* Professional Clean Theme - Dark Mode */
-:root[data-theme="professional"][data-dark="true"] {
-  /* Background */
-  --bg-primary: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-  --bg-secondary: #334155;
-  --bg-card: #475569;
-  --bg-card-hover: #334155;
-  
-  /* Text colors */
-  --text-primary: #f1f5f9;
-  --text-secondary: #cbd5e1;
-  --text-muted: #94a3b8;
-  
-  /* Borders */
-  --border-primary: #475569;
-  --border-secondary: #334155;
-  
-  /* Shadows */
-  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-  --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
-}
-
-/* Professional Minimal Theme - Dark Mode */
-:root[data-theme="minimal"][data-dark="true"] {
-  /* Background */
-  --bg-primary: linear-gradient(135deg, #000000 0%, #111111 100%);
-  --bg-secondary: #1a1a1a;
-  --bg-card: #222222;
-  --bg-card-hover: #1a1a1a;
-  
-  /* Text colors */
-  --text-primary: #ffffff;
-  --text-secondary: #e5e5e5;
-  --text-muted: #999999;
-  
-  /* Borders */
-  --border-primary: #333333;
-  --border-secondary: #262626;
-  
-  /* Shadows */
-  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-hover: 0 2px 4px rgba(0, 0, 0, 0.4);
-}
-
-/* Professional Serif Theme - Dark Mode */
-:root[data-theme="serif"][data-dark="true"] {
-  /* Background */
-  --bg-primary: linear-gradient(135deg, #000000 0%, #111111 100%);
-  --bg-secondary: #1a1a1a;
-  --bg-card: #222222;
-  --bg-card-hover: #1a1a1a;
-  
-  /* Text colors */
-  --text-primary: #ffffff;
-  --text-secondary: #e5e5e5;
-  --text-muted: #999999;
-  
-  /* Borders */
-  --border-primary: #333333;
-  --border-secondary: #262626;
-  
-  /* Shadows */
-  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-hover: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* Theme transition animations */
