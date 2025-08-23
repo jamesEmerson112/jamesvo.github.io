@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from 'svelte';
   import { darkMode } from './stores/theme.js';
   import ThemeSwitcher from './components/ThemeSwitcher.svelte';
   import './styles/themes.css';
@@ -6,15 +7,17 @@
   let name = 'James Vo';
   let currentTime = new Date().toLocaleString();
 
+  // Component mount - no longer need to manually set data-dark as store handles this
+  onMount(() => {
+    // Store now handles data-dark attribute initialization
+  });
+
   // Update time every second
   setInterval(() => {
     currentTime = new Date().toLocaleString();
   }, 1000);
 
-  // Update the data-dark attribute when dark mode changes
-  $: if (typeof document !== 'undefined') {
-    document.documentElement.setAttribute('data-dark', $darkMode.toString());
-  }
+  // Data-light attribute is now handled automatically by the theme store
 </script>
 
 <main>
