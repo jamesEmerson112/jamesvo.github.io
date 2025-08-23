@@ -89,3 +89,6 @@ You can also trigger the deployment manually:
 ## 📄 License
 
 This project is open source and available under the MIT License.
+
+## Credits
+Keita Yamada - https://p5aholic.me/

@@ -39,3 +39,6 @@ coverage
 # Deployment platform folders
 .vercel
 .netlify
+
+# Project documentation (exclude from git)
+docs/

@@ -1,4 +1,8 @@
 <script>
+  import { currentTheme, darkMode } from './stores/theme.js';
+  import ThemeSwitcher from './components/ThemeSwitcher.svelte';
+  import './styles/themes.css';
+
   let name = 'James Vo';
   let currentTime = new Date().toLocaleString();
 
@@ -6,9 +10,17 @@
   setInterval(() => {
     currentTime = new Date().toLocaleString();
   }, 1000);
+
+  // Update the data-theme and data-dark attributes when state changes
+  $: if (typeof document !== 'undefined') {
+    document.documentElement.setAttribute('data-theme', $currentTheme);
+    document.documentElement.setAttribute('data-dark', $darkMode.toString());
+  }
 </script>
 
 <main>
+  <ThemeSwitcher />
+  
   <div class="hero">
     <h1>Hello, I'm {name}! 👋</h1>
     <p class="subtitle">Full Stack Developer & Creative Technologist</p>
@@ -43,7 +55,8 @@
   :global(body) {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--font-family-primary);
+    transition: var(--theme-transition);
   }
 
   main {
@@ -54,9 +67,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: var(--bg-primary);
+    color: var(--text-primary);
     gap: 3em;
+    transition: var(--theme-transition);
   }
 
   .hero {
@@ -66,35 +80,36 @@
 
   h1 {
     font-size: 3.5em;
-    font-weight: 300;
+    font-weight: var(--font-weight-normal);
     margin: 0.2em 0;
     animation: fadeIn 1s ease-in;
+    color: var(--text-primary);
   }
 
   .subtitle {
     font-size: 1.4em;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     margin: 0.5em 0;
-    opacity: 0.9;
     animation: fadeIn 1.2s ease-in;
+    color: var(--text-secondary);
   }
 
   .description {
     font-size: 1.1em;
-    opacity: 0.8;
     margin: 1em 0;
     animation: fadeIn 1.4s ease-in;
+    color: var(--text-muted);
   }
 
   .time {
     font-size: 1em;
-    opacity: 0.7;
     margin-top: 1.5em;
     padding: 0.5em 1em;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--bg-secondary);
+    border-radius: var(--card-border-radius);
+    border: 1px solid var(--border-primary);
     animation: fadeIn 1.6s ease-in;
+    color: var(--text-muted);
   }
 
   .features {
@@ -107,18 +122,18 @@
   }
 
   .feature-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--bg-card);
     padding: 2em 1.5em;
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--card-border-radius);
+    border: 1px solid var(--border-primary);
     transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
+    backdrop-filter: var(--backdrop-blur);
   }
 
   .feature-card:hover {
     transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background: var(--bg-card-hover);
+    box-shadow: var(--shadow-hover);
   }
 
   .emoji {
@@ -130,13 +145,14 @@
   .feature-card h3 {
     font-size: 1.3em;
     margin: 0.5em 0;
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
+    color: var(--text-primary);
   }
 
   .feature-card p {
     font-size: 1em;
-    opacity: 0.9;
     margin: 0;
+    color: var(--text-secondary);
   }
 
   .animation {
