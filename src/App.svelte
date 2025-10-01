@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import { darkMode } from './stores/theme.js';
   import ThemeSwitcher from './components/ThemeSwitcher.svelte';
+  import CodeMetrics from './components/CodeMetrics.svelte';
   import './styles/themes.css';
 
   let name = 'James Vo';
@@ -22,7 +23,7 @@
 
 <main>
   <ThemeSwitcher />
-  
+
   <div class="hero">
     <h1>Hello, I'm {name}! 👋</h1>
     <p class="subtitle">Full Stack Developer & Creative Technologist</p>
@@ -49,6 +50,8 @@
       <p>Clean, responsive design with smooth animations</p>
     </div>
   </div>
+
+  <CodeMetrics />
 
   <div class="animation">✨</div>
 </main>
