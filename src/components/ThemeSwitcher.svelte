@@ -1,26 +1,6 @@
 <script>
-  import { currentTheme, themes, darkMode } from '../stores/theme.js';
-  import { Briefcase, Square, Type, Sun, Moon } from 'lucide-svelte';
-
-  // Icon mapping for each theme
-  const themeIcons = {
-    professional: Briefcase,
-    minimal: Square,
-    serif: Type
-  };
-
-  function handleThemeChange(themeId) {
-    // Add theme-switching class to prevent transition flicker
-    document.documentElement.classList.add('theme-switching');
-    
-    // Set the theme
-    currentTheme.setTheme(themeId);
-    
-    // Remove the class after a brief delay
-    setTimeout(() => {
-      document.documentElement.classList.remove('theme-switching');
-    }, 50);
-  }
+  import { darkMode } from '../stores/theme.js';
+  import { Sun, Moon } from 'lucide-svelte';
 
   function toggleDarkMode() {
     // Add theme-switching class to prevent transition flicker
@@ -36,104 +16,42 @@
   }
 </script>
 
-<div class="theme-switcher">
-  <div class="switcher-header">
-    <h2 class="switcher-title">Choose Your Style</h2>
-    <button 
-      class="dark-mode-toggle"
-      on:click={toggleDarkMode}
-      title={$darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-    >
+<div class="mode-switcher">
+  <button 
+    class="mode-toggle"
+    on:click={toggleDarkMode}
+    title={$darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+  >
+    <div class="icon-container">
       {#if $darkMode}
-        <Sun size={20} />
-        <span>Light</span>
+        <Sun size={24} />
       {:else}
-        <Moon size={20} />
-        <span>Dark</span>
+        <Moon size={24} />
       {/if}
-    </button>
-  </div>
-  
-  <div class="theme-buttons">
-    {#each Object.values(themes) as theme (theme.id)}
-      <button 
-        class="theme-button"
-        class:active={$currentTheme === theme.id}
-        on:click={() => handleThemeChange(theme.id)}
-        data-theme={theme.id}
-      >
-        <div class="icon-container">
-          <svelte:component this={themeIcons[theme.id]} size={24} />
-        </div>
-        <div class="theme-info">
-          <div class="theme-name">{theme.name}</div>
-          <div class="theme-description">{theme.description}</div>
-        </div>
-      </button>
-    {/each}
-  </div>
+    </div>
+    <div class="mode-info">
+      <div class="mode-name">
+        {$darkMode ? 'Light Mode' : 'Dark Mode'}
+      </div>
+      <div class="mode-description">
+        {$darkMode ? 'Serif typography with light colors' : 'Sans-serif typography with dark colors'}
+      </div>
+    </div>
+  </button>
 </div>
 
 <style>
-  .theme-switcher {
+  .mode-switcher {
     width: 100%;
-    max-width: 900px;
+    max-width: 400px;
     margin: 0 auto 3em auto;
     text-align: center;
   }
 
-  .switcher-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2em;
-    flex-wrap: wrap;
-    gap: 1em;
-  }
-
-  .switcher-title {
-    font-size: 2.2em;
-    font-weight: var(--font-weight-bold);
-    color: var(--text-primary);
-    margin: 0;
-    font-family: var(--font-family-primary);
-    flex: 1;
-  }
-
-  .dark-mode-toggle {
+  .mode-toggle {
     display: flex;
     align-items: center;
-    gap: 0.5em;
-    padding: 0.8em 1.2em;
-    background: var(--bg-card);
-    border: 2px solid var(--border-primary);
-    border-radius: var(--card-border-radius);
-    color: var(--text-primary);
-    font-family: var(--font-family-primary);
-    font-weight: var(--font-weight-medium);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    backdrop-filter: var(--backdrop-blur);
-  }
-
-  .dark-mode-toggle:hover {
-    background: var(--bg-card-hover);
-    box-shadow: var(--shadow-hover);
-    transform: translateY(-2px);
-    border-color: var(--text-primary);
-  }
-
-  .theme-buttons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.2em;
-    width: 100%;
-  }
-
-  .theme-button {
-    display: flex;
-    align-items: center;
-    gap: 1em;
     padding: 1.5em 2em;
     background: var(--bg-card);
     border: 2px solid var(--border-primary);
@@ -148,18 +66,11 @@
     box-sizing: border-box;
   }
 
-  .theme-button:hover {
+  .mode-toggle:hover {
     background: var(--bg-card-hover);
     box-shadow: var(--shadow-hover);
     transform: translateY(-3px);
     border-color: var(--text-primary);
-  }
-
-  .theme-button.active {
-    background: var(--bg-card-hover);
-    box-shadow: var(--shadow-card);
-    border-color: var(--text-primary);
-    transform: translateY(-2px);
   }
 
   .icon-container {
@@ -175,73 +86,43 @@
     flex-shrink: 0;
   }
 
-  .theme-info {
+  .mode-info {
     flex: 1;
   }
 
-  .theme-name {
+  .mode-name {
     font-size: 1.3em;
     font-weight: var(--font-weight-bold);
     color: var(--text-primary);
     margin-bottom: 0.3em;
   }
 
-  .theme-description {
+  .mode-description {
     font-size: 0.95em;
     color: var(--text-muted);
     font-weight: var(--font-weight-normal);
   }
 
-  /* Theme-specific button previews */
-  .theme-button[data-theme="professional"]:hover {
-    background: rgba(248, 250, 252, 0.8);
-    border-color: #475569;
-  }
-
-  .theme-button[data-theme="minimal"]:hover {
-    background: rgba(250, 250, 250, 0.8);
-    border-color: #333333;
-  }
-
-  .theme-button[data-theme="serif"]:hover {
-    background: rgba(250, 250, 250, 0.8);
-    border-color: #333333;
-  }
-
   @media (max-width: 768px) {
-    .theme-switcher {
+    .mode-switcher {
       margin-bottom: 2em;
     }
 
-    .switcher-title {
-      font-size: 1.8em;
-      margin-bottom: 1.5em;
-    }
-
-    .theme-buttons {
-      grid-template-columns: 1fr;
-      gap: 1em;
-    }
-
-    .theme-button {
+    .mode-toggle {
       padding: 1.2em 1.5em;
     }
 
-    .theme-name {
+    .mode-name {
       font-size: 1.2em;
     }
 
-    .theme-description {
+    .mode-description {
       font-size: 0.9em;
     }
   }
 
   @media (max-width: 480px) {
-    .switcher-title {
-      font-size: 1.5em;
-    }
-
-    .theme-button {
+    .mode-toggle {
       padding: 1em;
       gap: 0.8em;
     }

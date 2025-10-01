@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "scan": "node scripts/fetch-repos.js",
+    "scan:full": "node scripts/fetch-repos.js --full",
+    "scan:test": "node scripts/fetch-repos.js --test --limit=5"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
@@ -14,6 +17,11 @@
     "vite": "^5.0.0"
   },
   "dependencies": {
-    "lucide-svelte": "^0.541.0"
+    "@octokit/rest": "^22.0.0",
+    "dotenv": "^17.2.3",
+    "gsap": "^3.13.0",
+    "lucide-svelte": "^0.541.0",
+    "three": "^0.179.1",
+    "tweakpane": "^4.0.5"
   }
 }

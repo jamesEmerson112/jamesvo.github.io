@@ -1,26 +1,29 @@
 <script>
-  import { currentTheme, darkMode } from './stores/theme.js';
+  import { onMount } from 'svelte';
+  import { darkMode } from './stores/theme.js';
   import ThemeSwitcher from './components/ThemeSwitcher.svelte';
+  import CodeMetrics from './components/CodeMetrics.svelte';
   import './styles/themes.css';
 
   let name = 'James Vo';
   let currentTime = new Date().toLocaleString();
+
+  // Component mount - no longer need to manually set data-dark as store handles this
+  onMount(() => {
+    // Store now handles data-dark attribute initialization
+  });
 
   // Update time every second
   setInterval(() => {
     currentTime = new Date().toLocaleString();
   }, 1000);
 
-  // Update the data-theme and data-dark attributes when state changes
-  $: if (typeof document !== 'undefined') {
-    document.documentElement.setAttribute('data-theme', $currentTheme);
-    document.documentElement.setAttribute('data-dark', $darkMode.toString());
-  }
+  // Data-light attribute is now handled automatically by the theme store
 </script>
 
 <main>
   <ThemeSwitcher />
-  
+
   <div class="hero">
     <h1>Hello, I'm {name}! 👋</h1>
     <p class="subtitle">Full Stack Developer & Creative Technologist</p>
@@ -47,6 +50,8 @@
       <p>Clean, responsive design with smooth animations</p>
     </div>
   </div>
+
+  <CodeMetrics />
 
   <div class="animation">✨</div>
 </main>

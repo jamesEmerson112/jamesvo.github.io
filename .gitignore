@@ -27,6 +27,9 @@ dist-ssr
 .env
 .env.*
 
+# Temporary repo clones
+.temp-repos
+
 # Test coverage
 coverage
 
@@ -42,3 +45,7 @@ coverage
 
 # Project documentation (exclude from git)
 docs/
+inspired_code/
+
+# Planning documents (keep private)
+PORTFOLIO-METRICS-PLAN.md
