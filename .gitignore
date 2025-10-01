@@ -27,6 +27,9 @@ dist-ssr
 .env
 .env.*
 
+# Temporary repo clones
+.temp-repos
+
 # Test coverage
 coverage
 

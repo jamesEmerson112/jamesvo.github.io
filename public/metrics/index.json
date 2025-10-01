@@ -1,0 +1,168 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2025-10-01T08:21:25.445Z",
+  "lastFullScan": "2025-10-01T08:13:04.189Z",
+  "lastIncrementalScan": "2025-10-01T08:21:25.445Z",
+  "reposScannedThisRun": 4,
+  "totalPublicRepos": 0,
+  "totalPrivateRepos": 4,
+  "totalRepos": 4,
+  "portfolioTotals": {
+    "totalLines": 26561,
+    "totalCode": 22152,
+    "totalComments": 1486,
+    "totalBlanks": 2923,
+    "totalFiles": 82,
+    "totalBytes": 977792,
+    "totalComplexity": 717,
+    "estimatedValue": {
+      "standardCost": 276907,
+      "totalEffort": 59.03,
+      "avgTime": 14.76,
+      "avgPeople": 0
+    },
+    "soloDeveloper": {
+      "fullTimeMonths": 59.03,
+      "fullTimeYears": 5,
+      "fullTimeWeeks": 256,
+      "description": "Total time if developed alone, full-time"
+    },
+    "languages": {
+      "Markdown": {
+        "repos": 4,
+        "totalLines": 6940,
+        "totalCode": 5326,
+        "percentOfTotal": 26.1,
+        "averagePerRepo": 1735
+      },
+      "Cuda": {
+        "repos": 1,
+        "totalLines": 1793,
+        "totalCode": 1109,
+        "percentOfTotal": 6.8,
+        "averagePerRepo": 1793
+      },
+      "Python": {
+        "repos": 3,
+        "totalLines": 6015,
+        "totalCode": 3970,
+        "percentOfTotal": 22.6,
+        "averagePerRepo": 2005
+      },
+      "License": {
+        "repos": 2,
+        "totalLines": 222,
+        "totalCode": 186,
+        "percentOfTotal": 0.8,
+        "averagePerRepo": 111
+      },
+      "Jupyter": {
+        "repos": 2,
+        "totalLines": 11443,
+        "totalCode": 11443,
+        "percentOfTotal": 43.1,
+        "averagePerRepo": 5722
+      },
+      "Plain Text": {
+        "repos": 2,
+        "totalLines": 141,
+        "totalCode": 111,
+        "percentOfTotal": 0.5,
+        "averagePerRepo": 71
+      },
+      "JSON": {
+        "repos": 1,
+        "totalLines": 7,
+        "totalCode": 7,
+        "percentOfTotal": 0,
+        "averagePerRepo": 7
+      }
+    }
+  },
+  "repos": [
+    {
+      "id": "private-001",
+      "name": "Private Project 1",
+      "url": null,
+      "description": "Private repository",
+      "lastUpdated": "2025-10-01T06:30:07Z",
+      "primaryLanguage": "Markdown",
+      "isPrivate": true,
+      "isAnonymized": true,
+      "summary": {
+        "lines": 5039,
+        "code": 3632,
+        "files": 19,
+        "complexity": 212,
+        "traditionalCost": 43610,
+        "aiCost": 11120,
+        "traditionalMonths": 9.3,
+        "aiMonths": 2.37
+      },
+      "detailsFile": "repos/private-001.json"
+    },
+    {
+      "id": "private-002",
+      "name": "Private Project 2",
+      "url": null,
+      "description": "Private repository",
+      "lastUpdated": "2025-09-30T06:22:11Z",
+      "primaryLanguage": "Markdown",
+      "isPrivate": true,
+      "isAnonymized": true,
+      "summary": {
+        "lines": 2,
+        "code": 2,
+        "files": 1,
+        "complexity": 0,
+        "traditionalCost": 17,
+        "aiCost": 4,
+        "traditionalMonths": 0,
+        "aiMonths": 0
+      },
+      "detailsFile": "repos/private-002.json"
+    },
+    {
+      "id": "private-003",
+      "name": "Private Project 3",
+      "url": null,
+      "description": "Private repository",
+      "lastUpdated": "2025-09-21T18:18:13Z",
+      "primaryLanguage": "Jupyter",
+      "isPrivate": true,
+      "isAnonymized": true,
+      "summary": {
+        "lines": 13655,
+        "code": 11239,
+        "files": 42,
+        "complexity": 484,
+        "traditionalCost": 142789,
+        "aiCost": 36411,
+        "traditionalMonths": 30.44,
+        "aiMonths": 7.76
+      },
+      "detailsFile": "repos/private-003.json"
+    },
+    {
+      "id": "private-004",
+      "name": "Private Project 4",
+      "url": null,
+      "description": "Private repository",
+      "lastUpdated": "2025-09-16T03:31:30Z",
+      "primaryLanguage": "Jupyter",
+      "isPrivate": true,
+      "isAnonymized": true,
+      "summary": {
+        "lines": 7865,
+        "code": 7279,
+        "files": 20,
+        "complexity": 21,
+        "traditionalCost": 90491,
+        "aiCost": 23075,
+        "traditionalMonths": 19.29,
+        "aiMonths": 4.92
+      },
+      "detailsFile": "repos/private-004.json"
+    }
+  ]
+}
