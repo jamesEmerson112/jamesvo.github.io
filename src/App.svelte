@@ -3,6 +3,7 @@
   import { darkMode } from './stores/theme.js';
   import ThemeSwitcher from './components/ThemeSwitcher.svelte';
   import CodeMetrics from './components/CodeMetrics.svelte';
+  import PortfolioOverview from './components/portfolio/PortfolioOverview.svelte';
   import './styles/themes.css';
 
   let name = 'James Vo';
@@ -52,6 +53,8 @@
   </div>
 
   <CodeMetrics />
+
+  <PortfolioOverview />
 
   <div class="animation">✨</div>
 </main>

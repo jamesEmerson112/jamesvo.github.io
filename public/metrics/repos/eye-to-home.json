@@ -1,0 +1,218 @@
+{
+  "id": "eye-to-home",
+  "scannedAt": "2025-10-01T09:31:51.523Z",
+  "metadata": {
+    "name": "Eye-to-home",
+    "fullName": "jamesEmerson112/Eye-to-home",
+    "description": "HackDavis2025",
+    "url": "https://github.com/jamesEmerson112/Eye-to-home",
+    "homepage": null,
+    "topics": [],
+    "lastUpdated": "2025-09-15T18:53:27Z",
+    "createdAt": "2025-04-19T22:11:46Z",
+    "stars": 0,
+    "language": "Swift",
+    "isPrivate": false,
+    "isFork": false,
+    "isArchived": false,
+    "isAnonymized": false
+  },
+  "sccRaw": [
+    {
+      "Name": "JSON",
+      "Bytes": 2601,
+      "CodeBytes": 0,
+      "Lines": 138,
+      "Code": 138,
+      "Comment": 0,
+      "Blank": 0,
+      "Complexity": 0,
+      "Count": 9,
+      "WeightedComplexity": 0,
+      "Files": [],
+      "LineLength": null,
+      "ULOC": 0
+    },
+    {
+      "Name": "Swift",
+      "Bytes": 24520,
+      "CodeBytes": 0,
+      "Lines": 650,
+      "Code": 361,
+      "Comment": 218,
+      "Blank": 71,
+      "Complexity": 31,
+      "Count": 4,
+      "WeightedComplexity": 0,
+      "Files": [],
+      "LineLength": null,
+      "ULOC": 0
+    },
+    {
+      "Name": "License",
+      "Bytes": 1093,
+      "CodeBytes": 0,
+      "Lines": 21,
+      "Code": 17,
+      "Comment": 0,
+      "Blank": 4,
+      "Complexity": 0,
+      "Count": 1,
+      "WeightedComplexity": 0,
+      "Files": [],
+      "LineLength": null,
+      "ULOC": 0
+    },
+    {
+      "Name": "Markdown",
+      "Bytes": 736,
+      "CodeBytes": 0,
+      "Lines": 29,
+      "Code": 24,
+      "Comment": 0,
+      "Blank": 5,
+      "Complexity": 0,
+      "Count": 1,
+      "WeightedComplexity": 0,
+      "Files": [],
+      "LineLength": null,
+      "ULOC": 0
+    }
+  ],
+  "computed": {
+    "summary": {
+      "totalLines": 838,
+      "totalCode": 540,
+      "totalComments": 218,
+      "totalBlanks": 80,
+      "totalBytes": 28950,
+      "totalFiles": 15,
+      "totalLanguages": 4,
+      "totalComplexity": 31,
+      "primaryLanguage": "Swift",
+      "primaryLanguagePercent": 66.9
+    },
+    "languages": [
+      {
+        "name": "Swift",
+        "lines": 650,
+        "code": 361,
+        "comments": 218,
+        "blanks": 71,
+        "bytes": 24520,
+        "files": 4,
+        "complexity": 31,
+        "percentOfLines": 77.6,
+        "percentOfCode": 66.9,
+        "percentOfBytes": 84.7
+      },
+      {
+        "name": "JSON",
+        "lines": 138,
+        "code": 138,
+        "comments": 0,
+        "blanks": 0,
+        "bytes": 2601,
+        "files": 9,
+        "complexity": 0,
+        "percentOfLines": 16.5,
+        "percentOfCode": 25.6,
+        "percentOfBytes": 9
+      },
+      {
+        "name": "Markdown",
+        "lines": 29,
+        "code": 24,
+        "comments": 0,
+        "blanks": 5,
+        "bytes": 736,
+        "files": 1,
+        "complexity": 0,
+        "percentOfLines": 3.5,
+        "percentOfCode": 4.4,
+        "percentOfBytes": 2.5
+      },
+      {
+        "name": "License",
+        "lines": 21,
+        "code": 17,
+        "comments": 0,
+        "blanks": 4,
+        "bytes": 1093,
+        "files": 1,
+        "complexity": 0,
+        "percentOfLines": 2.5,
+        "percentOfCode": 3.1,
+        "percentOfBytes": 3.8
+      }
+    ],
+    "cocomo": {
+      "traditional": {
+        "kloc": 0.54,
+        "effort": 1.26,
+        "time": 2.73,
+        "people": 0.46,
+        "cost": 5894,
+        "avgWage": 56286,
+        "model": "organic",
+        "description": "Traditional COCOMO estimate"
+      },
+      "aiAssisted": {
+        "effectiveMultiplier": 0.255,
+        "effort": 0.32,
+        "time": 1.62,
+        "people": 0.2,
+        "cost": 1503,
+        "description": "With AI assistance (~3.9x faster)",
+        "taskBreakdown": {
+          "boilerplate": "20x faster (10% of work)",
+          "implementation": "10x faster (40% of work)",
+          "testing": "3.3x faster (15% of work)",
+          "debugging": "2x faster (15% of work)",
+          "architecture": "1.4x faster (10% of work)",
+          "documentation": "5x faster (10% of work)"
+        }
+      },
+      "comparison": {
+        "effortReduction": "75%",
+        "timeReduction": "41%",
+        "costReduction": "75%",
+        "speedup": "3.9x"
+      },
+      "singleDeveloper": {
+        "traditional": {
+          "fullTime": {
+            "months": 1.26,
+            "weeks": 5.4,
+            "days": 27,
+            "cost": 5894,
+            "description": "Traditional full-time solo development"
+          },
+          "partTime": {
+            "months": 2.73,
+            "hoursPerWeek": 18.4,
+            "totalHours": 217,
+            "cost": 5894,
+            "description": "Traditional part-time to match COCOMO schedule"
+          }
+        },
+        "aiAssisted": {
+          "fullTime": {
+            "months": 0.32,
+            "weeks": 1.4,
+            "days": 7,
+            "cost": 1503,
+            "description": "AI-assisted full-time solo development"
+          },
+          "partTime": {
+            "months": 1.62,
+            "hoursPerWeek": 7.9,
+            "totalHours": 55,
+            "cost": 1503,
+            "description": "AI-assisted part-time development"
+          }
+        }
+      }
+    }
+  }
+}

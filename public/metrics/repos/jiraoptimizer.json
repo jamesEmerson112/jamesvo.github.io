@@ -1,6 +1,6 @@
 {
   "id": "jiraoptimizer",
-  "scannedAt": "2025-10-01T08:12:52.092Z",
+  "scannedAt": "2025-10-01T09:31:30.321Z",
   "metadata": {
     "name": "JiraOptimizer",
     "fullName": "T-DEV16/JiraOptimizer",
@@ -287,29 +287,70 @@
       }
     ],
     "cocomo": {
-      "standard": {
+      "traditional": {
         "kloc": 1.972,
         "effort": 4.9,
         "time": 4.57,
         "people": 1.07,
         "cost": 22966,
         "avgWage": 56286,
-        "model": "organic"
+        "model": "organic",
+        "description": "Traditional COCOMO estimate"
+      },
+      "aiAssisted": {
+        "effectiveMultiplier": 0.255,
+        "effort": 1.25,
+        "time": 2.72,
+        "people": 0.46,
+        "cost": 5856,
+        "description": "With AI assistance (~3.9x faster)",
+        "taskBreakdown": {
+          "boilerplate": "20x faster (10% of work)",
+          "implementation": "10x faster (40% of work)",
+          "testing": "3.3x faster (15% of work)",
+          "debugging": "2x faster (15% of work)",
+          "architecture": "1.4x faster (10% of work)",
+          "documentation": "5x faster (10% of work)"
+        }
+      },
+      "comparison": {
+        "effortReduction": "75%",
+        "timeReduction": "41%",
+        "costReduction": "75%",
+        "speedup": "3.9x"
       },
       "singleDeveloper": {
-        "fullTime": {
-          "months": 4.9,
-          "weeks": 21.2,
-          "days": 106,
-          "cost": 22966,
-          "description": "Working full-time as solo developer"
+        "traditional": {
+          "fullTime": {
+            "months": 4.9,
+            "weeks": 21.2,
+            "days": 106,
+            "cost": 22966,
+            "description": "Traditional full-time solo development"
+          },
+          "partTime": {
+            "months": 4.57,
+            "hoursPerWeek": 42.8,
+            "totalHours": 847,
+            "cost": 22966,
+            "description": "Traditional part-time to match COCOMO schedule"
+          }
         },
-        "partTime": {
-          "months": 4.57,
-          "hoursPerWeek": 42.8,
-          "totalHours": 847,
-          "cost": 22966,
-          "description": "Working part-time to match COCOMO schedule"
+        "aiAssisted": {
+          "fullTime": {
+            "months": 1.25,
+            "weeks": 5.4,
+            "days": 27,
+            "cost": 5856,
+            "description": "AI-assisted full-time solo development"
+          },
+          "partTime": {
+            "months": 2.72,
+            "hoursPerWeek": 18.4,
+            "totalHours": 216,
+            "cost": 5856,
+            "description": "AI-assisted part-time development"
+          }
         }
       }
     }

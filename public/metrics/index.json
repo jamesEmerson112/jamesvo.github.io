@@ -1,66 +1,66 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2025-10-01T08:21:25.445Z",
+  "generatedAt": "2025-10-01T09:39:57.376Z",
   "lastFullScan": "2025-10-01T08:13:04.189Z",
-  "lastIncrementalScan": "2025-10-01T08:21:25.445Z",
-  "reposScannedThisRun": 4,
+  "lastIncrementalScan": "2025-10-01T09:39:57.376Z",
+  "reposScannedThisRun": 6,
   "totalPublicRepos": 0,
-  "totalPrivateRepos": 4,
-  "totalRepos": 4,
+  "totalPrivateRepos": 6,
+  "totalRepos": 6,
   "portfolioTotals": {
-    "totalLines": 26561,
-    "totalCode": 22152,
-    "totalComments": 1486,
-    "totalBlanks": 2923,
-    "totalFiles": 82,
-    "totalBytes": 977792,
+    "totalLines": 26829,
+    "totalCode": 22372,
+    "totalComments": 1506,
+    "totalBlanks": 2951,
+    "totalFiles": 95,
+    "totalBytes": 990435,
     "totalComplexity": 717,
     "estimatedValue": {
-      "standardCost": 276907,
-      "totalEffort": 59.03,
-      "avgTime": 14.76,
+      "standardCost": 279172,
+      "totalEffort": 59.52,
+      "avgTime": 9.92,
       "avgPeople": 0
     },
     "soloDeveloper": {
-      "fullTimeMonths": 59.03,
+      "fullTimeMonths": 59.52,
       "fullTimeYears": 5,
-      "fullTimeWeeks": 256,
+      "fullTimeWeeks": 258,
       "description": "Total time if developed alone, full-time"
     },
     "languages": {
       "Markdown": {
-        "repos": 4,
-        "totalLines": 6940,
-        "totalCode": 5326,
-        "percentOfTotal": 26.1,
-        "averagePerRepo": 1735
+        "repos": 6,
+        "totalLines": 6954,
+        "totalCode": 5334,
+        "percentOfTotal": 25.9,
+        "averagePerRepo": 1159
       },
       "Cuda": {
         "repos": 1,
         "totalLines": 1793,
         "totalCode": 1109,
-        "percentOfTotal": 6.8,
+        "percentOfTotal": 6.7,
         "averagePerRepo": 1793
       },
       "Python": {
         "repos": 3,
         "totalLines": 6015,
         "totalCode": 3970,
-        "percentOfTotal": 22.6,
+        "percentOfTotal": 22.4,
         "averagePerRepo": 2005
       },
       "License": {
-        "repos": 2,
-        "totalLines": 222,
-        "totalCode": 186,
-        "percentOfTotal": 0.8,
-        "averagePerRepo": 111
+        "repos": 3,
+        "totalLines": 243,
+        "totalCode": 203,
+        "percentOfTotal": 0.9,
+        "averagePerRepo": 81
       },
       "Jupyter": {
         "repos": 2,
         "totalLines": 11443,
         "totalCode": 11443,
-        "percentOfTotal": 43.1,
+        "percentOfTotal": 42.7,
         "averagePerRepo": 5722
       },
       "Plain Text": {
@@ -71,11 +71,46 @@
         "averagePerRepo": 71
       },
       "JSON": {
+        "repos": 2,
+        "totalLines": 34,
+        "totalCode": 34,
+        "percentOfTotal": 0.1,
+        "averagePerRepo": 17
+      },
+      "CSS": {
         "repos": 1,
-        "totalLines": 7,
-        "totalCode": 7,
+        "totalLines": 110,
+        "totalCode": 98,
+        "percentOfTotal": 0.4,
+        "averagePerRepo": 110
+      },
+      "JSX": {
+        "repos": 1,
+        "totalLines": 45,
+        "totalCode": 41,
+        "percentOfTotal": 0.2,
+        "averagePerRepo": 45
+      },
+      "JavaScript": {
+        "repos": 1,
+        "totalLines": 36,
+        "totalCode": 14,
+        "percentOfTotal": 0.1,
+        "averagePerRepo": 36
+      },
+      "HTML": {
+        "repos": 1,
+        "totalLines": 13,
+        "totalCode": 13,
         "percentOfTotal": 0,
-        "averagePerRepo": 7
+        "averagePerRepo": 13
+      },
+      "SVG": {
+        "repos": 1,
+        "totalLines": 2,
+        "totalCode": 2,
+        "percentOfTotal": 0,
+        "averagePerRepo": 2
       }
     }
   },
@@ -163,6 +198,48 @@
         "aiMonths": 4.92
       },
       "detailsFile": "repos/private-004.json"
+    },
+    {
+      "id": "private-005",
+      "name": "Private Project 5",
+      "url": null,
+      "description": "Private repository",
+      "lastUpdated": "2025-08-30T23:16:51Z",
+      "primaryLanguage": "CSS",
+      "isPrivate": true,
+      "isAnonymized": true,
+      "summary": {
+        "lines": 245,
+        "code": 202,
+        "files": 11,
+        "complexity": 0,
+        "traditionalCost": 2099,
+        "aiCost": 535,
+        "traditionalMonths": 0.45,
+        "aiMonths": 0.11
+      },
+      "detailsFile": "repos/private-005.json"
+    },
+    {
+      "id": "private-007",
+      "name": "Private Project 7",
+      "url": null,
+      "description": "Private repository",
+      "lastUpdated": "2025-08-16T21:15:51Z",
+      "primaryLanguage": "License",
+      "isPrivate": true,
+      "isAnonymized": true,
+      "summary": {
+        "lines": 23,
+        "code": 18,
+        "files": 2,
+        "complexity": 0,
+        "traditionalCost": 166,
+        "aiCost": 42,
+        "traditionalMonths": 0.04,
+        "aiMonths": 0.01
+      },
+      "detailsFile": "repos/private-007.json"
     }
   ]
 }

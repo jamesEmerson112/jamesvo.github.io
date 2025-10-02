@@ -1,0 +1,330 @@
+{
+  "id": "jamesvo-github-io",
+  "scannedAt": "2025-10-01T09:31:26.206Z",
+  "metadata": {
+    "name": "jamesvo.github.io",
+    "fullName": "jamesEmerson112/jamesvo.github.io",
+    "description": "James Emerson Vo's personal portfolio",
+    "url": "https://github.com/jamesEmerson112/jamesvo.github.io",
+    "homepage": null,
+    "topics": [],
+    "lastUpdated": "2025-10-01T09:04:36Z",
+    "createdAt": "2022-06-03T13:53:42Z",
+    "stars": 1,
+    "language": "JavaScript",
+    "isPrivate": false,
+    "isFork": false,
+    "isArchived": false,
+    "isAnonymized": false
+  },
+  "sccRaw": [
+    {
+      "Name": "JSON",
+      "Bytes": 35378,
+      "CodeBytes": 0,
+      "Lines": 1358,
+      "Code": 1358,
+      "Comment": 0,
+      "Blank": 0,
+      "Complexity": 0,
+      "Count": 9,
+      "WeightedComplexity": 0,
+      "Files": [],
+      "LineLength": null,
+      "ULOC": 0
+    },
+    {
+      "Name": "JavaScript",
+      "Bytes": 32280,
+      "CodeBytes": 0,
+      "Lines": 988,
+      "Code": 676,
+      "Comment": 187,
+      "Blank": 125,
+      "Complexity": 47,
+      "Count": 7,
+      "WeightedComplexity": 0,
+      "Files": [],
+      "LineLength": null,
+      "ULOC": 0
+    },
+    {
+      "Name": "Markdown",
+      "Bytes": 74486,
+      "CodeBytes": 0,
+      "Lines": 1780,
+      "Code": 1284,
+      "Comment": 0,
+      "Blank": 496,
+      "Complexity": 0,
+      "Count": 5,
+      "WeightedComplexity": 0,
+      "Files": [],
+      "LineLength": null,
+      "ULOC": 0
+    },
+    {
+      "Name": "Svelte",
+      "Bytes": 17437,
+      "CodeBytes": 0,
+      "Lines": 757,
+      "Code": 638,
+      "Comment": 13,
+      "Blank": 106,
+      "Complexity": 6,
+      "Count": 3,
+      "WeightedComplexity": 0,
+      "Files": [],
+      "LineLength": null,
+      "ULOC": 0
+    },
+    {
+      "Name": "HTML",
+      "Bytes": 24494,
+      "CodeBytes": 0,
+      "Lines": 679,
+      "Code": 590,
+      "Comment": 4,
+      "Blank": 85,
+      "Complexity": 0,
+      "Count": 2,
+      "WeightedComplexity": 0,
+      "Files": [],
+      "LineLength": null,
+      "ULOC": 0
+    },
+    {
+      "Name": "YAML",
+      "Bytes": 5013,
+      "CodeBytes": 0,
+      "Lines": 161,
+      "Code": 129,
+      "Comment": 5,
+      "Blank": 27,
+      "Complexity": 0,
+      "Count": 2,
+      "WeightedComplexity": 0,
+      "Files": [],
+      "LineLength": null,
+      "ULOC": 0
+    },
+    {
+      "Name": "CSS",
+      "Bytes": 1976,
+      "CodeBytes": 0,
+      "Lines": 81,
+      "Code": 48,
+      "Comment": 18,
+      "Blank": 15,
+      "Complexity": 0,
+      "Count": 1,
+      "WeightedComplexity": 0,
+      "Files": [],
+      "LineLength": null,
+      "ULOC": 0
+    },
+    {
+      "Name": "License",
+      "Bytes": 1108,
+      "CodeBytes": 0,
+      "Lines": 9,
+      "Code": 5,
+      "Comment": 0,
+      "Blank": 4,
+      "Complexity": 0,
+      "Count": 1,
+      "WeightedComplexity": 0,
+      "Files": [],
+      "LineLength": null,
+      "ULOC": 0
+    }
+  ],
+  "computed": {
+    "summary": {
+      "totalLines": 5813,
+      "totalCode": 4728,
+      "totalComments": 227,
+      "totalBlanks": 858,
+      "totalBytes": 192172,
+      "totalFiles": 30,
+      "totalLanguages": 8,
+      "totalComplexity": 53,
+      "primaryLanguage": "JSON",
+      "primaryLanguagePercent": 28.7
+    },
+    "languages": [
+      {
+        "name": "JSON",
+        "lines": 1358,
+        "code": 1358,
+        "comments": 0,
+        "blanks": 0,
+        "bytes": 35378,
+        "files": 9,
+        "complexity": 0,
+        "percentOfLines": 23.4,
+        "percentOfCode": 28.7,
+        "percentOfBytes": 18.4
+      },
+      {
+        "name": "Markdown",
+        "lines": 1780,
+        "code": 1284,
+        "comments": 0,
+        "blanks": 496,
+        "bytes": 74486,
+        "files": 5,
+        "complexity": 0,
+        "percentOfLines": 30.6,
+        "percentOfCode": 27.2,
+        "percentOfBytes": 38.8
+      },
+      {
+        "name": "JavaScript",
+        "lines": 988,
+        "code": 676,
+        "comments": 187,
+        "blanks": 125,
+        "bytes": 32280,
+        "files": 7,
+        "complexity": 47,
+        "percentOfLines": 17,
+        "percentOfCode": 14.3,
+        "percentOfBytes": 16.8
+      },
+      {
+        "name": "Svelte",
+        "lines": 757,
+        "code": 638,
+        "comments": 13,
+        "blanks": 106,
+        "bytes": 17437,
+        "files": 3,
+        "complexity": 6,
+        "percentOfLines": 13,
+        "percentOfCode": 13.5,
+        "percentOfBytes": 9.1
+      },
+      {
+        "name": "HTML",
+        "lines": 679,
+        "code": 590,
+        "comments": 4,
+        "blanks": 85,
+        "bytes": 24494,
+        "files": 2,
+        "complexity": 0,
+        "percentOfLines": 11.7,
+        "percentOfCode": 12.5,
+        "percentOfBytes": 12.7
+      },
+      {
+        "name": "YAML",
+        "lines": 161,
+        "code": 129,
+        "comments": 5,
+        "blanks": 27,
+        "bytes": 5013,
+        "files": 2,
+        "complexity": 0,
+        "percentOfLines": 2.8,
+        "percentOfCode": 2.7,
+        "percentOfBytes": 2.6
+      },
+      {
+        "name": "CSS",
+        "lines": 81,
+        "code": 48,
+        "comments": 18,
+        "blanks": 15,
+        "bytes": 1976,
+        "files": 1,
+        "complexity": 0,
+        "percentOfLines": 1.4,
+        "percentOfCode": 1,
+        "percentOfBytes": 1
+      },
+      {
+        "name": "License",
+        "lines": 9,
+        "code": 5,
+        "comments": 0,
+        "blanks": 4,
+        "bytes": 1108,
+        "files": 1,
+        "complexity": 0,
+        "percentOfLines": 0.2,
+        "percentOfCode": 0.1,
+        "percentOfBytes": 0.6
+      }
+    ],
+    "cocomo": {
+      "traditional": {
+        "kloc": 4.728,
+        "effort": 12.26,
+        "time": 6.48,
+        "people": 1.89,
+        "cost": 57523,
+        "avgWage": 56286,
+        "model": "organic",
+        "description": "Traditional COCOMO estimate"
+      },
+      "aiAssisted": {
+        "effectiveMultiplier": 0.255,
+        "effort": 3.13,
+        "time": 3.86,
+        "people": 0.81,
+        "cost": 14668,
+        "description": "With AI assistance (~3.9x faster)",
+        "taskBreakdown": {
+          "boilerplate": "20x faster (10% of work)",
+          "implementation": "10x faster (40% of work)",
+          "testing": "3.3x faster (15% of work)",
+          "debugging": "2x faster (15% of work)",
+          "architecture": "1.4x faster (10% of work)",
+          "documentation": "5x faster (10% of work)"
+        }
+      },
+      "comparison": {
+        "effortReduction": "75%",
+        "timeReduction": "41%",
+        "costReduction": "75%",
+        "speedup": "3.9x"
+      },
+      "singleDeveloper": {
+        "traditional": {
+          "fullTime": {
+            "months": 12.26,
+            "weeks": 53.1,
+            "days": 266,
+            "cost": 57523,
+            "description": "Traditional full-time solo development"
+          },
+          "partTime": {
+            "months": 6.48,
+            "hoursPerWeek": 75.7,
+            "totalHours": 2122,
+            "cost": 57523,
+            "description": "Traditional part-time to match COCOMO schedule"
+          }
+        },
+        "aiAssisted": {
+          "fullTime": {
+            "months": 3.13,
+            "weeks": 13.5,
+            "days": 68,
+            "cost": 14668,
+            "description": "AI-assisted full-time solo development"
+          },
+          "partTime": {
+            "months": 3.86,
+            "hoursPerWeek": 32.4,
+            "totalHours": 541,
+            "cost": 14668,
+            "description": "AI-assisted part-time development"
+          }
+        }
+      }
+    }
+  }
+}
