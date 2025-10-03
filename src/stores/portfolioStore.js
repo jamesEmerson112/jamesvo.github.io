@@ -18,6 +18,7 @@ export const languageFilter = writable('all');
 export const sortBy = writable('lines'); // 'name', 'lines', 'cost', 'updated'
 export const sortOrder = writable('desc'); // 'asc' or 'desc'
 export const selectedRepo = writable(null);
+export const displayLimit = writable(10); // Number of repos to display
 
 /**
  * Select a repository to view details
@@ -55,15 +56,20 @@ export async function loadPortfolioData() {
  * Derived store: Filtered and sorted repositories
  */
 export const filteredRepos = derived(
-  [portfolioData, searchTerm, languageFilter, sortBy, sortOrder],
-  ([$portfolioData, $searchTerm, $languageFilter, $sortBy, $sortOrder]) => {
+  [portfolioData, searchTerm, languageFilter, sortBy, sortOrder, displayLimit],
+  ([$portfolioData, $searchTerm, $languageFilter, $sortBy, $sortOrder, $displayLimit]) => {
     if (!$portfolioData || !$portfolioData.repos) return [];
 
-    // Filter repositories
+    // Filter repositories (includes minimum lines filter of 500)
     let repos = filterRepos($portfolioData.repos, $searchTerm, $languageFilter);
 
     // Sort repositories
     repos = sortRepos(repos, $sortBy, $sortOrder);
+
+    // Limit displayed repositories
+    if ($displayLimit && $displayLimit > 0) {
+      repos = repos.slice(0, $displayLimit);
+    }
 
     return repos;
   }

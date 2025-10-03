@@ -1,6 +1,7 @@
 <script>
   import * as d3 from 'd3';
   import { onMount, afterUpdate } from 'svelte';
+  import { filterProgrammingLanguages } from '../../utils/dataLoader.js';
 
   export let languages = [];
   export let size = 300;
@@ -11,7 +12,7 @@
   let mounted = false;
 
   // Filter and prepare language data
-  $: validLanguages = languages
+  $: validLanguages = filterProgrammingLanguages(languages)
     .filter(lang => lang.code > 0 || lang.complexity > 0)
     .slice(0, 8); // Max 8 languages for readability
 

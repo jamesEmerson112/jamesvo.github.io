@@ -99,7 +99,7 @@ export function getLanguageColor(language) {
     'Cuda': '#3A4E3A',
     'Markdown': '#083fa1'
   };
-  
+
   return colors[language] || '#8b949e'; // Default gray for unknown languages
 }
 
@@ -113,38 +113,63 @@ export function getLanguageColor(language) {
 export function sortRepos(repos, sortBy, order = 'desc') {
   const sorted = [...repos].sort((a, b) => {
     let aVal, bVal;
-    
+
     switch (sortBy) {
       case 'name':
         aVal = a.name.toLowerCase();
         bVal = b.name.toLowerCase();
-        return order === 'asc' 
+        return order === 'asc'
           ? aVal.localeCompare(bVal)
           : bVal.localeCompare(aVal);
-      
+
       case 'lines':
         aVal = a.summary.lines;
         bVal = b.summary.lines;
         break;
-      
+
       case 'cost':
         aVal = a.summary.aiCost;
         bVal = b.summary.aiCost;
         break;
-      
+
       case 'updated':
         aVal = new Date(a.lastUpdated);
         bVal = new Date(b.lastUpdated);
         break;
-      
+
       default:
         return 0;
     }
-    
+
     return order === 'asc' ? aVal - bVal : bVal - aVal;
   });
-  
+
   return sorted;
+}
+
+/**
+ * Filter out non-programming languages from language data
+ * @param {Array} languages - Array of language objects
+ * @returns {Array} Filtered array containing only programming languages
+ */
+export function filterProgrammingLanguages(languages) {
+  const nonProgrammingLanguages = [
+    'Markdown',
+    'Plain Text',
+    'SVG',
+    'HTML',
+    'JSON',
+    'YAML',
+    'TOML',
+    'License',
+    'Makefile',
+    'Autoconf',
+    'Shell'
+  ];
+
+  return languages.filter(lang =>
+    !nonProgrammingLanguages.includes(lang.name)
+  );
 }
 
 /**
@@ -152,11 +177,17 @@ export function sortRepos(repos, sortBy, order = 'desc') {
  * @param {Array} repos - Array of repositories
  * @param {string} searchTerm - Search term
  * @param {string} languageFilter - Language to filter by
+ * @param {number} minLines - Minimum number of lines (default: 500)
  * @returns {Array} Filtered repositories
  */
-export function filterRepos(repos, searchTerm, languageFilter) {
+export function filterRepos(repos, searchTerm, languageFilter, minLines = 500) {
   let filtered = repos;
-  
+
+  // Filter by minimum lines
+  filtered = filtered.filter(repo =>
+    repo.summary && repo.summary.lines >= minLines
+  );
+
   // Filter by search term
   if (searchTerm) {
     const term = searchTerm.toLowerCase();
@@ -165,13 +196,13 @@ export function filterRepos(repos, searchTerm, languageFilter) {
       (repo.description && repo.description.toLowerCase().includes(term))
     );
   }
-  
+
   // Filter by language
   if (languageFilter && languageFilter !== 'all') {
     filtered = filtered.filter(repo =>
       repo.primaryLanguage === languageFilter
     );
   }
-  
+
   return filtered;
 }

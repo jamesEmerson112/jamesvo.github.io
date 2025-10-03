@@ -4,7 +4,7 @@
   export let sortable = true;
   export let compact = false;
 
-  let sortColumn = 'code'; // Default sort by code lines
+  let sortColumn = 'complexity'; // Default sort by complexity
   let sortDirection = 'desc';
 
   // Calculate totals
