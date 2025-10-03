@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import { darkMode } from './stores/theme.js';
   import ThemeSwitcher from './components/ThemeSwitcher.svelte';
+  import GamingCharacterDemo from './components/GamingCharacterDemo.svelte';
   import CodeMetrics from './components/CodeMetrics.svelte';
   import PortfolioOverview from './components/portfolio/PortfolioOverview.svelte';
   import './styles/themes.css';
@@ -24,6 +25,8 @@
 
 <main>
   <ThemeSwitcher />
+
+  <GamingCharacterDemo />
 
   <div class="hero">
     <h1>Hello, I'm {name}! 👋</h1>
