@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "scan": "node scripts/fetch-repos.js",
     "scan:full": "node scripts/fetch-repos.js --full",
-    "scan:test": "node scripts/fetch-repos.js --test --limit=20"
+    "scan:test": "node scripts/fetch-repos.js --test --limit=20",
+    "scan:test-public": "node scripts/fetch-repos.js --test --public-only --limit=20"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.0.0",

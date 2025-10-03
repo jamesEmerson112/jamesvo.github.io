@@ -1,15 +1,15 @@
 {
-  "id": "sglang-and-dynamo-example",
-  "scannedAt": "2025-10-03T19:25:14.119Z",
+  "id": "test-framework-with-aurelia",
+  "scannedAt": "2025-10-03T19:25:39.859Z",
   "metadata": {
-    "name": "SGLang-and-Dynamo-example",
-    "fullName": "jamesEmerson112/SGLang-and-Dynamo-example",
+    "name": "test-framework-with-aurelia",
+    "fullName": "jamesEmerson112/test-framework-with-aurelia",
     "description": "",
-    "url": "https://github.com/jamesEmerson112/SGLang-and-Dynamo-example",
+    "url": "https://github.com/jamesEmerson112/test-framework-with-aurelia",
     "homepage": null,
     "topics": [],
-    "lastUpdated": "2025-10-03T07:01:52Z",
-    "createdAt": "2025-10-03T00:29:17Z",
+    "lastUpdated": "2025-05-30T22:29:48Z",
+    "createdAt": "2025-05-30T22:29:43Z",
     "stars": 0,
     "language": "Unknown",
     "isPrivate": false,
@@ -19,23 +19,8 @@
   },
   "sccRaw": [
     {
-      "Name": "Markdown",
-      "Bytes": 152822,
-      "CodeBytes": 0,
-      "Lines": 4703,
-      "Code": 3625,
-      "Comment": 0,
-      "Blank": 1078,
-      "Complexity": 0,
-      "Count": 9,
-      "WeightedComplexity": 0,
-      "Files": [],
-      "LineLength": null,
-      "ULOC": 0
-    },
-    {
       "Name": "License",
-      "Bytes": 1071,
+      "Bytes": 1072,
       "CodeBytes": 0,
       "Lines": 21,
       "Code": 17,
@@ -47,66 +32,81 @@
       "Files": [],
       "LineLength": null,
       "ULOC": 0
+    },
+    {
+      "Name": "Markdown",
+      "Bytes": 31,
+      "CodeBytes": 0,
+      "Lines": 2,
+      "Code": 1,
+      "Comment": 0,
+      "Blank": 1,
+      "Complexity": 0,
+      "Count": 1,
+      "WeightedComplexity": 0,
+      "Files": [],
+      "LineLength": null,
+      "ULOC": 0
     }
   ],
   "computed": {
     "summary": {
-      "totalLines": 4724,
-      "totalCode": 3642,
+      "totalLines": 23,
+      "totalCode": 18,
       "totalComments": 0,
-      "totalBlanks": 1082,
-      "totalBytes": 153893,
-      "totalFiles": 10,
+      "totalBlanks": 5,
+      "totalBytes": 1103,
+      "totalFiles": 2,
       "totalLanguages": 2,
       "totalComplexity": 0,
-      "primaryLanguage": "Markdown",
-      "primaryLanguagePercent": 99.5
+      "primaryLanguage": "License",
+      "primaryLanguagePercent": 94.4
     },
     "languages": [
-      {
-        "name": "Markdown",
-        "lines": 4703,
-        "code": 3625,
-        "comments": 0,
-        "blanks": 1078,
-        "bytes": 152822,
-        "files": 9,
-        "complexity": 0,
-        "percentOfLines": 99.6,
-        "percentOfCode": 99.5,
-        "percentOfBytes": 99.3
-      },
       {
         "name": "License",
         "lines": 21,
         "code": 17,
         "comments": 0,
         "blanks": 4,
-        "bytes": 1071,
+        "bytes": 1072,
         "files": 1,
         "complexity": 0,
-        "percentOfLines": 0.4,
-        "percentOfCode": 0.5,
-        "percentOfBytes": 0.7
+        "percentOfLines": 91.3,
+        "percentOfCode": 94.4,
+        "percentOfBytes": 97.2
+      },
+      {
+        "name": "Markdown",
+        "lines": 2,
+        "code": 1,
+        "comments": 0,
+        "blanks": 1,
+        "bytes": 31,
+        "files": 1,
+        "complexity": 0,
+        "percentOfLines": 8.7,
+        "percentOfCode": 5.6,
+        "percentOfBytes": 2.8
       }
     ],
     "cocomo": {
       "traditional": {
-        "kloc": 3.642,
-        "effort": 9.32,
-        "time": 5.84,
-        "people": 1.6,
-        "cost": 43736,
+        "kloc": 0.018,
+        "effort": 0.04,
+        "time": 0.7,
+        "people": 0.05,
+        "cost": 166,
         "avgWage": 56286,
         "model": "organic",
         "description": "Traditional COCOMO estimate"
       },
       "aiAssisted": {
         "effectiveMultiplier": 0.255,
-        "effort": 2.38,
-        "time": 3.47,
-        "people": 0.68,
-        "cost": 11153,
+        "effort": 0.01,
+        "time": 0.42,
+        "people": 0.02,
+        "cost": 42,
         "description": "With AI assistance (~3.9x faster)",
         "taskBreakdown": {
           "boilerplate": "20x faster (10% of work)",
@@ -126,33 +126,33 @@
       "singleDeveloper": {
         "traditional": {
           "fullTime": {
-            "months": 9.32,
-            "weeks": 40.4,
-            "days": 202,
-            "cost": 43736,
+            "months": 0.04,
+            "weeks": 0.2,
+            "days": 1,
+            "cost": 166,
             "description": "Traditional full-time solo development"
           },
           "partTime": {
-            "months": 5.84,
-            "hoursPerWeek": 63.9,
-            "totalHours": 1613,
-            "cost": 43736,
+            "months": 0.7,
+            "hoursPerWeek": 2,
+            "totalHours": 6,
+            "cost": 166,
             "description": "Traditional part-time to match COCOMO schedule"
           }
         },
         "aiAssisted": {
           "fullTime": {
-            "months": 2.38,
-            "weeks": 10.3,
-            "days": 52,
-            "cost": 11153,
+            "months": 0.01,
+            "weeks": 0,
+            "days": 0,
+            "cost": 42,
             "description": "AI-assisted full-time solo development"
           },
           "partTime": {
-            "months": 3.47,
-            "hoursPerWeek": 27.4,
-            "totalHours": 411,
-            "cost": 11153,
+            "months": 0.42,
+            "hoursPerWeek": 0.9,
+            "totalHours": 2,
+            "cost": 42,
             "description": "AI-assisted part-time development"
           }
         }

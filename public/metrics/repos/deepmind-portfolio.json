@@ -1,15 +1,15 @@
 {
-  "id": "sglang-and-dynamo-example",
-  "scannedAt": "2025-10-03T19:25:14.119Z",
+  "id": "deepmind-portfolio",
+  "scannedAt": "2025-10-03T19:25:38.490Z",
   "metadata": {
-    "name": "SGLang-and-Dynamo-example",
-    "fullName": "jamesEmerson112/SGLang-and-Dynamo-example",
+    "name": "Deepmind-portfolio",
+    "fullName": "jamesEmerson112/Deepmind-portfolio",
     "description": "",
-    "url": "https://github.com/jamesEmerson112/SGLang-and-Dynamo-example",
+    "url": "https://github.com/jamesEmerson112/Deepmind-portfolio",
     "homepage": null,
     "topics": [],
-    "lastUpdated": "2025-10-03T07:01:52Z",
-    "createdAt": "2025-10-03T00:29:17Z",
+    "lastUpdated": "2025-06-15T17:33:47Z",
+    "createdAt": "2025-06-09T05:28:05Z",
     "stars": 0,
     "language": "Unknown",
     "isPrivate": false,
@@ -19,23 +19,8 @@
   },
   "sccRaw": [
     {
-      "Name": "Markdown",
-      "Bytes": 152822,
-      "CodeBytes": 0,
-      "Lines": 4703,
-      "Code": 3625,
-      "Comment": 0,
-      "Blank": 1078,
-      "Complexity": 0,
-      "Count": 9,
-      "WeightedComplexity": 0,
-      "Files": [],
-      "LineLength": null,
-      "ULOC": 0
-    },
-    {
       "Name": "License",
-      "Bytes": 1071,
+      "Bytes": 1072,
       "CodeBytes": 0,
       "Lines": 21,
       "Code": 17,
@@ -47,34 +32,64 @@
       "Files": [],
       "LineLength": null,
       "ULOC": 0
+    },
+    {
+      "Name": "Markdown",
+      "Bytes": 8089,
+      "CodeBytes": 0,
+      "Lines": 160,
+      "Code": 114,
+      "Comment": 0,
+      "Blank": 46,
+      "Complexity": 0,
+      "Count": 1,
+      "WeightedComplexity": 0,
+      "Files": [],
+      "LineLength": null,
+      "ULOC": 0
+    },
+    {
+      "Name": "Plain Text",
+      "Bytes": 41,
+      "CodeBytes": 0,
+      "Lines": 3,
+      "Code": 3,
+      "Comment": 0,
+      "Blank": 0,
+      "Complexity": 0,
+      "Count": 1,
+      "WeightedComplexity": 0,
+      "Files": [],
+      "LineLength": null,
+      "ULOC": 0
     }
   ],
   "computed": {
     "summary": {
-      "totalLines": 4724,
-      "totalCode": 3642,
+      "totalLines": 184,
+      "totalCode": 134,
       "totalComments": 0,
-      "totalBlanks": 1082,
-      "totalBytes": 153893,
-      "totalFiles": 10,
-      "totalLanguages": 2,
+      "totalBlanks": 50,
+      "totalBytes": 9202,
+      "totalFiles": 3,
+      "totalLanguages": 3,
       "totalComplexity": 0,
       "primaryLanguage": "Markdown",
-      "primaryLanguagePercent": 99.5
+      "primaryLanguagePercent": 85.1
     },
     "languages": [
       {
         "name": "Markdown",
-        "lines": 4703,
-        "code": 3625,
+        "lines": 160,
+        "code": 114,
         "comments": 0,
-        "blanks": 1078,
-        "bytes": 152822,
-        "files": 9,
+        "blanks": 46,
+        "bytes": 8089,
+        "files": 1,
         "complexity": 0,
-        "percentOfLines": 99.6,
-        "percentOfCode": 99.5,
-        "percentOfBytes": 99.3
+        "percentOfLines": 87,
+        "percentOfCode": 85.1,
+        "percentOfBytes": 87.9
       },
       {
         "name": "License",
@@ -82,31 +97,44 @@
         "code": 17,
         "comments": 0,
         "blanks": 4,
-        "bytes": 1071,
+        "bytes": 1072,
         "files": 1,
         "complexity": 0,
-        "percentOfLines": 0.4,
-        "percentOfCode": 0.5,
-        "percentOfBytes": 0.7
+        "percentOfLines": 11.4,
+        "percentOfCode": 12.7,
+        "percentOfBytes": 11.6
+      },
+      {
+        "name": "Plain Text",
+        "lines": 3,
+        "code": 3,
+        "comments": 0,
+        "blanks": 0,
+        "bytes": 41,
+        "files": 1,
+        "complexity": 0,
+        "percentOfLines": 1.6,
+        "percentOfCode": 2.2,
+        "percentOfBytes": 0.4
       }
     ],
     "cocomo": {
       "traditional": {
-        "kloc": 3.642,
-        "effort": 9.32,
-        "time": 5.84,
-        "people": 1.6,
-        "cost": 43736,
+        "kloc": 0.134,
+        "effort": 0.29,
+        "time": 1.56,
+        "people": 0.19,
+        "cost": 1364,
         "avgWage": 56286,
         "model": "organic",
         "description": "Traditional COCOMO estimate"
       },
       "aiAssisted": {
         "effectiveMultiplier": 0.255,
-        "effort": 2.38,
-        "time": 3.47,
-        "people": 0.68,
-        "cost": 11153,
+        "effort": 0.07,
+        "time": 0.93,
+        "people": 0.08,
+        "cost": 348,
         "description": "With AI assistance (~3.9x faster)",
         "taskBreakdown": {
           "boilerplate": "20x faster (10% of work)",
@@ -126,33 +154,33 @@
       "singleDeveloper": {
         "traditional": {
           "fullTime": {
-            "months": 9.32,
-            "weeks": 40.4,
-            "days": 202,
-            "cost": 43736,
+            "months": 0.29,
+            "weeks": 1.3,
+            "days": 6,
+            "cost": 1364,
             "description": "Traditional full-time solo development"
           },
           "partTime": {
-            "months": 5.84,
-            "hoursPerWeek": 63.9,
-            "totalHours": 1613,
-            "cost": 43736,
+            "months": 1.56,
+            "hoursPerWeek": 7.4,
+            "totalHours": 50,
+            "cost": 1364,
             "description": "Traditional part-time to match COCOMO schedule"
           }
         },
         "aiAssisted": {
           "fullTime": {
-            "months": 2.38,
-            "weeks": 10.3,
-            "days": 52,
-            "cost": 11153,
+            "months": 0.07,
+            "weeks": 0.3,
+            "days": 2,
+            "cost": 348,
             "description": "AI-assisted full-time solo development"
           },
           "partTime": {
-            "months": 3.47,
-            "hoursPerWeek": 27.4,
-            "totalHours": 411,
-            "cost": 11153,
+            "months": 0.93,
+            "hoursPerWeek": 3.2,
+            "totalHours": 13,
+            "cost": 348,
             "description": "AI-assisted part-time development"
           }
         }

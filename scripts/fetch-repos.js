@@ -29,6 +29,7 @@ const indexPath = join(metricsDir, 'index.json');
 const args = process.argv.slice(2);
 const isFullScan = args.includes('--full');
 const isTestMode = args.includes('--test');
+const isPublicOnly = args.includes('--public-only');
 const limitArg = args.find(arg => arg.startsWith('--limit='));
 const repoLimit = limitArg ? parseInt(limitArg.split('=')[1]) : null;
 
@@ -101,7 +102,13 @@ async function fetchAllRepos() {
 function filterRepos(repos) {
   console.log('\n🔍 Filtering repositories...');
 
-  const filtered = repos.filter(shouldIncludeRepo);
+  let filtered = repos.filter(shouldIncludeRepo);
+
+  // Filter to public only if flag is set
+  if (isPublicOnly) {
+    filtered = filtered.filter(r => !r.private);
+    console.log(`   🌐 Public-only mode enabled`);
+  }
 
   const excluded = repos.length - filtered.length;
   const publicCount = filtered.filter(r => !r.private).length;

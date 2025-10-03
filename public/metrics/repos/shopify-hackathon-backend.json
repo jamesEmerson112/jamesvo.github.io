@@ -1,6 +1,6 @@
 {
   "id": "shopify-hackathon-backend",
-  "scannedAt": "2025-10-01T09:32:28.736Z",
+  "scannedAt": "2025-10-03T19:25:19.767Z",
   "metadata": {
     "name": "shopify-hackathon-backend",
     "fullName": "jamesEmerson112/shopify-hackathon-backend",
@@ -20,7 +20,7 @@
   "sccRaw": [
     {
       "Name": "Markdown",
-      "Bytes": 20065,
+      "Bytes": 19461,
       "CodeBytes": 0,
       "Lines": 604,
       "Code": 447,
@@ -35,7 +35,7 @@
     },
     {
       "Name": "JSON",
-      "Bytes": 481,
+      "Bytes": 458,
       "CodeBytes": 0,
       "Lines": 23,
       "Code": 23,
@@ -50,7 +50,7 @@
     },
     {
       "Name": "JavaScript",
-      "Bytes": 2782,
+      "Bytes": 2695,
       "CodeBytes": 0,
       "Lines": 87,
       "Code": 67,
@@ -65,7 +65,7 @@
     },
     {
       "Name": "License",
-      "Bytes": 1093,
+      "Bytes": 1072,
       "CodeBytes": 0,
       "Lines": 21,
       "Code": 17,
@@ -85,7 +85,7 @@
       "totalCode": 554,
       "totalComments": 8,
       "totalBlanks": 173,
-      "totalBytes": 24421,
+      "totalBytes": 23686,
       "totalFiles": 5,
       "totalLanguages": 4,
       "totalComplexity": 19,
@@ -99,7 +99,7 @@
         "code": 447,
         "comments": 0,
         "blanks": 157,
-        "bytes": 20065,
+        "bytes": 19461,
         "files": 2,
         "complexity": 0,
         "percentOfLines": 82.2,
@@ -112,7 +112,7 @@
         "code": 67,
         "comments": 8,
         "blanks": 12,
-        "bytes": 2782,
+        "bytes": 2695,
         "files": 1,
         "complexity": 19,
         "percentOfLines": 11.8,
@@ -125,12 +125,12 @@
         "code": 23,
         "comments": 0,
         "blanks": 0,
-        "bytes": 481,
+        "bytes": 458,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 3.1,
         "percentOfCode": 4.2,
-        "percentOfBytes": 2
+        "percentOfBytes": 1.9
       },
       {
         "name": "License",
@@ -138,7 +138,7 @@
         "code": 17,
         "comments": 0,
         "blanks": 4,
-        "bytes": 1093,
+        "bytes": 1072,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 2.9,
