@@ -20,12 +20,26 @@ export const sortOrder = writable('desc'); // 'asc' or 'desc'
 export const selectedRepo = writable(null);
 
 /**
+ * Select a repository to view details
+ */
+export function selectRepo(repoId) {
+  selectedRepo.set(repoId);
+}
+
+/**
+ * Clear selected repository
+ */
+export function clearSelectedRepo() {
+  selectedRepo.set(null);
+}
+
+/**
  * Load portfolio data from JSON files
  */
 export async function loadPortfolioData() {
   loading.set(true);
   error.set(null);
-  
+
   try {
     const data = await loadMasterIndex();
     portfolioData.set(data);
@@ -44,13 +58,13 @@ export const filteredRepos = derived(
   [portfolioData, searchTerm, languageFilter, sortBy, sortOrder],
   ([$portfolioData, $searchTerm, $languageFilter, $sortBy, $sortOrder]) => {
     if (!$portfolioData || !$portfolioData.repos) return [];
-    
+
     // Filter repositories
     let repos = filterRepos($portfolioData.repos, $searchTerm, $languageFilter);
-    
+
     // Sort repositories
     repos = sortRepos(repos, $sortBy, $sortOrder);
-    
+
     return repos;
   }
 );
@@ -62,14 +76,14 @@ export const availableLanguages = derived(
   portfolioData,
   ($portfolioData) => {
     if (!$portfolioData || !$portfolioData.repos) return [];
-    
+
     const languages = new Set();
     $portfolioData.repos.forEach(repo => {
       if (repo.primaryLanguage) {
         languages.add(repo.primaryLanguage);
       }
     });
-    
+
     return Array.from(languages).sort();
   }
 );
@@ -81,9 +95,9 @@ export const portfolioStats = derived(
   portfolioData,
   ($portfolioData) => {
     if (!$portfolioData) return null;
-    
+
     const totals = $portfolioData.portfolioTotals;
-    
+
     return {
       totalRepos: $portfolioData.totalRepos,
       publicRepos: $portfolioData.totalPublicRepos,

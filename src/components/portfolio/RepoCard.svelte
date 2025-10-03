@@ -6,7 +6,7 @@
   export let repo;
 
   function handleClick() {
-    selectedRepo.set(repo);
+    selectedRepo.set(repo.id);
   }
 
   // Calculate savings percentage

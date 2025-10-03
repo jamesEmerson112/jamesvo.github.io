@@ -1,9 +1,10 @@
 <script>
   import { onMount } from 'svelte';
-  import { loading, error, filteredRepos, loadPortfolioData } from '../../stores/portfolioStore.js';
+  import { loading, error, filteredRepos, loadPortfolioData, selectedRepo, clearSelectedRepo } from '../../stores/portfolioStore.js';
   import PortfolioStats from './PortfolioStats.svelte';
   import SearchFilter from './SearchFilter.svelte';
   import RepoCard from './RepoCard.svelte';
+  import RepoDetail from './RepoDetail.svelte';
 
   // Load data on mount
   onMount(() => {
@@ -66,6 +67,14 @@
     {/if}
   </div>
 </section>
+
+<!-- Repository Detail Modal -->
+{#if $selectedRepo}
+  <RepoDetail
+    repoId={$selectedRepo}
+    closeHandler={clearSelectedRepo}
+  />
+{/if}
 
 <style>
   .portfolio-overview {
