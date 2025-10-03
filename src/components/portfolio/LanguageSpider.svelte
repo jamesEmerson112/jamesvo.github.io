@@ -6,7 +6,6 @@
   export let size = 300;
   export let showLabels = true;
   export let animationDuration = 750;
-  export let curveType = 'cardinal'; // 'linear', 'cardinal', 'catmullRom', 'basis'
 
   let svgElement;
   let mounted = false;
@@ -46,32 +45,31 @@
     index: i
   }));
 
-  // D3 Line and Area Generators with curve interpolation
-  $: getCurveType = () => {
-    switch(curveType) {
-      case 'cardinal': return d3.curveCardinalClosed.tension(0.5);
-      case 'catmullRom': return d3.curveCatmullRomClosed.alpha(0.5);
-      case 'basis': return d3.curveBasisClosed;
-      default: return d3.curveLinearClosed;
-    }
-  };
+  // Polygon point calculation for grid levels
+  function getPolygonPoints(levelPercent) {
+    const levelRadius = radius * (levelPercent / 100);
+    return normalizedData.map(d => {
+      const x = center + levelRadius * Math.cos(d.angle);
+      const y = center + levelRadius * Math.sin(d.angle);
+      return `${x},${y}`;
+    }).join(' ');
+  }
 
-  $: lineGenerator = d3.lineRadial()
-    .angle(d => d.angle)
-    .radius(d => radialScale(d.value))
-    .curve(getCurveType());
+  // Calculate code polygon points
+  $: codePolygonPoints = normalizedData.map(d => {
+    const r = radialScale(d.code);
+    const x = center + r * Math.cos(d.angle);
+    const y = center + r * Math.sin(d.angle);
+    return `${x},${y}`;
+  }).join(' ');
 
-  $: areaGenerator = d3.areaRadial()
-    .angle(d => d.angle)
-    .innerRadius(0)
-    .outerRadius(d => radialScale(d.value))
-    .curve(getCurveType());
-
-  // Generate path data
-  $: codePath = lineGenerator(normalizedData.map(d => ({ angle: d.angle, value: d.code })));
-  $: complexityPath = lineGenerator(normalizedData.map(d => ({ angle: d.angle, value: d.complexity })));
-  $: codeArea = areaGenerator(normalizedData.map(d => ({ angle: d.angle, value: d.code })));
-  $: complexityArea = areaGenerator(normalizedData.map(d => ({ angle: d.angle, value: d.complexity })));
+  // Calculate complexity polygon points
+  $: complexityPolygonPoints = normalizedData.map(d => {
+    const r = radialScale(d.complexity);
+    const x = center + r * Math.cos(d.angle);
+    const y = center + r * Math.sin(d.angle);
+    return `${x},${y}`;
+  }).join(' ');
 
   $: center = size / 2;
   $: radius = (size / 2) - 40;
@@ -154,13 +152,6 @@
 
   afterUpdate(() => {
     if (mounted && svgElement) {
-      // Animate polygons
-      const codePoly = svgElement.querySelector('.code-path');
-      const complexityPoly = svgElement.querySelector('.complexity-path');
-
-      if (codePoly) animatePath(codePoly, codePath);
-      if (complexityPoly) animatePath(complexityPoly, complexityPath);
-
       // Animate data points with stagger
       svgElement.querySelectorAll('.data-point').forEach((point, i) => {
         d3.select(point)
@@ -236,23 +227,20 @@
       </filter>
     </defs>
 
-    <!-- Grid circles with labels -->
-    <g class="grid-circles">
+    <!-- Grid polygons with labels -->
+    <g class="grid-polygons">
       {#each gridLevels as level}
-        {@const r = radialScale(level)}
-        <circle
-          cx={center}
-          cy={center}
-          r={r}
+        <polygon
+          points={getPolygonPoints(level)}
           fill="none"
           stroke="rgba(255, 255, 255, 0.08)"
           stroke-width="1"
-          stroke-dasharray="4,4"
+          stroke-dasharray="3,3"
         />
         <!-- Grid level labels -->
         <text
           x={center + 5}
-          y={center - r + 3}
+          y={center - radialScale(level) + 3}
           font-size="8"
           fill="rgba(255, 255, 255, 0.4)"
           class="grid-label"
@@ -278,49 +266,49 @@
       {/each}
     </g>
 
-    <!-- Code area (filled) -->
-    {#if codeArea}
-      <path
-        d={codeArea}
-        fill="url(#codeGradient)"
-        class="code-area"
+    <!-- Complexity polygon (filled with solid color) - drawn first so code appears on top -->
+    {#if complexityPolygonPoints}
+      <polygon
+        points={complexityPolygonPoints}
+        fill="rgba(239, 68, 68, {hoveredMetric === 'complexity' ? 0.5 : 0.25})"
+        class="complexity-polygon-fill"
         filter="url(#shadow)"
+        style="transition: fill 0.3s ease;"
       />
     {/if}
 
-    <!-- Complexity area (filled) -->
-    {#if complexityArea}
-      <path
-        d={complexityArea}
-        fill="url(#complexityGradient)"
-        class="complexity-area"
-        filter="url(#shadow)"
-      />
-    {/if}
-
-    <!-- Code path (stroke) -->
-    {#if codePath}
-      <path
-        d={codePath}
-        fill="none"
-        stroke="rgb(59, 130, 246)"
-        stroke-width="2.5"
-        class="code-path"
-        filter="url(#glow)"
-        style="opacity: 0;"
-      />
-    {/if}
-
-    <!-- Complexity path (stroke) -->
-    {#if complexityPath}
-      <path
-        d={complexityPath}
+    <!-- Complexity polygon (stroke outline) -->
+    {#if complexityPolygonPoints}
+      <polygon
+        points={complexityPolygonPoints}
         fill="none"
         stroke="rgb(239, 68, 68)"
-        stroke-width="2.5"
-        class="complexity-path"
+        stroke-width="5"
+        class="complexity-polygon-outline"
         filter="url(#glow)"
-        style="opacity: 0;"
+      />
+    {/if}
+
+    <!-- Code polygon (filled with solid color) -->
+    {#if codePolygonPoints}
+      <polygon
+        points={codePolygonPoints}
+        fill="rgba(59, 130, 246, {hoveredMetric === 'code' ? 0.5 : 0.25})"
+        class="code-polygon-fill"
+        filter="url(#shadow)"
+        style="transition: fill 0.3s ease;"
+      />
+    {/if}
+
+    <!-- Code polygon (stroke outline) -->
+    {#if codePolygonPoints}
+      <polygon
+        points={codePolygonPoints}
+        fill="none"
+        stroke="rgb(59, 130, 246)"
+        stroke-width="5"
+        class="code-polygon-outline"
+        filter="url(#glow)"
       />
     {/if}
 
@@ -361,6 +349,19 @@
         on:mouseleave={handlePointLeave}
         on:focus={() => handlePointHover(point.data, 'complexity')}
         on:blur={handlePointLeave}
+      />
+    {/each}
+
+    <!-- Axis endpoint dots -->
+    {#each axisPoints as point}
+      <circle
+        cx={point.x}
+        cy={point.y}
+        r="3"
+        fill="rgba(255, 255, 255, 0.3)"
+        stroke="rgba(255, 255, 255, 0.5)"
+        stroke-width="1"
+        class="axis-dot"
       />
     {/each}
 
@@ -469,12 +470,6 @@
     stroke-width: 2;
   }
 
-  .code-path,
-  .complexity-path,
-  .code-area,
-  .complexity-area {
-    transition: all 0.3s ease;
-  }
 
   .data-point {
     cursor: pointer;
@@ -569,6 +564,7 @@
     border: 1px solid rgba(239, 68, 68, 0.4);
   }
 
+
   .tooltip-content {
     display: flex;
     flex-direction: column;
@@ -593,6 +589,7 @@
   .complexity-icon {
     color: rgb(239, 68, 68);
   }
+
 
   .metric-label {
     color: rgba(255, 255, 255, 0.7);
@@ -661,6 +658,7 @@
     box-shadow: 0 0 8px rgba(239, 68, 68, 0.4);
   }
 
+
   .legend-glow {
     position: absolute;
     inset: -2px;
@@ -679,5 +677,20 @@
 
   .legend-color.complexity .legend-glow {
     box-shadow: 0 0 12px rgba(239, 68, 68, 0.8);
+  }
+
+
+  .code-polygon-fill,
+  .complexity-polygon-fill {
+    transition: all 0.3s ease;
+  }
+
+  .code-polygon-outline,
+  .complexity-polygon-outline {
+    transition: all 0.3s ease;
+  }
+
+  .axis-dot {
+    transition: all 0.2s ease;
   }
 </style>
