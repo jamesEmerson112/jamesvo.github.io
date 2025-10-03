@@ -1,6 +1,6 @@
 {
   "id": "private-004",
-  "scannedAt": "2025-10-01T09:39:53.943Z",
+  "scannedAt": "2025-10-03T15:44:00.849Z",
   "metadata": {
     "name": "Private Project 4",
     "fullName": null,
@@ -20,7 +20,7 @@
   "sccRaw": [
     {
       "Name": "Jupyter",
-      "Bytes": 200497,
+      "Bytes": 194724,
       "CodeBytes": 0,
       "Lines": 5773,
       "Code": 5773,
@@ -35,7 +35,7 @@
     },
     {
       "Name": "Markdown",
-      "Bytes": 58943,
+      "Bytes": 57449,
       "CodeBytes": 0,
       "Lines": 1494,
       "Code": 1124,
@@ -50,7 +50,7 @@
     },
     {
       "Name": "Python",
-      "Bytes": 20227,
+      "Bytes": 19699,
       "CodeBytes": 0,
       "Lines": 530,
       "Code": 329,
@@ -65,7 +65,7 @@
     },
     {
       "Name": "Plain Text",
-      "Bytes": 4269,
+      "Bytes": 4201,
       "CodeBytes": 0,
       "Lines": 68,
       "Code": 53,
@@ -85,7 +85,7 @@
       "totalCode": 7279,
       "totalComments": 115,
       "totalBlanks": 471,
-      "totalBytes": 283936,
+      "totalBytes": 276073,
       "totalFiles": 20,
       "totalLanguages": 4,
       "totalComplexity": 21,
@@ -99,12 +99,12 @@
         "code": 5773,
         "comments": 0,
         "blanks": 0,
-        "bytes": 200497,
+        "bytes": 194724,
         "files": 8,
         "complexity": 0,
         "percentOfLines": 73.4,
         "percentOfCode": 79.3,
-        "percentOfBytes": 70.6
+        "percentOfBytes": 70.5
       },
       {
         "name": "Markdown",
@@ -112,7 +112,7 @@
         "code": 1124,
         "comments": 0,
         "blanks": 370,
-        "bytes": 58943,
+        "bytes": 57449,
         "files": 5,
         "complexity": 0,
         "percentOfLines": 19,
@@ -125,7 +125,7 @@
         "code": 329,
         "comments": 115,
         "blanks": 86,
-        "bytes": 20227,
+        "bytes": 19699,
         "files": 5,
         "complexity": 21,
         "percentOfLines": 6.7,
@@ -138,7 +138,7 @@
         "code": 53,
         "comments": 0,
         "blanks": 15,
-        "bytes": 4269,
+        "bytes": 4201,
         "files": 2,
         "complexity": 0,
         "percentOfLines": 0.9,

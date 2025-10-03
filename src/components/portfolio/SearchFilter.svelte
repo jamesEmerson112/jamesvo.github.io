@@ -1,6 +1,6 @@
 <script>
   import { searchTerm, languageFilter, sortBy, sortOrder, availableLanguages, resetFilters, toggleSortOrder } from '../../stores/portfolioStore.js';
-  
+
   const sortOptions = [
     { value: 'lines', label: 'Lines of Code' },
     { value: 'cost', label: 'Cost (AI)' },
@@ -25,7 +25,7 @@
       </button>
     {/if}
   </div>
-  
+
   <!-- Filters -->
   <div class="filters">
     <!-- Language Filter -->
@@ -38,7 +38,7 @@
         {/each}
       </select>
     </div>
-    
+
     <!-- Sort By -->
     <div class="filter-group">
       <label for="sort-by" class="filter-label">Sort by:</label>
@@ -48,7 +48,7 @@
         {/each}
       </select>
     </div>
-    
+
     <!-- Sort Order Toggle -->
     <button class="sort-toggle" on:click={toggleSortOrder} title="Toggle sort order">
       {#if $sortOrder === 'desc'}
@@ -59,7 +59,7 @@
         <span class="toggle-label">Asc</span>
       {/if}
     </button>
-    
+
     <!-- Reset Button -->
     <button class="reset-button" on:click={resetFilters} title="Reset all filters">
       <span class="reset-icon">↻</span>
@@ -90,7 +90,7 @@
     position: absolute;
     left: 1rem;
     font-size: 1.25rem;
-    opacity: 0.5;
+    color: var(--text-muted);
   }
 
   .search-input {
@@ -111,7 +111,7 @@
   }
 
   .search-input::placeholder {
-    opacity: 0.5;
+    color: var(--text-muted);
   }
 
   .clear-button {
@@ -120,15 +120,14 @@
     padding: 0.25rem;
     background: none;
     border: none;
-    color: inherit;
+    color: var(--text-muted);
     font-size: 1.25rem;
     cursor: pointer;
-    opacity: 0.5;
-    transition: opacity 0.2s;
+    transition: color 0.2s;
   }
 
   .clear-button:hover {
-    opacity: 1;
+    color: var(--text-primary);
   }
 
   .filters {
@@ -147,7 +146,7 @@
   .filter-label {
     font-size: 0.875rem;
     font-weight: 500;
-    opacity: 0.7;
+    color: var(--text-secondary);
     white-space: nowrap;
   }
 

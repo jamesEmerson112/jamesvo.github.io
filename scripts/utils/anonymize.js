@@ -29,7 +29,7 @@ export function anonymizePrivateRepo(repo, index) {
       isAnonymized: false
     };
   }
-  
+
   // Anonymize private repository
   return {
     name: `Private Project ${index}`,
@@ -55,13 +55,8 @@ export function anonymizePrivateRepo(repo, index) {
  * @returns {boolean} True if repo should be scanned
  */
 export function shouldIncludeRepo(repo) {
-  // Exclude forks and archived repos
-  if (repo.fork || repo.archived) {
-    return false;
-  }
-  
-  // Include all other repos (both public and private)
-  return true;
+  // Only exclude forks - archived repos are still our work!
+  return !repo.fork;
 }
 
 /**
@@ -74,7 +69,7 @@ export function generateRepoId(repo, privateIndex = 0) {
   if (repo.private) {
     return `private-${String(privateIndex).padStart(3, '0')}`;
   }
-  
+
   // For public repos, use sanitized name
   return repo.name
     .toLowerCase()
@@ -89,7 +84,7 @@ export function generateRepoId(repo, privateIndex = 0) {
  * @returns {string} Display name
  */
 export function getDisplayName(metadata) {
-  return metadata.isAnonymized 
+  return metadata.isAnonymized
     ? metadata.name // "Private Project 5"
     : metadata.name; // Original name
 }

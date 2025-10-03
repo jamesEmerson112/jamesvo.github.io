@@ -1,6 +1,6 @@
 {
   "id": "sf10x-hackathon",
-  "scannedAt": "2025-10-01T09:32:07.148Z",
+  "scannedAt": "2025-10-03T15:35:27.476Z",
   "metadata": {
     "name": "sf10x-hackathon",
     "fullName": "jasonyi33/sf10x-hackathon",
@@ -20,7 +20,7 @@
   "sccRaw": [
     {
       "Name": "Python",
-      "Bytes": 403242,
+      "Bytes": 393022,
       "CodeBytes": 0,
       "Lines": 10259,
       "Code": 7571,
@@ -35,7 +35,7 @@
     },
     {
       "Name": "Markdown",
-      "Bytes": 615583,
+      "Bytes": 600108,
       "CodeBytes": 0,
       "Lines": 15500,
       "Code": 12458,
@@ -50,7 +50,7 @@
     },
     {
       "Name": "TypeScript",
-      "Bytes": 258626,
+      "Bytes": 250223,
       "CodeBytes": 0,
       "Lines": 8421,
       "Code": 7492,
@@ -65,7 +65,7 @@
     },
     {
       "Name": "JavaScript",
-      "Bytes": 242034,
+      "Bytes": 234961,
       "CodeBytes": 0,
       "Lines": 7079,
       "Code": 5503,
@@ -80,7 +80,7 @@
     },
     {
       "Name": "SQL",
-      "Bytes": 28186,
+      "Bytes": 27685,
       "CodeBytes": 0,
       "Lines": 506,
       "Code": 357,
@@ -95,7 +95,7 @@
     },
     {
       "Name": "JSON",
-      "Bytes": 14111,
+      "Bytes": 13595,
       "CodeBytes": 0,
       "Lines": 516,
       "Code": 516,
@@ -110,7 +110,7 @@
     },
     {
       "Name": "Plain Text",
-      "Bytes": 726,
+      "Bytes": 715,
       "CodeBytes": 0,
       "Lines": 16,
       "Code": 16,
@@ -140,7 +140,7 @@
     },
     {
       "Name": "Shell",
-      "Bytes": 4107,
+      "Bytes": 3989,
       "CodeBytes": 0,
       "Lines": 120,
       "Code": 85,
@@ -155,7 +155,7 @@
     },
     {
       "Name": "TOML",
-      "Bytes": 13253,
+      "Bytes": 12898,
       "CodeBytes": 0,
       "Lines": 357,
       "Code": 142,
@@ -170,7 +170,7 @@
     },
     {
       "Name": "CSS",
-      "Bytes": 6329,
+      "Bytes": 5984,
       "CodeBytes": 0,
       "Lines": 345,
       "Code": 287,
@@ -190,7 +190,7 @@
       "totalCode": 34432,
       "totalComments": 2859,
       "totalBlanks": 5833,
-      "totalBytes": 1589511,
+      "totalBytes": 1546494,
       "totalFiles": 181,
       "totalLanguages": 11,
       "totalComplexity": 1896,
@@ -204,12 +204,12 @@
         "code": 12458,
         "comments": 0,
         "blanks": 3042,
-        "bytes": 615583,
+        "bytes": 600108,
         "files": 35,
         "complexity": 0,
         "percentOfLines": 35.9,
         "percentOfCode": 36.2,
-        "percentOfBytes": 38.7
+        "percentOfBytes": 38.8
       },
       {
         "name": "Python",
@@ -217,7 +217,7 @@
         "code": 7571,
         "comments": 1331,
         "blanks": 1357,
-        "bytes": 403242,
+        "bytes": 393022,
         "files": 55,
         "complexity": 871,
         "percentOfLines": 23.8,
@@ -230,12 +230,12 @@
         "code": 7492,
         "comments": 279,
         "blanks": 650,
-        "bytes": 258626,
+        "bytes": 250223,
         "files": 31,
         "complexity": 764,
         "percentOfLines": 19.5,
         "percentOfCode": 21.8,
-        "percentOfBytes": 16.3
+        "percentOfBytes": 16.2
       },
       {
         "name": "JavaScript",
@@ -243,7 +243,7 @@
         "code": 5503,
         "comments": 973,
         "blanks": 603,
-        "bytes": 242034,
+        "bytes": 234961,
         "files": 27,
         "complexity": 253,
         "percentOfLines": 16.4,
@@ -256,7 +256,7 @@
         "code": 516,
         "comments": 0,
         "blanks": 0,
-        "bytes": 14111,
+        "bytes": 13595,
         "files": 7,
         "complexity": 0,
         "percentOfLines": 1.2,
@@ -269,7 +269,7 @@
         "code": 357,
         "comments": 80,
         "blanks": 69,
-        "bytes": 28186,
+        "bytes": 27685,
         "files": 8,
         "complexity": 0,
         "percentOfLines": 1.2,
@@ -282,7 +282,7 @@
         "code": 287,
         "comments": 10,
         "blanks": 48,
-        "bytes": 6329,
+        "bytes": 5984,
         "files": 2,
         "complexity": 0,
         "percentOfLines": 0.8,
@@ -295,7 +295,7 @@
         "code": 142,
         "comments": 171,
         "blanks": 44,
-        "bytes": 13253,
+        "bytes": 12898,
         "files": 3,
         "complexity": 0,
         "percentOfLines": 0.8,
@@ -308,7 +308,7 @@
         "code": 85,
         "comments": 15,
         "blanks": 20,
-        "bytes": 4107,
+        "bytes": 3989,
         "files": 3,
         "complexity": 8,
         "percentOfLines": 0.3,
@@ -321,7 +321,7 @@
         "code": 16,
         "comments": 0,
         "blanks": 0,
-        "bytes": 726,
+        "bytes": 715,
         "files": 5,
         "complexity": 0,
         "percentOfLines": 0,

@@ -1,6 +1,6 @@
 {
   "id": "private-009",
-  "scannedAt": "2025-10-01T09:32:15.400Z",
+  "scannedAt": "2025-10-03T15:35:32.328Z",
   "metadata": {
     "name": "Private Project 9",
     "fullName": null,
@@ -20,7 +20,7 @@
   "sccRaw": [
     {
       "Name": "JavaScript",
-      "Bytes": 28304,
+      "Bytes": 27483,
       "CodeBytes": 0,
       "Lines": 821,
       "Code": 617,
@@ -35,7 +35,7 @@
     },
     {
       "Name": "CSS",
-      "Bytes": 13043,
+      "Bytes": 12344,
       "CodeBytes": 0,
       "Lines": 699,
       "Code": 593,
@@ -50,7 +50,7 @@
     },
     {
       "Name": "HTML",
-      "Bytes": 8753,
+      "Bytes": 8548,
       "CodeBytes": 0,
       "Lines": 205,
       "Code": 189,
@@ -65,7 +65,7 @@
     },
     {
       "Name": "JSON",
-      "Bytes": 687,
+      "Bytes": 659,
       "CodeBytes": 0,
       "Lines": 28,
       "Code": 28,
@@ -80,7 +80,7 @@
     },
     {
       "Name": "License",
-      "Bytes": 1093,
+      "Bytes": 1072,
       "CodeBytes": 0,
       "Lines": 21,
       "Code": 17,
@@ -95,7 +95,7 @@
     },
     {
       "Name": "Markdown",
-      "Bytes": 16,
+      "Bytes": 14,
       "CodeBytes": 0,
       "Lines": 2,
       "Code": 1,
@@ -115,7 +115,7 @@
       "totalCode": 1445,
       "totalComments": 64,
       "totalBlanks": 267,
-      "totalBytes": 51896,
+      "totalBytes": 50120,
       "totalFiles": 12,
       "totalLanguages": 6,
       "totalComplexity": 61,
@@ -129,12 +129,12 @@
         "code": 617,
         "comments": 61,
         "blanks": 143,
-        "bytes": 28304,
+        "bytes": 27483,
         "files": 5,
         "complexity": 61,
         "percentOfLines": 46.2,
         "percentOfCode": 42.7,
-        "percentOfBytes": 54.5
+        "percentOfBytes": 54.8
       },
       {
         "name": "CSS",
@@ -142,12 +142,12 @@
         "code": 593,
         "comments": 3,
         "blanks": 103,
-        "bytes": 13043,
+        "bytes": 12344,
         "files": 2,
         "complexity": 0,
         "percentOfLines": 39.4,
         "percentOfCode": 41,
-        "percentOfBytes": 25.1
+        "percentOfBytes": 24.6
       },
       {
         "name": "HTML",
@@ -155,12 +155,12 @@
         "code": 189,
         "comments": 0,
         "blanks": 16,
-        "bytes": 8753,
+        "bytes": 8548,
         "files": 2,
         "complexity": 0,
         "percentOfLines": 11.5,
         "percentOfCode": 13.1,
-        "percentOfBytes": 16.9
+        "percentOfBytes": 17.1
       },
       {
         "name": "JSON",
@@ -168,7 +168,7 @@
         "code": 28,
         "comments": 0,
         "blanks": 0,
-        "bytes": 687,
+        "bytes": 659,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 1.6,
@@ -181,7 +181,7 @@
         "code": 17,
         "comments": 0,
         "blanks": 4,
-        "bytes": 1093,
+        "bytes": 1072,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 1.2,
@@ -194,7 +194,7 @@
         "code": 1,
         "comments": 0,
         "blanks": 1,
-        "bytes": 16,
+        "bytes": 14,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 0.1,

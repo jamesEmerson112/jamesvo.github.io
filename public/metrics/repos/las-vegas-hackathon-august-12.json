@@ -1,6 +1,6 @@
 {
   "id": "las-vegas-hackathon-august-12",
-  "scannedAt": "2025-10-01T09:32:22.453Z",
+  "scannedAt": "2025-10-03T15:35:35.680Z",
   "metadata": {
     "name": "las-vegas-hackathon-august-12",
     "fullName": "jamesEmerson112/las-vegas-hackathon-august-12",
@@ -20,7 +20,7 @@
   "sccRaw": [
     {
       "Name": "Python",
-      "Bytes": 159178,
+      "Bytes": 157193,
       "CodeBytes": 0,
       "Lines": 1987,
       "Code": 1567,
@@ -35,7 +35,7 @@
     },
     {
       "Name": "Markdown",
-      "Bytes": 31470,
+      "Bytes": 30519,
       "CodeBytes": 0,
       "Lines": 952,
       "Code": 705,
@@ -50,7 +50,7 @@
     },
     {
       "Name": "JSON",
-      "Bytes": 13472,
+      "Bytes": 13081,
       "CodeBytes": 0,
       "Lines": 392,
       "Code": 392,
@@ -65,7 +65,7 @@
     },
     {
       "Name": "License",
-      "Bytes": 1093,
+      "Bytes": 1072,
       "CodeBytes": 0,
       "Lines": 21,
       "Code": 17,
@@ -85,7 +85,7 @@
       "totalCode": 2681,
       "totalComments": 174,
       "totalBlanks": 497,
-      "totalBytes": 205213,
+      "totalBytes": 201865,
       "totalFiles": 16,
       "totalLanguages": 4,
       "totalComplexity": 157,
@@ -99,12 +99,12 @@
         "code": 1567,
         "comments": 174,
         "blanks": 246,
-        "bytes": 159178,
+        "bytes": 157193,
         "files": 10,
         "complexity": 157,
         "percentOfLines": 59.3,
         "percentOfCode": 58.4,
-        "percentOfBytes": 77.6
+        "percentOfBytes": 77.9
       },
       {
         "name": "Markdown",
@@ -112,12 +112,12 @@
         "code": 705,
         "comments": 0,
         "blanks": 247,
-        "bytes": 31470,
+        "bytes": 30519,
         "files": 4,
         "complexity": 0,
         "percentOfLines": 28.4,
         "percentOfCode": 26.3,
-        "percentOfBytes": 15.3
+        "percentOfBytes": 15.1
       },
       {
         "name": "JSON",
@@ -125,12 +125,12 @@
         "code": 392,
         "comments": 0,
         "blanks": 0,
-        "bytes": 13472,
+        "bytes": 13081,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 11.7,
         "percentOfCode": 14.6,
-        "percentOfBytes": 6.6
+        "percentOfBytes": 6.5
       },
       {
         "name": "License",
@@ -138,7 +138,7 @@
         "code": 17,
         "comments": 0,
         "blanks": 4,
-        "bytes": 1093,
+        "bytes": 1072,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 0.6,

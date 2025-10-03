@@ -1,6 +1,6 @@
 {
   "id": "private-003",
-  "scannedAt": "2025-10-01T09:39:52.607Z",
+  "scannedAt": "2025-10-03T15:43:59.841Z",
   "metadata": {
     "name": "Private Project 3",
     "fullName": null,
@@ -20,7 +20,7 @@
   "sccRaw": [
     {
       "Name": "Python",
-      "Bytes": 207240,
+      "Bytes": 201991,
       "CodeBytes": 0,
       "Lines": 5251,
       "Code": 3454,
@@ -35,7 +35,7 @@
     },
     {
       "Name": "Markdown",
-      "Bytes": 97083,
+      "Bytes": 94450,
       "CodeBytes": 0,
       "Lines": 2633,
       "Code": 2033,
@@ -50,7 +50,7 @@
     },
     {
       "Name": "Jupyter",
-      "Bytes": 196503,
+      "Bytes": 190833,
       "CodeBytes": 0,
       "Lines": 5670,
       "Code": 5670,
@@ -65,7 +65,7 @@
     },
     {
       "Name": "Plain Text",
-      "Bytes": 4353,
+      "Bytes": 4280,
       "CodeBytes": 0,
       "Lines": 73,
       "Code": 58,
@@ -80,7 +80,7 @@
     },
     {
       "Name": "JSON",
-      "Bytes": 458,
+      "Bytes": 452,
       "CodeBytes": 0,
       "Lines": 7,
       "Code": 7,
@@ -95,7 +95,7 @@
     },
     {
       "Name": "License",
-      "Bytes": 1090,
+      "Bytes": 1069,
       "CodeBytes": 0,
       "Lines": 21,
       "Code": 17,
@@ -115,7 +115,7 @@
       "totalCode": 11239,
       "totalComments": 1002,
       "totalBlanks": 1414,
-      "totalBytes": 506727,
+      "totalBytes": 493075,
       "totalFiles": 42,
       "totalLanguages": 6,
       "totalComplexity": 484,
@@ -129,12 +129,12 @@
         "code": 5670,
         "comments": 0,
         "blanks": 0,
-        "bytes": 196503,
+        "bytes": 190833,
         "files": 7,
         "complexity": 0,
         "percentOfLines": 41.5,
         "percentOfCode": 50.4,
-        "percentOfBytes": 38.8
+        "percentOfBytes": 38.7
       },
       {
         "name": "Python",
@@ -142,12 +142,12 @@
         "code": 3454,
         "comments": 1002,
         "blanks": 795,
-        "bytes": 207240,
+        "bytes": 201991,
         "files": 21,
         "complexity": 484,
         "percentOfLines": 38.5,
         "percentOfCode": 30.7,
-        "percentOfBytes": 40.9
+        "percentOfBytes": 41
       },
       {
         "name": "Markdown",
@@ -155,7 +155,7 @@
         "code": 2033,
         "comments": 0,
         "blanks": 600,
-        "bytes": 97083,
+        "bytes": 94450,
         "files": 9,
         "complexity": 0,
         "percentOfLines": 19.3,
@@ -168,7 +168,7 @@
         "code": 58,
         "comments": 0,
         "blanks": 15,
-        "bytes": 4353,
+        "bytes": 4280,
         "files": 3,
         "complexity": 0,
         "percentOfLines": 0.5,
@@ -181,7 +181,7 @@
         "code": 17,
         "comments": 0,
         "blanks": 4,
-        "bytes": 1090,
+        "bytes": 1069,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 0.2,
@@ -194,7 +194,7 @@
         "code": 7,
         "comments": 0,
         "blanks": 0,
-        "bytes": 458,
+        "bytes": 452,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 0.1,

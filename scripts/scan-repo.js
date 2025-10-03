@@ -16,7 +16,8 @@ const execAsync = promisify(exec);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const projectRoot = join(__dirname, '..');
-const sccPath = join(projectRoot, 'scripts', 'scc.exe');
+// Use system scc command instead of bundled .exe
+const sccPath = 'scc';
 const tempDir = join(projectRoot, '.temp-repos');
 
 /**
@@ -55,13 +56,13 @@ async function cloneRepo(cloneUrl, targetPath, token) {
       'https://github.com',
       `https://${token}@github.com`
     );
-    
+
     // Shallow clone (depth=1) to save time and space
     const { stdout, stderr } = await execAsync(
       `git clone --depth 1 --quiet "${authenticatedUrl}" "${targetPath}"`,
       { timeout: 60000 } // 60 second timeout
     );
-    
+
     return true;
   } catch (error) {
     console.error(`   ❌ Clone failed: ${error.message}`);
@@ -77,10 +78,10 @@ async function cloneRepo(cloneUrl, targetPath, token) {
 async function runSCC(repoPath) {
   try {
     const { stdout } = await execAsync(
-      `"${sccPath}" --format json "${repoPath}"`,
+      `${sccPath} --format json "${repoPath}"`,
       { maxBuffer: 10 * 1024 * 1024 } // 10MB buffer
     );
-    
+
     const sccData = JSON.parse(stdout);
     return sccData;
   } catch (error) {
@@ -99,32 +100,32 @@ async function runSCC(repoPath) {
  */
 export async function scanRepository(repo, metadata, repoId, token) {
   const repoPath = join(tempDir, repoId);
-  
+
   try {
     // Step 1: Clone the repository
     console.log(`   📥 Cloning...`);
     const cloned = await cloneRepo(repo.clone_url, repoPath, token);
-    
+
     if (!cloned) {
       return null;
     }
-    
+
     // Step 2: Run SCC
     console.log(`   🔍 Scanning with SCC...`);
     const sccData = await runSCC(repoPath);
-    
+
     if (!sccData || sccData.length === 0) {
       console.warn(`   ⚠️  No code found or scan failed`);
       return null;
     }
-    
+
     // Step 3: Calculate metrics
     console.log(`   📊 Calculating metrics...`);
-    
+
     const summary = generateSummary(sccData);
     const languages = calculateLanguagePercentages(sccData);
     const cocomo = calculateCOCOMO(summary.totalCode);
-    
+
     // Step 4: Build complete metrics object
     const metrics = {
       id: repoId,
@@ -137,11 +138,11 @@ export async function scanRepository(repo, metadata, repoId, token) {
         cocomo
       }
     };
-    
+
     console.log(`   ✅ Scanned: ${summary.totalLines.toLocaleString()} lines, ${summary.totalFiles} files`);
-    
+
     return metrics;
-    
+
   } catch (error) {
     console.error(`   ❌ Scan error: ${error.message}`);
     return null;

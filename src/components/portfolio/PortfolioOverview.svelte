@@ -4,7 +4,7 @@
   import PortfolioStats from './PortfolioStats.svelte';
   import SearchFilter from './SearchFilter.svelte';
   import RepoCard from './RepoCard.svelte';
-  
+
   // Load data on mount
   onMount(() => {
     loadPortfolioData();
@@ -40,16 +40,16 @@
     {:else}
       <!-- Portfolio Stats -->
       <PortfolioStats />
-      
+
       <!-- Search & Filter -->
       <SearchFilter />
-      
+
       <!-- Repositories Grid -->
       {#if $filteredRepos.length > 0}
         <div class="repos-header">
           <h2>Projects ({$filteredRepos.length})</h2>
         </div>
-        
+
         <div class="repos-grid">
           {#each $filteredRepos as repo (repo.id)}
             <RepoCard {repo} />
@@ -96,7 +96,7 @@
 
   .section-subtitle {
     font-size: 1.125rem;
-    opacity: 0.7;
+    color: var(--text-secondary);
     max-width: 600px;
     margin: 0 auto;
   }
@@ -126,7 +126,7 @@
 
   .loading-state p {
     font-size: 1.125rem;
-    opacity: 0.7;
+    color: var(--text-secondary);
   }
 
   /* Error State */
@@ -147,10 +147,11 @@
   .error-state h3 {
     font-size: 1.5rem;
     margin: 0;
+    color: var(--text-primary);
   }
 
   .error-state p {
-    opacity: 0.7;
+    color: var(--text-secondary);
     max-width: 400px;
   }
 
@@ -194,10 +195,11 @@
   .empty-state h3 {
     font-size: 1.5rem;
     margin: 0;
+    color: var(--text-primary);
   }
 
   .empty-state p {
-    opacity: 0.7;
+    color: var(--text-secondary);
   }
 
   /* Repos Header */
@@ -209,6 +211,7 @@
     font-size: 2rem;
     font-weight: 600;
     margin: 0;
+    color: var(--text-primary);
   }
 
   /* Repos Grid */

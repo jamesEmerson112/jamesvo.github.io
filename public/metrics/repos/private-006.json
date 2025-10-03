@@ -1,6 +1,6 @@
 {
   "id": "private-006",
-  "scannedAt": "2025-10-01T09:32:03.338Z",
+  "scannedAt": "2025-10-03T15:35:26.344Z",
   "metadata": {
     "name": "Private Project 6",
     "fullName": null,
@@ -20,7 +20,7 @@
   "sccRaw": [
     {
       "Name": "CSV",
-      "Bytes": 209163047,
+      "Bytes": 205555387,
       "CodeBytes": 0,
       "Lines": 3607660,
       "Code": 3607660,
@@ -35,13 +35,13 @@
     },
     {
       "Name": "Python",
-      "Bytes": 80386,
+      "Bytes": 78321,
       "CodeBytes": 0,
       "Lines": 2067,
-      "Code": 1299,
-      "Comment": 391,
-      "Blank": 377,
-      "Complexity": 78,
+      "Code": 1409,
+      "Comment": 357,
+      "Blank": 301,
+      "Complexity": 64,
       "Count": 21,
       "WeightedComplexity": 0,
       "Files": [],
@@ -50,7 +50,7 @@
     },
     {
       "Name": "Markdown",
-      "Bytes": 48852,
+      "Bytes": 47631,
       "CodeBytes": 0,
       "Lines": 1221,
       "Code": 972,
@@ -65,7 +65,7 @@
     },
     {
       "Name": "Plain Text",
-      "Bytes": 1509228,
+      "Bytes": 1507961,
       "CodeBytes": 0,
       "Lines": 1267,
       "Code": 1267,
@@ -80,7 +80,7 @@
     },
     {
       "Name": "LaTeX",
-      "Bytes": 71729,
+      "Bytes": 70229,
       "CodeBytes": 0,
       "Lines": 1500,
       "Code": 1150,
@@ -95,7 +95,7 @@
     },
     {
       "Name": "License",
-      "Bytes": 12992,
+      "Bytes": 12766,
       "CodeBytes": 0,
       "Lines": 227,
       "Code": 190,
@@ -110,7 +110,7 @@
     },
     {
       "Name": "YAML",
-      "Bytes": 224,
+      "Bytes": 208,
       "CodeBytes": 0,
       "Lines": 16,
       "Code": 16,
@@ -127,13 +127,13 @@
   "computed": {
     "summary": {
       "totalLines": 3613958,
-      "totalCode": 3612554,
-      "totalComments": 396,
-      "totalBlanks": 1008,
-      "totalBytes": 210886458,
+      "totalCode": 3612664,
+      "totalComments": 362,
+      "totalBlanks": 932,
+      "totalBytes": 207272503,
       "totalFiles": 64,
       "totalLanguages": 7,
-      "totalComplexity": 78,
+      "totalComplexity": 64,
       "primaryLanguage": "CSV",
       "primaryLanguagePercent": 99.9
     },
@@ -144,7 +144,7 @@
         "code": 3607660,
         "comments": 0,
         "blanks": 0,
-        "bytes": 209163047,
+        "bytes": 205555387,
         "files": 30,
         "complexity": 0,
         "percentOfLines": 99.8,
@@ -154,12 +154,12 @@
       {
         "name": "Python",
         "lines": 2067,
-        "code": 1299,
-        "comments": 391,
-        "blanks": 377,
-        "bytes": 80386,
+        "code": 1409,
+        "comments": 357,
+        "blanks": 301,
+        "bytes": 78321,
         "files": 21,
-        "complexity": 78,
+        "complexity": 64,
         "percentOfLines": 0.1,
         "percentOfCode": 0,
         "percentOfBytes": 0
@@ -170,7 +170,7 @@
         "code": 1267,
         "comments": 0,
         "blanks": 0,
-        "bytes": 1509228,
+        "bytes": 1507961,
         "files": 3,
         "complexity": 0,
         "percentOfLines": 0,
@@ -183,7 +183,7 @@
         "code": 1150,
         "comments": 5,
         "blanks": 345,
-        "bytes": 71729,
+        "bytes": 70229,
         "files": 2,
         "complexity": 0,
         "percentOfLines": 0,
@@ -196,7 +196,7 @@
         "code": 972,
         "comments": 0,
         "blanks": 249,
-        "bytes": 48852,
+        "bytes": 47631,
         "files": 5,
         "complexity": 0,
         "percentOfLines": 0,
@@ -209,7 +209,7 @@
         "code": 190,
         "comments": 0,
         "blanks": 37,
-        "bytes": 12992,
+        "bytes": 12766,
         "files": 2,
         "complexity": 0,
         "percentOfLines": 0,
@@ -222,7 +222,7 @@
         "code": 16,
         "comments": 0,
         "blanks": 0,
-        "bytes": 224,
+        "bytes": 208,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 0,
@@ -232,21 +232,21 @@
     ],
     "cocomo": {
       "traditional": {
-        "kloc": 3612.554,
-        "effort": 13059.19,
+        "kloc": 3612.664,
+        "effort": 13059.61,
         "time": 91.62,
         "people": 142.54,
-        "cost": 61254140,
+        "cost": 61256098,
         "avgWage": 56286,
         "model": "organic",
         "description": "Traditional COCOMO estimate"
       },
       "aiAssisted": {
         "effectiveMultiplier": 0.255,
-        "effort": 3330.09,
+        "effort": 3330.2,
         "time": 54.51,
         "people": 61.09,
-        "cost": 15619806,
+        "cost": 15620305,
         "description": "With AI assistance (~3.9x faster)",
         "taskBreakdown": {
           "boilerplate": "20x faster (10% of work)",
@@ -258,41 +258,41 @@
         }
       },
       "comparison": {
-        "effortReduction": "74%",
+        "effortReduction": "75%",
         "timeReduction": "41%",
-        "costReduction": "74%",
+        "costReduction": "75%",
         "speedup": "3.9x"
       },
       "singleDeveloper": {
         "traditional": {
           "fullTime": {
-            "months": 13059.19,
-            "weeks": 56546.3,
-            "days": 283384,
-            "cost": 61254140,
+            "months": 13059.61,
+            "weeks": 56548.1,
+            "days": 283394,
+            "cost": 61256098,
             "description": "Traditional full-time solo development"
           },
           "partTime": {
             "months": 91.62,
-            "hoursPerWeek": 5701.5,
-            "totalHours": 2259240,
-            "cost": 61254140,
+            "hoursPerWeek": 5701.6,
+            "totalHours": 2259312,
+            "cost": 61256098,
             "description": "Traditional part-time to match COCOMO schedule"
           }
         },
         "aiAssisted": {
           "fullTime": {
-            "months": 3330.09,
-            "weeks": 14419.3,
-            "days": 72263,
-            "cost": 15619806,
+            "months": 3330.2,
+            "weeks": 14419.8,
+            "days": 72265,
+            "cost": 15620305,
             "description": "AI-assisted full-time solo development"
           },
           "partTime": {
             "months": 54.51,
             "hoursPerWeek": 2443.7,
-            "totalHours": 576106,
-            "cost": 15619806,
+            "totalHours": 576125,
+            "cost": 15620305,
             "description": "AI-assisted part-time development"
           }
         }

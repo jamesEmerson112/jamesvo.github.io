@@ -1,6 +1,6 @@
 {
   "id": "samdu-news",
-  "scannedAt": "2025-10-01T09:32:18.890Z",
+  "scannedAt": "2025-10-03T15:35:33.954Z",
   "metadata": {
     "name": "samdu-news",
     "fullName": "jamesEmerson112/samdu-news",
@@ -20,7 +20,7 @@
   "sccRaw": [
     {
       "Name": "TypeScript",
-      "Bytes": 59979,
+      "Bytes": 58392,
       "CodeBytes": 0,
       "Lines": 1587,
       "Code": 1424,
@@ -50,7 +50,7 @@
     },
     {
       "Name": "JSON",
-      "Bytes": 1268,
+      "Bytes": 1213,
       "CodeBytes": 0,
       "Lines": 55,
       "Code": 55,
@@ -65,7 +65,7 @@
     },
     {
       "Name": "JavaScript",
-      "Bytes": 495,
+      "Bytes": 474,
       "CodeBytes": 0,
       "Lines": 21,
       "Code": 16,
@@ -80,7 +80,7 @@
     },
     {
       "Name": "Markdown",
-      "Bytes": 1561,
+      "Bytes": 1519,
       "CodeBytes": 0,
       "Lines": 43,
       "Code": 27,
@@ -95,7 +95,7 @@
     },
     {
       "Name": "CSS",
-      "Bytes": 514,
+      "Bytes": 488,
       "CodeBytes": 0,
       "Lines": 26,
       "Code": 22,
@@ -110,7 +110,7 @@
     },
     {
       "Name": "License",
-      "Bytes": 1093,
+      "Bytes": 1072,
       "CodeBytes": 0,
       "Lines": 21,
       "Code": 17,
@@ -130,7 +130,7 @@
       "totalCode": 1566,
       "totalComments": 13,
       "totalBlanks": 179,
-      "totalBytes": 68224,
+      "totalBytes": 66472,
       "totalFiles": 27,
       "totalLanguages": 7,
       "totalComplexity": 73,
@@ -144,12 +144,12 @@
         "code": 1424,
         "comments": 13,
         "blanks": 150,
-        "bytes": 59979,
+        "bytes": 58392,
         "files": 14,
         "complexity": 73,
         "percentOfLines": 90.3,
         "percentOfCode": 90.9,
-        "percentOfBytes": 87.9
+        "percentOfBytes": 87.8
       },
       {
         "name": "JSON",
@@ -157,12 +157,12 @@
         "code": 55,
         "comments": 0,
         "blanks": 0,
-        "bytes": 1268,
+        "bytes": 1213,
         "files": 2,
         "complexity": 0,
         "percentOfLines": 3.1,
         "percentOfCode": 3.5,
-        "percentOfBytes": 1.9
+        "percentOfBytes": 1.8
       },
       {
         "name": "Markdown",
@@ -170,7 +170,7 @@
         "code": 27,
         "comments": 0,
         "blanks": 16,
-        "bytes": 1561,
+        "bytes": 1519,
         "files": 2,
         "complexity": 0,
         "percentOfLines": 2.4,
@@ -183,12 +183,12 @@
         "code": 22,
         "comments": 0,
         "blanks": 4,
-        "bytes": 514,
+        "bytes": 488,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 1.5,
         "percentOfCode": 1.4,
-        "percentOfBytes": 0.8
+        "percentOfBytes": 0.7
       },
       {
         "name": "License",
@@ -196,7 +196,7 @@
         "code": 17,
         "comments": 0,
         "blanks": 4,
-        "bytes": 1093,
+        "bytes": 1072,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 1.2,
@@ -209,7 +209,7 @@
         "code": 16,
         "comments": 0,
         "blanks": 5,
-        "bytes": 495,
+        "bytes": 474,
         "files": 2,
         "complexity": 0,
         "percentOfLines": 1.2,
@@ -227,7 +227,7 @@
         "complexity": 0,
         "percentOfLines": 0.3,
         "percentOfCode": 0.3,
-        "percentOfBytes": 4.9
+        "percentOfBytes": 5
       }
     ],
     "cocomo": {

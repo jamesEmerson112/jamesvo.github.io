@@ -1,18 +1,19 @@
 <script>
   import { formatNumber, formatCurrency, formatDuration, getLanguageColor } from '../../utils/dataLoader.js';
   import { selectedRepo } from '../../stores/portfolioStore.js';
-  
+  import LanguageSpider from './LanguageSpider.svelte';
+
   export let repo;
-  
+
   function handleClick() {
     selectedRepo.set(repo);
   }
-  
+
   // Calculate savings percentage
   $: savingsPercent = repo.summary.traditionalCost > 0
     ? Math.round(((repo.summary.traditionalCost - repo.summary.aiCost) / repo.summary.traditionalCost) * 100)
     : 0;
-    
+
   $: languageColor = getLanguageColor(repo.primaryLanguage);
 </script>
 
@@ -32,14 +33,14 @@
       </span>
     {/if}
   </div>
-  
+
   <!-- Description -->
   {#if repo.description && !repo.isAnonymized}
     <p class="repo-description">{repo.description}</p>
   {:else if repo.isAnonymized}
     <p class="repo-description muted">Private repository</p>
   {/if}
-  
+
   <!-- Stats -->
   <div class="repo-stats">
     <div class="stat">
@@ -58,7 +59,14 @@
       <span class="stat-label">complexity</span>
     </div>
   </div>
-  
+
+  <!-- Language Spider Chart -->
+  {#if repo.languages && repo.languages.length > 0}
+    <div class="language-spider-container">
+      <LanguageSpider languages={repo.languages} size={140} />
+    </div>
+  {/if}
+
   <!-- Cost Comparison -->
   <div class="cost-comparison">
     <div class="cost-row">
@@ -73,14 +81,14 @@
       💰 {savingsPercent}% savings
     </div>
   </div>
-  
+
   <!-- Time Estimate -->
   <div class="time-estimate">
     <span class="time-icon">⏱️</span>
     <span class="time-value">{formatDuration(repo.summary.aiMonths)}</span>
     <span class="time-label">with AI</span>
   </div>
-  
+
   <!-- View Details -->
   <div class="card-footer">
     <span class="view-details">View Details →</span>
@@ -132,6 +140,7 @@
     margin: 0;
     font-size: 1.125rem;
     font-weight: 600;
+    color: var(--text-primary);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -159,7 +168,7 @@
   .repo-description {
     margin: 0;
     font-size: 0.875rem;
-    opacity: 0.7;
+    color: var(--text-secondary);
     line-height: 1.4;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -169,7 +178,7 @@
 
   .repo-description.muted {
     font-style: italic;
-    opacity: 0.5;
+    color: var(--text-muted);
   }
 
   .repo-stats {
@@ -194,11 +203,12 @@
   .stat-value {
     font-weight: 600;
     font-size: 0.875rem;
+    color: var(--text-primary);
   }
 
   .stat-label {
     font-size: 0.75rem;
-    opacity: 0.6;
+    color: var(--text-muted);
   }
 
   .cost-comparison {
@@ -221,11 +231,12 @@
   }
 
   .cost-label {
-    opacity: 0.7;
+    color: var(--text-secondary);
   }
 
   .cost-value {
     font-weight: 600;
+    color: var(--text-primary);
   }
 
   .cost-value.traditional {
@@ -272,7 +283,16 @@
   }
 
   .time-label {
-    opacity: 0.7;
+    color: var(--text-secondary);
+  }
+
+  .language-spider-container {
+    display: flex;
+    justify-content: center;
+    padding: 0.75rem;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-height: 100px;
   }
 
   .card-footer {

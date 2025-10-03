@@ -1,6 +1,6 @@
 {
   "id": "virtual-cursor",
-  "scannedAt": "2025-10-01T09:32:08.799Z",
+  "scannedAt": "2025-10-03T15:35:28.213Z",
   "metadata": {
     "name": "virtual-cursor",
     "fullName": "jamesEmerson112/virtual-cursor",
@@ -20,7 +20,7 @@
   "sccRaw": [
     {
       "Name": "Python",
-      "Bytes": 97612,
+      "Bytes": 95007,
       "CodeBytes": 0,
       "Lines": 2607,
       "Code": 2089,
@@ -35,7 +35,7 @@
     },
     {
       "Name": "Markdown",
-      "Bytes": 25452,
+      "Bytes": 24750,
       "CodeBytes": 0,
       "Lines": 702,
       "Code": 535,
@@ -50,7 +50,7 @@
     },
     {
       "Name": "Plain Text",
-      "Bytes": 676,
+      "Bytes": 657,
       "CodeBytes": 0,
       "Lines": 19,
       "Code": 15,
@@ -65,7 +65,7 @@
     },
     {
       "Name": "Shell",
-      "Bytes": 26,
+      "Bytes": 25,
       "CodeBytes": 0,
       "Lines": 1,
       "Code": 1,
@@ -85,7 +85,7 @@
       "totalCode": 2640,
       "totalComments": 211,
       "totalBlanks": 478,
-      "totalBytes": 123766,
+      "totalBytes": 120439,
       "totalFiles": 10,
       "totalLanguages": 4,
       "totalComplexity": 269,
@@ -99,7 +99,7 @@
         "code": 2089,
         "comments": 211,
         "blanks": 307,
-        "bytes": 97612,
+        "bytes": 95007,
         "files": 6,
         "complexity": 269,
         "percentOfLines": 78.3,
@@ -112,12 +112,12 @@
         "code": 535,
         "comments": 0,
         "blanks": 167,
-        "bytes": 25452,
+        "bytes": 24750,
         "files": 2,
         "complexity": 0,
         "percentOfLines": 21.1,
         "percentOfCode": 20.3,
-        "percentOfBytes": 20.6
+        "percentOfBytes": 20.5
       },
       {
         "name": "Plain Text",
@@ -125,7 +125,7 @@
         "code": 15,
         "comments": 0,
         "blanks": 4,
-        "bytes": 676,
+        "bytes": 657,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 0.6,
@@ -138,7 +138,7 @@
         "code": 1,
         "comments": 0,
         "blanks": 0,
-        "bytes": 26,
+        "bytes": 25,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 0,

@@ -1,6 +1,6 @@
 {
   "id": "private-010",
-  "scannedAt": "2025-10-01T09:32:17.163Z",
+  "scannedAt": "2025-10-03T15:35:33.240Z",
   "metadata": {
     "name": "Private Project 10",
     "fullName": null,
@@ -20,7 +20,7 @@
   "sccRaw": [
     {
       "Name": "CSS",
-      "Bytes": 4844,
+      "Bytes": 4612,
       "CodeBytes": 0,
       "Lines": 232,
       "Code": 199,
@@ -35,7 +35,7 @@
     },
     {
       "Name": "HTML",
-      "Bytes": 679,
+      "Bytes": 657,
       "CodeBytes": 0,
       "Lines": 22,
       "Code": 20,
@@ -50,7 +50,7 @@
     },
     {
       "Name": "JavaScript",
-      "Bytes": 11283,
+      "Bytes": 10959,
       "CodeBytes": 0,
       "Lines": 324,
       "Code": 259,
@@ -70,7 +70,7 @@
       "totalCode": 478,
       "totalComments": 30,
       "totalBlanks": 70,
-      "totalBytes": 16806,
+      "totalBytes": 16228,
       "totalFiles": 3,
       "totalLanguages": 3,
       "totalComplexity": 28,
@@ -84,12 +84,12 @@
         "code": 259,
         "comments": 20,
         "blanks": 45,
-        "bytes": 11283,
+        "bytes": 10959,
         "files": 1,
         "complexity": 28,
         "percentOfLines": 56.1,
         "percentOfCode": 54.2,
-        "percentOfBytes": 67.1
+        "percentOfBytes": 67.5
       },
       {
         "name": "CSS",
@@ -97,12 +97,12 @@
         "code": 199,
         "comments": 9,
         "blanks": 24,
-        "bytes": 4844,
+        "bytes": 4612,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 40.1,
         "percentOfCode": 41.6,
-        "percentOfBytes": 28.8
+        "percentOfBytes": 28.4
       },
       {
         "name": "HTML",
@@ -110,7 +110,7 @@
         "code": 20,
         "comments": 1,
         "blanks": 1,
-        "bytes": 679,
+        "bytes": 657,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 3.8,

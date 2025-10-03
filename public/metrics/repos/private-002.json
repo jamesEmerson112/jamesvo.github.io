@@ -1,6 +1,6 @@
 {
   "id": "private-002",
-  "scannedAt": "2025-10-01T09:39:51.241Z",
+  "scannedAt": "2025-10-03T15:43:58.782Z",
   "metadata": {
     "name": "Private Project 2",
     "fullName": null,
@@ -20,7 +20,7 @@
   "sccRaw": [
     {
       "Name": "Markdown",
-      "Bytes": 81,
+      "Bytes": 79,
       "CodeBytes": 0,
       "Lines": 2,
       "Code": 2,
@@ -40,7 +40,7 @@
       "totalCode": 2,
       "totalComments": 0,
       "totalBlanks": 0,
-      "totalBytes": 81,
+      "totalBytes": 79,
       "totalFiles": 1,
       "totalLanguages": 1,
       "totalComplexity": 0,
@@ -54,7 +54,7 @@
         "code": 2,
         "comments": 0,
         "blanks": 0,
-        "bytes": 81,
+        "bytes": 79,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 100,

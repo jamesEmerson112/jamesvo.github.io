@@ -1,7 +1,7 @@
 <script>
   import { portfolioStats } from '../../stores/portfolioStore.js';
   import { formatNumber, formatCurrency, formatDuration } from '../../utils/dataLoader.js';
-  
+
   // Calculate AI vs Traditional comparison
   $: aiSavings = $portfolioStats ? {
     costSaved: $portfolioStats.estimatedValue.standardCost * 0.75,
@@ -21,7 +21,7 @@
           {formatNumber($portfolioStats.totalCode)} code • {formatNumber($portfolioStats.totalFiles)} files
         </div>
       </div>
-      
+
       <div class="stat-card">
         <div class="stat-value">{$portfolioStats.totalRepos}</div>
         <div class="stat-label">Repositories</div>
@@ -29,7 +29,7 @@
           {$portfolioStats.publicRepos} public • {$portfolioStats.privateRepos} private
         </div>
       </div>
-      
+
       <div class="stat-card">
         <div class="stat-value">{Object.keys($portfolioStats.languages).length}</div>
         <div class="stat-label">Languages</div>
@@ -45,7 +45,7 @@
         <span class="ai-badge">🤖 AI-Powered Development</span>
         <h3>Modern Development Reality</h3>
       </div>
-      
+
       <div class="comparison-grid">
         <div class="comparison-item">
           <div class="comparison-label">Traditional Estimate</div>
@@ -56,13 +56,13 @@
             {formatDuration($portfolioStats.soloDeveloper.fullTimeMonths)}
           </div>
         </div>
-        
+
         <div class="comparison-arrow">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round"/>
           </svg>
         </div>
-        
+
         <div class="comparison-item">
           <div class="comparison-label">AI-Assisted Reality</div>
           <div class="comparison-value ai">
@@ -73,7 +73,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="impact-highlights">
         <div class="highlight">
           <span class="highlight-icon">⚡</span>
@@ -139,12 +139,12 @@
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.25rem;
-    opacity: 0.9;
+    color: var(--text-primary);
   }
 
   .stat-sublabel {
     font-size: 0.875rem;
-    opacity: 0.6;
+    color: var(--text-muted);
   }
 
   /* AI Impact Section */
@@ -174,6 +174,7 @@
   .impact-header h3 {
     font-size: 1.5rem;
     margin: 0;
+    color: var(--text-primary);
   }
 
   .comparison-grid {
@@ -193,7 +194,7 @@
 
   .comparison-label {
     font-size: 0.875rem;
-    opacity: 0.7;
+    color: var(--text-secondary);
     margin-bottom: 0.5rem;
   }
 
@@ -218,7 +219,7 @@
 
   .comparison-sublabel {
     font-size: 0.875rem;
-    opacity: 0.6;
+    color: var(--text-muted);
   }
 
   .comparison-arrow {
@@ -260,7 +261,7 @@
 
   .highlight-label {
     font-size: 0.875rem;
-    opacity: 0.7;
+    color: var(--text-secondary);
   }
 
   @media (max-width: 768px) {

@@ -1,6 +1,6 @@
 {
   "id": "eye-to-home",
-  "scannedAt": "2025-10-01T09:31:51.523Z",
+  "scannedAt": "2025-10-03T15:35:22.338Z",
   "metadata": {
     "name": "Eye-to-home",
     "fullName": "jamesEmerson112/Eye-to-home",
@@ -20,7 +20,7 @@
   "sccRaw": [
     {
       "Name": "JSON",
-      "Bytes": 2601,
+      "Bytes": 2466,
       "CodeBytes": 0,
       "Lines": 138,
       "Code": 138,
@@ -35,7 +35,7 @@
     },
     {
       "Name": "Swift",
-      "Bytes": 24520,
+      "Bytes": 23870,
       "CodeBytes": 0,
       "Lines": 650,
       "Code": 361,
@@ -50,7 +50,7 @@
     },
     {
       "Name": "License",
-      "Bytes": 1093,
+      "Bytes": 1072,
       "CodeBytes": 0,
       "Lines": 21,
       "Code": 17,
@@ -65,7 +65,7 @@
     },
     {
       "Name": "Markdown",
-      "Bytes": 736,
+      "Bytes": 707,
       "CodeBytes": 0,
       "Lines": 29,
       "Code": 24,
@@ -85,7 +85,7 @@
       "totalCode": 540,
       "totalComments": 218,
       "totalBlanks": 80,
-      "totalBytes": 28950,
+      "totalBytes": 28115,
       "totalFiles": 15,
       "totalLanguages": 4,
       "totalComplexity": 31,
@@ -99,12 +99,12 @@
         "code": 361,
         "comments": 218,
         "blanks": 71,
-        "bytes": 24520,
+        "bytes": 23870,
         "files": 4,
         "complexity": 31,
         "percentOfLines": 77.6,
         "percentOfCode": 66.9,
-        "percentOfBytes": 84.7
+        "percentOfBytes": 84.9
       },
       {
         "name": "JSON",
@@ -112,12 +112,12 @@
         "code": 138,
         "comments": 0,
         "blanks": 0,
-        "bytes": 2601,
+        "bytes": 2466,
         "files": 9,
         "complexity": 0,
         "percentOfLines": 16.5,
         "percentOfCode": 25.6,
-        "percentOfBytes": 9
+        "percentOfBytes": 8.8
       },
       {
         "name": "Markdown",
@@ -125,7 +125,7 @@
         "code": 24,
         "comments": 0,
         "blanks": 5,
-        "bytes": 736,
+        "bytes": 707,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 3.5,
@@ -138,7 +138,7 @@
         "code": 17,
         "comments": 0,
         "blanks": 4,
-        "bytes": 1093,
+        "bytes": 1072,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 2.5,

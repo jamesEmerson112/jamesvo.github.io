@@ -1,6 +1,6 @@
 {
   "id": "jamesvo-github-io",
-  "scannedAt": "2025-10-01T09:31:26.206Z",
+  "scannedAt": "2025-10-03T15:35:07.280Z",
   "metadata": {
     "name": "jamesvo.github.io",
     "fullName": "jamesEmerson112/jamesvo.github.io",
@@ -8,10 +8,10 @@
     "url": "https://github.com/jamesEmerson112/jamesvo.github.io",
     "homepage": null,
     "topics": [],
-    "lastUpdated": "2025-10-01T09:04:36Z",
+    "lastUpdated": "2025-10-03T07:48:59Z",
     "createdAt": "2022-06-03T13:53:42Z",
     "stars": 1,
-    "language": "JavaScript",
+    "language": "Svelte",
     "isPrivate": false,
     "isFork": false,
     "isArchived": false,
@@ -20,14 +20,14 @@
   "sccRaw": [
     {
       "Name": "JSON",
-      "Bytes": 35378,
+      "Bytes": 121909,
       "CodeBytes": 0,
-      "Lines": 1358,
-      "Code": 1358,
+      "Lines": 5116,
+      "Code": 5116,
       "Comment": 0,
       "Blank": 0,
       "Complexity": 0,
-      "Count": 9,
+      "Count": 23,
       "WeightedComplexity": 0,
       "Files": [],
       "LineLength": null,
@@ -35,13 +35,28 @@
     },
     {
       "Name": "JavaScript",
-      "Bytes": 32280,
+      "Bytes": 38890,
       "CodeBytes": 0,
-      "Lines": 988,
-      "Code": 676,
-      "Comment": 187,
-      "Blank": 125,
-      "Complexity": 47,
+      "Lines": 1283,
+      "Code": 859,
+      "Comment": 263,
+      "Blank": 161,
+      "Complexity": 65,
+      "Count": 9,
+      "WeightedComplexity": 0,
+      "Files": [],
+      "LineLength": null,
+      "ULOC": 0
+    },
+    {
+      "Name": "Svelte",
+      "Bytes": 41434,
+      "CodeBytes": 0,
+      "Lines": 1852,
+      "Code": 1553,
+      "Comment": 44,
+      "Blank": 255,
+      "Complexity": 9,
       "Count": 7,
       "WeightedComplexity": 0,
       "Files": [],
@@ -50,7 +65,7 @@
     },
     {
       "Name": "Markdown",
-      "Bytes": 74486,
+      "Bytes": 72707,
       "CodeBytes": 0,
       "Lines": 1780,
       "Code": 1284,
@@ -64,23 +79,8 @@
       "ULOC": 0
     },
     {
-      "Name": "Svelte",
-      "Bytes": 17437,
-      "CodeBytes": 0,
-      "Lines": 757,
-      "Code": 638,
-      "Comment": 13,
-      "Blank": 106,
-      "Complexity": 6,
-      "Count": 3,
-      "WeightedComplexity": 0,
-      "Files": [],
-      "LineLength": null,
-      "ULOC": 0
-    },
-    {
       "Name": "HTML",
-      "Bytes": 24494,
+      "Bytes": 23815,
       "CodeBytes": 0,
       "Lines": 679,
       "Code": 590,
@@ -95,7 +95,7 @@
     },
     {
       "Name": "YAML",
-      "Bytes": 5013,
+      "Bytes": 4852,
       "CodeBytes": 0,
       "Lines": 161,
       "Code": 129,
@@ -110,7 +110,7 @@
     },
     {
       "Name": "CSS",
-      "Bytes": 1976,
+      "Bytes": 1895,
       "CodeBytes": 0,
       "Lines": 81,
       "Code": 48,
@@ -125,7 +125,7 @@
     },
     {
       "Name": "License",
-      "Bytes": 1108,
+      "Bytes": 1099,
       "CodeBytes": 0,
       "Lines": 9,
       "Code": 5,
@@ -141,30 +141,43 @@
   ],
   "computed": {
     "summary": {
-      "totalLines": 5813,
-      "totalCode": 4728,
-      "totalComments": 227,
-      "totalBlanks": 858,
-      "totalBytes": 192172,
-      "totalFiles": 30,
+      "totalLines": 10961,
+      "totalCode": 9584,
+      "totalComments": 334,
+      "totalBlanks": 1043,
+      "totalBytes": 306601,
+      "totalFiles": 50,
       "totalLanguages": 8,
-      "totalComplexity": 53,
+      "totalComplexity": 74,
       "primaryLanguage": "JSON",
-      "primaryLanguagePercent": 28.7
+      "primaryLanguagePercent": 53.4
     },
     "languages": [
       {
         "name": "JSON",
-        "lines": 1358,
-        "code": 1358,
+        "lines": 5116,
+        "code": 5116,
         "comments": 0,
         "blanks": 0,
-        "bytes": 35378,
-        "files": 9,
+        "bytes": 121909,
+        "files": 23,
         "complexity": 0,
-        "percentOfLines": 23.4,
-        "percentOfCode": 28.7,
-        "percentOfBytes": 18.4
+        "percentOfLines": 46.7,
+        "percentOfCode": 53.4,
+        "percentOfBytes": 39.8
+      },
+      {
+        "name": "Svelte",
+        "lines": 1852,
+        "code": 1553,
+        "comments": 44,
+        "blanks": 255,
+        "bytes": 41434,
+        "files": 7,
+        "complexity": 9,
+        "percentOfLines": 16.9,
+        "percentOfCode": 16.2,
+        "percentOfBytes": 13.5
       },
       {
         "name": "Markdown",
@@ -172,38 +185,25 @@
         "code": 1284,
         "comments": 0,
         "blanks": 496,
-        "bytes": 74486,
+        "bytes": 72707,
         "files": 5,
         "complexity": 0,
-        "percentOfLines": 30.6,
-        "percentOfCode": 27.2,
-        "percentOfBytes": 38.8
+        "percentOfLines": 16.2,
+        "percentOfCode": 13.4,
+        "percentOfBytes": 23.7
       },
       {
         "name": "JavaScript",
-        "lines": 988,
-        "code": 676,
-        "comments": 187,
-        "blanks": 125,
-        "bytes": 32280,
-        "files": 7,
-        "complexity": 47,
-        "percentOfLines": 17,
-        "percentOfCode": 14.3,
-        "percentOfBytes": 16.8
-      },
-      {
-        "name": "Svelte",
-        "lines": 757,
-        "code": 638,
-        "comments": 13,
-        "blanks": 106,
-        "bytes": 17437,
-        "files": 3,
-        "complexity": 6,
-        "percentOfLines": 13,
-        "percentOfCode": 13.5,
-        "percentOfBytes": 9.1
+        "lines": 1283,
+        "code": 859,
+        "comments": 263,
+        "blanks": 161,
+        "bytes": 38890,
+        "files": 9,
+        "complexity": 65,
+        "percentOfLines": 11.7,
+        "percentOfCode": 9,
+        "percentOfBytes": 12.7
       },
       {
         "name": "HTML",
@@ -211,12 +211,12 @@
         "code": 590,
         "comments": 4,
         "blanks": 85,
-        "bytes": 24494,
+        "bytes": 23815,
         "files": 2,
         "complexity": 0,
-        "percentOfLines": 11.7,
-        "percentOfCode": 12.5,
-        "percentOfBytes": 12.7
+        "percentOfLines": 6.2,
+        "percentOfCode": 6.2,
+        "percentOfBytes": 7.8
       },
       {
         "name": "YAML",
@@ -224,12 +224,12 @@
         "code": 129,
         "comments": 5,
         "blanks": 27,
-        "bytes": 5013,
+        "bytes": 4852,
         "files": 2,
         "complexity": 0,
-        "percentOfLines": 2.8,
-        "percentOfCode": 2.7,
-        "percentOfBytes": 2.6
+        "percentOfLines": 1.5,
+        "percentOfCode": 1.3,
+        "percentOfBytes": 1.6
       },
       {
         "name": "CSS",
@@ -237,12 +237,12 @@
         "code": 48,
         "comments": 18,
         "blanks": 15,
-        "bytes": 1976,
+        "bytes": 1895,
         "files": 1,
         "complexity": 0,
-        "percentOfLines": 1.4,
-        "percentOfCode": 1,
-        "percentOfBytes": 1
+        "percentOfLines": 0.7,
+        "percentOfCode": 0.5,
+        "percentOfBytes": 0.6
       },
       {
         "name": "License",
@@ -250,31 +250,31 @@
         "code": 5,
         "comments": 0,
         "blanks": 4,
-        "bytes": 1108,
+        "bytes": 1099,
         "files": 1,
         "complexity": 0,
-        "percentOfLines": 0.2,
+        "percentOfLines": 0.1,
         "percentOfCode": 0.1,
-        "percentOfBytes": 0.6
+        "percentOfBytes": 0.4
       }
     ],
     "cocomo": {
       "traditional": {
-        "kloc": 4.728,
-        "effort": 12.26,
-        "time": 6.48,
-        "people": 1.89,
-        "cost": 57523,
+        "kloc": 9.584,
+        "effort": 25.75,
+        "time": 8.59,
+        "people": 3,
+        "cost": 120797,
         "avgWage": 56286,
         "model": "organic",
         "description": "Traditional COCOMO estimate"
       },
       "aiAssisted": {
         "effectiveMultiplier": 0.255,
-        "effort": 3.13,
-        "time": 3.86,
-        "people": 0.81,
-        "cost": 14668,
+        "effort": 6.57,
+        "time": 5.11,
+        "people": 1.28,
+        "cost": 30803,
         "description": "With AI assistance (~3.9x faster)",
         "taskBreakdown": {
           "boilerplate": "20x faster (10% of work)",
@@ -286,7 +286,7 @@
         }
       },
       "comparison": {
-        "effortReduction": "75%",
+        "effortReduction": "74%",
         "timeReduction": "41%",
         "costReduction": "75%",
         "speedup": "3.9x"
@@ -294,33 +294,33 @@
       "singleDeveloper": {
         "traditional": {
           "fullTime": {
-            "months": 12.26,
-            "weeks": 53.1,
-            "days": 266,
-            "cost": 57523,
+            "months": 25.75,
+            "weeks": 111.5,
+            "days": 559,
+            "cost": 120797,
             "description": "Traditional full-time solo development"
           },
           "partTime": {
-            "months": 6.48,
-            "hoursPerWeek": 75.7,
-            "totalHours": 2122,
-            "cost": 57523,
+            "months": 8.59,
+            "hoursPerWeek": 119.9,
+            "totalHours": 4455,
+            "cost": 120797,
             "description": "Traditional part-time to match COCOMO schedule"
           }
         },
         "aiAssisted": {
           "fullTime": {
-            "months": 3.13,
-            "weeks": 13.5,
-            "days": 68,
-            "cost": 14668,
+            "months": 6.57,
+            "weeks": 28.4,
+            "days": 143,
+            "cost": 30803,
             "description": "AI-assisted full-time solo development"
           },
           "partTime": {
-            "months": 3.86,
-            "hoursPerWeek": 32.4,
-            "totalHours": 541,
-            "cost": 14668,
+            "months": 5.11,
+            "hoursPerWeek": 51.4,
+            "totalHours": 1136,
+            "cost": 30803,
             "description": "AI-assisted part-time development"
           }
         }

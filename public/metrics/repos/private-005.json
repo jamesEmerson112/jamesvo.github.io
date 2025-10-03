@@ -1,6 +1,6 @@
 {
   "id": "private-005",
-  "scannedAt": "2025-10-01T09:39:55.196Z",
+  "scannedAt": "2025-10-03T15:44:01.815Z",
   "metadata": {
     "name": "Private Project 5",
     "fullName": null,
@@ -20,7 +20,7 @@
   "sccRaw": [
     {
       "Name": "CSS",
-      "Bytes": 1870,
+      "Bytes": 1760,
       "CodeBytes": 0,
       "Lines": 110,
       "Code": 98,
@@ -35,7 +35,7 @@
     },
     {
       "Name": "JSX",
-      "Bytes": 1185,
+      "Bytes": 1140,
       "CodeBytes": 0,
       "Lines": 45,
       "Code": 41,
@@ -50,7 +50,7 @@
     },
     {
       "Name": "JavaScript",
-      "Bytes": 960,
+      "Bytes": 924,
       "CodeBytes": 0,
       "Lines": 36,
       "Code": 14,
@@ -80,7 +80,7 @@
     },
     {
       "Name": "HTML",
-      "Bytes": 385,
+      "Bytes": 372,
       "CodeBytes": 0,
       "Lines": 13,
       "Code": 13,
@@ -95,7 +95,7 @@
     },
     {
       "Name": "JSON",
-      "Bytes": 635,
+      "Bytes": 608,
       "CodeBytes": 0,
       "Lines": 27,
       "Code": 27,
@@ -110,7 +110,7 @@
     },
     {
       "Name": "Markdown",
-      "Bytes": 868,
+      "Bytes": 856,
       "CodeBytes": 0,
       "Lines": 12,
       "Code": 7,
@@ -130,7 +130,7 @@
       "totalCode": 202,
       "totalComments": 20,
       "totalBlanks": 23,
-      "totalBytes": 11526,
+      "totalBytes": 11283,
       "totalFiles": 11,
       "totalLanguages": 7,
       "totalComplexity": 0,
@@ -144,12 +144,12 @@
         "code": 98,
         "comments": 0,
         "blanks": 12,
-        "bytes": 1870,
+        "bytes": 1760,
         "files": 2,
         "complexity": 0,
         "percentOfLines": 44.9,
         "percentOfCode": 48.5,
-        "percentOfBytes": 16.2
+        "percentOfBytes": 15.6
       },
       {
         "name": "JSX",
@@ -157,12 +157,12 @@
         "code": 41,
         "comments": 0,
         "blanks": 4,
-        "bytes": 1185,
+        "bytes": 1140,
         "files": 2,
         "complexity": 0,
         "percentOfLines": 18.4,
         "percentOfCode": 20.3,
-        "percentOfBytes": 10.3
+        "percentOfBytes": 10.1
       },
       {
         "name": "JSON",
@@ -170,12 +170,12 @@
         "code": 27,
         "comments": 0,
         "blanks": 0,
-        "bytes": 635,
+        "bytes": 608,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 11,
         "percentOfCode": 13.4,
-        "percentOfBytes": 5.5
+        "percentOfBytes": 5.4
       },
       {
         "name": "JavaScript",
@@ -183,12 +183,12 @@
         "code": 14,
         "comments": 20,
         "blanks": 2,
-        "bytes": 960,
+        "bytes": 924,
         "files": 2,
         "complexity": 0,
         "percentOfLines": 14.7,
         "percentOfCode": 6.9,
-        "percentOfBytes": 8.3
+        "percentOfBytes": 8.2
       },
       {
         "name": "HTML",
@@ -196,7 +196,7 @@
         "code": 13,
         "comments": 0,
         "blanks": 0,
-        "bytes": 385,
+        "bytes": 372,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 5.3,
@@ -209,12 +209,12 @@
         "code": 7,
         "comments": 0,
         "blanks": 5,
-        "bytes": 868,
+        "bytes": 856,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 4.9,
         "percentOfCode": 3.5,
-        "percentOfBytes": 7.5
+        "percentOfBytes": 7.6
       },
       {
         "name": "SVG",
@@ -227,7 +227,7 @@
         "complexity": 0,
         "percentOfLines": 0.8,
         "percentOfCode": 1,
-        "percentOfBytes": 48.8
+        "percentOfBytes": 49.8
       }
     ],
     "cocomo": {

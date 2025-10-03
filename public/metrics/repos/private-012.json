@@ -1,6 +1,6 @@
 {
   "id": "private-012",
-  "scannedAt": "2025-10-01T09:32:27.192Z",
+  "scannedAt": "2025-10-03T15:35:38.353Z",
   "metadata": {
     "name": "Private Project 12",
     "fullName": null,
@@ -20,7 +20,7 @@
   "sccRaw": [
     {
       "Name": "TypeScript",
-      "Bytes": 274404,
+      "Bytes": 267346,
       "CodeBytes": 0,
       "Lines": 7966,
       "Code": 6653,
@@ -35,7 +35,7 @@
     },
     {
       "Name": "Markdown",
-      "Bytes": 72232,
+      "Bytes": 70040,
       "CodeBytes": 0,
       "Lines": 2196,
       "Code": 1748,
@@ -50,7 +50,7 @@
     },
     {
       "Name": "JSON",
-      "Bytes": 2006,
+      "Bytes": 1935,
       "CodeBytes": 0,
       "Lines": 72,
       "Code": 72,
@@ -65,7 +65,7 @@
     },
     {
       "Name": "TypeScript Typings",
-      "Bytes": 331,
+      "Bytes": 319,
       "CodeBytes": 0,
       "Lines": 12,
       "Code": 11,
@@ -80,7 +80,7 @@
     },
     {
       "Name": "CSS",
-      "Bytes": 2126,
+      "Bytes": 2020,
       "CodeBytes": 0,
       "Lines": 106,
       "Code": 80,
@@ -95,7 +95,7 @@
     },
     {
       "Name": "HTML",
-      "Bytes": 382,
+      "Bytes": 367,
       "CodeBytes": 0,
       "Lines": 15,
       "Code": 15,
@@ -110,7 +110,7 @@
     },
     {
       "Name": "JavaScript",
-      "Bytes": 281,
+      "Bytes": 270,
       "CodeBytes": 0,
       "Lines": 11,
       "Code": 10,
@@ -125,7 +125,7 @@
     },
     {
       "Name": "License",
-      "Bytes": 1093,
+      "Bytes": 1072,
       "CodeBytes": 0,
       "Lines": 21,
       "Code": 17,
@@ -145,7 +145,7 @@
       "totalCode": 8606,
       "totalComments": 482,
       "totalBlanks": 1311,
-      "totalBytes": 352855,
+      "totalBytes": 343369,
       "totalFiles": 102,
       "totalLanguages": 8,
       "totalComplexity": 927,
@@ -159,12 +159,12 @@
         "code": 6653,
         "comments": 474,
         "blanks": 839,
-        "bytes": 274404,
+        "bytes": 267346,
         "files": 83,
         "complexity": 927,
         "percentOfLines": 76.6,
         "percentOfCode": 77.3,
-        "percentOfBytes": 77.8
+        "percentOfBytes": 77.9
       },
       {
         "name": "Markdown",
@@ -172,12 +172,12 @@
         "code": 1748,
         "comments": 0,
         "blanks": 448,
-        "bytes": 72232,
+        "bytes": 70040,
         "files": 10,
         "complexity": 0,
         "percentOfLines": 21.1,
         "percentOfCode": 20.3,
-        "percentOfBytes": 20.5
+        "percentOfBytes": 20.4
       },
       {
         "name": "CSS",
@@ -185,7 +185,7 @@
         "code": 80,
         "comments": 7,
         "blanks": 19,
-        "bytes": 2126,
+        "bytes": 2020,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 1,
@@ -198,7 +198,7 @@
         "code": 72,
         "comments": 0,
         "blanks": 0,
-        "bytes": 2006,
+        "bytes": 1935,
         "files": 3,
         "complexity": 0,
         "percentOfLines": 0.7,
@@ -211,7 +211,7 @@
         "code": 17,
         "comments": 0,
         "blanks": 4,
-        "bytes": 1093,
+        "bytes": 1072,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 0.2,
@@ -224,7 +224,7 @@
         "code": 15,
         "comments": 0,
         "blanks": 0,
-        "bytes": 382,
+        "bytes": 367,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 0.1,
@@ -237,7 +237,7 @@
         "code": 11,
         "comments": 1,
         "blanks": 0,
-        "bytes": 331,
+        "bytes": 319,
         "files": 2,
         "complexity": 0,
         "percentOfLines": 0.1,
@@ -250,7 +250,7 @@
         "code": 10,
         "comments": 0,
         "blanks": 1,
-        "bytes": 281,
+        "bytes": 270,
         "files": 1,
         "complexity": 0,
         "percentOfLines": 0.1,
