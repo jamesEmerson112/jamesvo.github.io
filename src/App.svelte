@@ -26,7 +26,7 @@
 <main>
   <ThemeSwitcher />
 
-  <GamingCharacterDemo />
+  <!-- <GamingCharacterDemo /> -->
 
   <div class="hero">
     <h1>Hello, I'm {name}! 👋</h1>
