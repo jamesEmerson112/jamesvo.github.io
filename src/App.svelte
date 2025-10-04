@@ -1,46 +1,66 @@
 <script>
   import { onMount } from 'svelte';
-  import { darkMode } from './stores/theme.js';
+  import { loading, error, loadPortfolioData, selectedRepo, clearSelectedRepo } from './stores/portfolioStore.js';
   import ThemeSwitcher from './components/ThemeSwitcher.svelte';
-  import GamingCharacterDemo from './components/GamingCharacterDemo.svelte';
-  import CodeMetrics from './components/CodeMetrics.svelte';
-  import PortfolioOverview from './components/portfolio/PortfolioOverview.svelte';
+  import ProfileHeader from './components/profile/ProfileHeader.svelte';
+  import ProfileSidebar from './components/profile/ProfileSidebar.svelte';
+  import TechDomainSpider from './components/profile/TechDomainSpider.svelte';
+  import ProjectShowcase from './components/profile/ProjectShowcase.svelte';
+  import RepoDetail from './components/portfolio/RepoDetail.svelte';
   import './styles/themes.css';
 
-  let name = 'James Vo';
-  let currentTime = new Date().toLocaleString();
-
-  // Component mount - no longer need to manually set data-dark as store handles this
+  // Load portfolio data on mount
   onMount(() => {
-    // Store now handles data-dark attribute initialization
+    loadPortfolioData();
   });
-
-  // Update time every second
-  setInterval(() => {
-    currentTime = new Date().toLocaleString();
-  }, 1000);
-
-  // Data-light attribute is now handled automatically by the theme store
 </script>
 
+<ThemeSwitcher />
+
 <main>
-  <ThemeSwitcher />
+  {#if $loading}
+    <!-- Loading State -->
+    <div class="loading-state">
+      <div class="spinner"></div>
+      <p>Loading portfolio...</p>
+    </div>
+  {:else if $error}
+    <!-- Error State -->
+    <div class="error-state">
+      <span class="error-icon">⚠️</span>
+      <h3>Failed to load portfolio</h3>
+      <p>{$error}</p>
+      <button class="retry-button" on:click={loadPortfolioData}>
+        Try Again
+      </button>
+    </div>
+  {:else}
+    <!-- Profile Header -->
+    <ProfileHeader />
 
-  <!-- <GamingCharacterDemo /> -->
+    <!-- Main Content: Two-Column Layout -->
+    <div class="content-container">
+      <!-- Left Sidebar (33%) -->
+      <aside class="sidebar">
+        <ProfileSidebar />
+      </aside>
 
-  <div class="hero">
-    <h1>Hello, I'm {name}! 👋</h1>
-    <p class="subtitle">Full Stack Developer & Creative Technologist</p>
-    <p class="description">Welcome to my personal website built with Svelte and deployed on GitHub Pages ✨</p>
-    <div class="time">Current time: {currentTime}</div>
-  </div>
-
-  <CodeMetrics />
-
-  <PortfolioOverview />
-
-  <div class="animation">✨</div>
+      <!-- Right Content Area (67%) -->
+      <div class="main-content">
+        <TechDomainSpider />
+        <ProjectShowcase />
+      </div>
+    </div>
+  {/if}
 </main>
+
+<!-- Repository Detail Modal -->
+{#if $selectedRepo}
+  <RepoDetail
+    repoId={$selectedRepo}
+    closeHandler={clearSelectedRepo}
+  />
+{/if}
 
 <style>
   :global(body) {
@@ -51,110 +71,104 @@
   }
 
   main {
-    text-align: center;
-    padding: 2em;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background: var(--bg-primary);
     color: var(--text-primary);
-    gap: 3em;
     transition: var(--theme-transition);
   }
 
-  .hero {
-    max-width: 800px;
-    animation: fadeIn 1s ease-in;
+  /* Loading & Error States */
+  .loading-state,
+  .error-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    gap: 1.5rem;
+    text-align: center;
   }
 
-  h1 {
-    font-size: 3.5em;
-    font-weight: var(--font-weight-normal);
-    margin: 0.2em 0;
-    animation: fadeIn 1s ease-in;
-    color: var(--text-primary);
-  }
-
-  .subtitle {
-    font-size: 1.4em;
-    font-weight: var(--font-weight-medium);
-    margin: 0.5em 0;
-    animation: fadeIn 1.2s ease-in;
-    color: var(--text-secondary);
-  }
-
-  .description {
-    font-size: 1.1em;
-    margin: 1em 0;
-    animation: fadeIn 1.4s ease-in;
-    color: var(--text-muted);
-  }
-
-  .time {
-    font-size: 1em;
-    margin-top: 1.5em;
-    padding: 0.5em 1em;
-    background: var(--bg-secondary);
-    border-radius: var(--card-border-radius);
-    border: 1px solid var(--border-primary);
-    animation: fadeIn 1.6s ease-in;
-    color: var(--text-muted);
-  }
-
-  .animation {
-    font-size: 3em;
-    animation: spin 3s linear infinite;
-    margin-top: 1em;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  .spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid rgba(59, 130, 246, 0.2);
+    border-top-color: #3b82f6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
   }
 
   @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+    to { transform: rotate(360deg); }
   }
 
-  @media (max-width: 768px) {
-    main {
-      padding: 1.5em;
-      gap: 2em;
-    }
-
-    h1 {
-      font-size: 2.5em;
-    }
-
-    .subtitle {
-      font-size: 1.2em;
-    }
-
-    .description {
-      font-size: 1em;
-    }
+  .loading-state p {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
   }
 
-  @media (max-width: 480px) {
-    h1 {
-      font-size: 2em;
-    }
+  .error-icon {
+    font-size: 4rem;
+  }
 
-    .subtitle {
-      font-size: 1.1em;
+  .error-state h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--text-primary);
+  }
+
+  .error-state p {
+    color: var(--text-secondary);
+    max-width: 400px;
+  }
+
+  .retry-button {
+    padding: 0.75rem 1.5rem;
+    background: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 0.5rem;
+  }
+
+  .retry-button:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  }
+
+  /* Main Content Container */
+  .content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  /* Sidebar (33%) */
+  .sidebar {
+    position: sticky;
+    top: 2rem;
+  }
+
+  /* Main Content Area (67%) */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Desktop First - No mobile styles yet */
+  @media (min-width: 1200px) {
+    .content-container {
+      max-width: 1400px;
     }
   }
 </style>

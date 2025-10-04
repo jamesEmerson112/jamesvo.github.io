@@ -2,8 +2,15 @@
   import { formatNumber, formatCurrency, formatDuration, getLanguageColor } from '../../utils/dataLoader.js';
   import { selectedRepo } from '../../stores/portfolioStore.js';
   import LanguageSpider from './LanguageSpider.svelte';
+  import { projectEnhancements } from '../../data/projectEnhancements.js';
+  import { TECH_DOMAINS } from '../../data/techDomains.js';
 
   export let repo;
+
+  // Get enhancement data for this repo
+  $: enhancement = projectEnhancements[repo.id];
+  $: techDomains = enhancement?.techDomains || [];
+  $: hoursInvested = enhancement?.hoursInvested || 0;
 
   function handleClick() {
     selectedRepo.set(repo.id);
@@ -34,6 +41,20 @@
     {/if}
   </div>
 
+  <!-- Tech Domain Tags (NEW) -->
+  {#if techDomains.length > 0}
+    <div class="tech-domains">
+      {#each techDomains as domainId}
+        {@const domain = TECH_DOMAINS.find(d => d.id === domainId)}
+        {#if domain}
+          <span class="domain-tag" style="background: {domain.color}20; color: {domain.color}; border-color: {domain.color}40;">
+            {domain.icon} {domain.label}
+          </span>
+        {/if}
+      {/each}
+    </div>
+  {/if}
+
   <!-- Description -->
   {#if repo.description && !repo.isAnonymized}
     <p class="repo-description">{repo.description}</p>
@@ -58,6 +79,13 @@
       <span class="stat-value">{repo.summary.complexity}</span>
       <span class="stat-label">complexity</span>
     </div>
+    {#if hoursInvested > 0}
+      <div class="stat">
+        <span class="stat-icon">⏱️</span>
+        <span class="stat-value">{hoursInvested}</span>
+        <span class="stat-label">hours</span>
+      </div>
+    {/if}
   </div>
 
   <!-- Language Spider Chart -->
@@ -310,6 +338,31 @@
 
   .repo-card:hover .view-details {
     transform: translateX(4px);
+  }
+
+  /* Tech Domain Tags */
+  .tech-domains {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .domain-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.25rem 0.625rem;
+    border-radius: 4px;
+    border: 1px solid;
+    transition: all 0.2s ease;
+  }
+
+  .domain-tag:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px currentColor;
   }
 
   @media (max-width: 640px) {

@@ -6,11 +6,17 @@
 import { writable, derived } from 'svelte/store';
 import { loadMasterIndex } from '../utils/dataLoader.js';
 import { filterRepos, sortRepos } from '../utils/dataLoader.js';
+import { profileData as profileDataImport } from '../data/profileData.js';
+import { TECH_DOMAINS } from '../data/techDomains.js';
+import { projectEnhancements } from '../data/projectEnhancements.js';
 
 // Core data stores
 export const portfolioData = writable(null);
 export const loading = writable(true);
 export const error = writable(null);
+
+// Profile data store
+export const profileData = writable(profileDataImport);
 
 // UI state stores
 export const searchTerm = writable('');
@@ -19,6 +25,9 @@ export const sortBy = writable('lines'); // 'name', 'lines', 'cost', 'updated'
 export const sortOrder = writable('desc'); // 'asc' or 'desc'
 export const selectedRepo = writable(null);
 export const displayLimit = writable(10); // Number of repos to display
+
+// Tech domain filtering (new for LinkedIn-style redesign)
+export const selectedTechDomain = writable('all');
 
 /**
  * Select a repository to view details
@@ -135,3 +144,100 @@ export function resetFilters() {
 export function toggleSortOrder() {
   sortOrder.update(order => order === 'asc' ? 'desc' : 'asc');
 }
+
+/**
+ * Set tech domain filter
+ */
+export function setTechDomainFilter(domainId) {
+  selectedTechDomain.set(domainId);
+}
+
+/**
+ * Clear tech domain filter
+ */
+export function clearTechDomainFilter() {
+  selectedTechDomain.set('all');
+}
+
+/**
+ * Derived store: Repos filtered by tech domain
+ * Merges existing filteredRepos with tech domain filtering
+ */
+export const techDomainFilteredRepos = derived(
+  [filteredRepos, selectedTechDomain],
+  ([$repos, $domain]) => {
+    if ($domain === 'all') return $repos;
+
+    // Filter repos that match the selected tech domain
+    return $repos.filter(repo => {
+      const enhancement = projectEnhancements[repo.id];
+      return enhancement && enhancement.techDomains.includes($domain);
+    });
+  }
+);
+
+/**
+ * Derived store: Featured projects only
+ */
+export const featuredProjects = derived(
+  techDomainFilteredRepos,
+  ($repos) => {
+    return $repos.filter(repo => {
+      const enhancement = projectEnhancements[repo.id];
+      return enhancement && enhancement.isFeatured;
+    });
+  }
+);
+
+/**
+ * Derived store: Project counts per tech domain
+ * Calculates how many projects belong to each domain
+ */
+export const domainCounts = derived(
+  portfolioData,
+  ($data) => {
+    if (!$data || !$data.repos) return {};
+
+    const counts = {};
+
+    // Initialize all domains with 0
+    TECH_DOMAINS.forEach(domain => {
+      counts[domain.id] = 0;
+    });
+
+    // Count projects per domain
+    $data.repos.forEach(repo => {
+      const enhancement = projectEnhancements[repo.id];
+      if (enhancement && enhancement.techDomains) {
+        enhancement.techDomains.forEach(domainId => {
+          counts[domainId] = (counts[domainId] || 0) + 1;
+        });
+      }
+    });
+
+    return counts;
+  }
+);
+
+/**
+ * Derived store: Enriched repos with enhancement data
+ * Merges repo data with projectEnhancements metadata
+ */
+export const enrichedRepos = derived(
+  portfolioData,
+  ($data) => {
+    if (!$data || !$data.repos) return [];
+
+    return $data.repos.map(repo => {
+      const enhancement = projectEnhancements[repo.id];
+      return {
+        ...repo,
+        techDomains: enhancement?.techDomains || [],
+        hoursInvested: enhancement?.hoursInvested || 0,
+        isFeatured: enhancement?.isFeatured || false,
+        thumbnail: enhancement?.thumbnail || '/assets/projects/placeholder.jpg',
+        shortDescription: enhancement?.shortDescription || repo.description
+      };
+    });
+  }
+);
