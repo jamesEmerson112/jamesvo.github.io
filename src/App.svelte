@@ -74,6 +74,10 @@
               <div class="stat_label">Estimated Value</div>
             </div>
           </div>
+          <div class="methodology">
+            <div class="method_name">Calculated using COCOMO</div>
+            <div class="method_citation">(Boehm, 1981)</div>
+          </div>
         </div>
       </div>
     {:else if currentPage === 'contact'}
@@ -221,6 +225,25 @@
     opacity: 0.6;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+  }
+
+  .methodology {
+    margin-top: 3em;
+    text-align: right;
+    font-size: 10px;
+    color: #fff;
+    opacity: 0.5;
+    line-height: 1.4;
+  }
+
+  .method_name {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .method_citation {
+    font-style: italic;
+    margin-top: 0.2em;
   }
 
   /* Contact Page */
