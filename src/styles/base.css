@@ -38,12 +38,12 @@ html {
 }
 
 /* Theme override for manual toggle */
-[data-theme="dark"] {
+[data-light="false"] {
   --c-bg: hsl(0, 0%, 5%);
   --c-text: hsl(0, 0%, 95%);
 }
 
-[data-theme="light"] {
+[data-light="true"] {
   --c-bg: hsl(0, 0%, 90%);
   --c-text: hsl(0, 0%, 10%);
 }
