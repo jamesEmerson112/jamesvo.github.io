@@ -13,7 +13,7 @@
   .copyright {
     position: fixed;
     z-index: 10;
-    right: calc(var(--pad) * 2);
+    right: var(--pad);
     bottom: calc(var(--pad) * 0.5);
     font-size: 80%;
     opacity: 0.5;

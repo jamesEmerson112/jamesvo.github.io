@@ -99,6 +99,21 @@
           </div>
         </div>
       </div>
+    {:else if currentPage === 'privacy'}
+      <div class="page privacy">
+        <div class="privacy_content">
+          <h2>Privacy</h2>
+          <p class="privacy_summary">
+            This site uses Google Analytics<br />
+            to understand how visitors use the site.
+          </p>
+          <a href="/privacy.html" 
+             target="_blank"
+             class="privacy_link">
+            Full Privacy Policy →
+          </a>
+        </div>
+      </div>
     {/if}
   </ContentLayer>
 </PageContainer>
@@ -251,5 +266,42 @@
   .link_handle {
     font-size: 16px;
     font-weight: 400;
+  }
+
+  /* Privacy Page */
+  .privacy_content {
+    text-align: right;
+    max-width: 600px;
+  }
+
+  .privacy_content h2 {
+    font-size: clamp(32px, 6vw, 60px);
+    font-weight: 200;
+    margin: 0 0 1em 0;
+    color: #fff;
+  }
+
+  .privacy_summary {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #fff;
+    opacity: 0.8;
+    margin: 2em 0;
+  }
+
+  .privacy_link {
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.5em 0;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+
+  .privacy_link:hover {
+    opacity: 1;
   }
 </style>
