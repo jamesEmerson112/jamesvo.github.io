@@ -4,8 +4,8 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => ({
   plugins: [svelte()],
-  // Use root path in dev, repo name in production
-  base: command === 'serve' ? '/' : '/jamesvo.github.io/',
+  // Root path for GitHub Pages user site
+  base: '/',
   build: {
     outDir: 'dist'
   }
