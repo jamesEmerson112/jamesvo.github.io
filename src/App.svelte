@@ -10,6 +10,7 @@
   import ThemeSwitcher from './components/ThemeSwitcher.svelte';
   import Copyright from './components/layout/Copyright.svelte';
   import PortfolioStats from './components/portfolio/PortfolioStats.svelte';
+  import Timeline from './components/Timeline.svelte';
   import './styles/themes.css';
 
   let currentPage = 'home';
@@ -46,12 +47,7 @@
     {#if currentPage === 'home'}
       <div class="page home">
         <div class="home_content">
-          <!-- <h1>I like to study both brains and neural networks</h1> -->
-          <!-- <p class="subtitle">'Cure' neural networks == cure brains</p> -->
-          <p class="description">
-            I like to study both brains and neural networks.<br />
-            'Cure' neural networks == cure brains
-          </p>
+          <Timeline />
         </div>
       </div>
     {:else if currentPage === 'projects'}
@@ -130,17 +126,17 @@
   }
 
   /* Home Page */
+  .page.home {
+    overflow: hidden;
+  }
+
   .home_content {
     text-align: right;
     max-width: 600px;
-  }
-
-  .home_content .description {
-    font-size: clamp(12px, 2vw, 14px);
-    line-height: 1.6;
-    margin-top: 2em;
-    color: #fff;
-    opacity: 0.8;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   /* Projects Page */

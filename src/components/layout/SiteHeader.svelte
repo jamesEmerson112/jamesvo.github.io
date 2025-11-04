@@ -1,6 +1,6 @@
 <script>
   export let currentPage = 'home';
-  
+
   const pages = [
     { id: 'home', label: 'Home' },
     { id: 'projects', label: 'Projects' },
@@ -8,7 +8,7 @@
     { id: 'contact', label: 'Contact' },
     { id: 'privacy', label: 'Privacy' }
   ];
-  
+
   function handlePageChange(pageId) {
     currentPage = pageId;
     // Dispatch event for parent to handle
@@ -22,12 +22,17 @@
     <div>Emerson</div>
     <div>Vo</div>
   </div>
-  
+
+  <div class="siteHeader_description">
+    <p>I like to study both brains and neural networks.</p>
+    <p>'Cure' neural networks == cure brains</p>
+  </div>
+
   <nav class="siteHeader_nav">
     <ol>
       {#each pages as page}
         <li class:is-selected={currentPage === page.id}>
-          <button 
+          <button
             on:click={() => handlePageChange(page.id)}
             class="nav-button"
           >
@@ -49,34 +54,53 @@
     mix-blend-mode: difference;
     color: #fff;
   }
-  
+
   .siteHeader_title {
     margin: -0.1em 0 0 -0.04em;
     font-weight: 200;
     font-size: 30px;
     line-height: 1.1;
   }
-  
+
   @media (min-width: 1280px) {
     .siteHeader_title {
       font-size: 60px;
     }
   }
-  
+
+  .siteHeader_description {
+    margin-top: 1.5em;
+    font-size: 12px;
+    line-height: 1.6;
+    opacity: 0.8;
+    max-width: 300px;
+  }
+
+  .siteHeader_description p {
+    margin: 0.5em 0;
+  }
+
+  @media (min-width: 1280px) {
+    .siteHeader_description {
+      font-size: 14px;
+      max-width: 400px;
+    }
+  }
+
   .siteHeader_nav {
     margin-top: 50px;
   }
-  
+
   .siteHeader_nav ol {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
   }
-  
+
   .siteHeader_nav ol li {
     position: relative;
   }
-  
+
   .nav-button {
     background: none;
     border: none;
@@ -88,7 +112,7 @@
     position: relative;
     display: block;
   }
-  
+
   .nav-button ._dot {
     position: absolute;
     left: 0;
@@ -98,12 +122,12 @@
     pointer-events: none;
     transition: opacity 0.4s cubic-bezier(0.1, 0.4, 0.2, 1);
   }
-  
+
   .nav-button ._text {
     position: relative;
     transition: opacity 0.4s cubic-bezier(0.1, 0.4, 0.2, 1);
   }
-  
+
   .nav-button ._text::before {
     content: "";
     display: block;
@@ -113,21 +137,21 @@
     width: calc(100% + 10px);
     height: calc(100% + 10px);
   }
-  
+
   @media (hover: hover) {
     .nav-button:hover ._text {
       opacity: 0.25;
     }
   }
-  
+
   .is-selected .nav-button {
     pointer-events: none;
   }
-  
+
   .is-selected ._dot {
     opacity: 1;
   }
-  
+
   .is-selected ._text {
     opacity: 0;
   }
