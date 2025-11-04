@@ -7,7 +7,7 @@ on:
     - cron: '0 2 * * 1'
     # Monthly full scan (1st of month, 3 AM UTC)
     - cron: '0 3 1 * *'
-  
+
   # Manual trigger with full scan option
   workflow_dispatch:
     inputs:
@@ -23,18 +23,18 @@ permissions:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      
+
       - name: Install SCC
         run: |
           echo "📦 Installing SCC..."
@@ -42,10 +42,10 @@ jobs:
           tar -xzf scc_Linux_x86_64.tar.gz
           sudo mv scc /usr/local/bin/
           scc --version
-      
+
       - name: Install dependencies
         run: npm ci
-      
+
       - name: Determine scan type
         id: scan_type
         run: |
@@ -59,10 +59,10 @@ jobs:
             echo "type=incremental" >> $GITHUB_OUTPUT
             echo "⚡ Weekly scheduled: INCREMENTAL SCAN"
           fi
-      
+
       - name: Run portfolio scan
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           if [[ "${{ steps.scan_type.outputs.type }}" == "full" ]]; then
             echo "🔄 Starting full scan of all repositories..."
@@ -71,7 +71,7 @@ jobs:
             echo "⚡ Starting incremental scan (updated repos only)..."
             npm run scan
           fi
-      
+
       - name: Check for changes
         id: check_changes
         run: |
@@ -82,25 +82,25 @@ jobs:
             echo "changes=false" >> $GITHUB_OUTPUT
             echo "ℹ️  No changes to metrics"
           fi
-      
+
       - name: Commit updated metrics
         if: steps.check_changes.outputs.changes == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/metrics/
-          
+
           if [[ "${{ steps.scan_type.outputs.type }}" == "full" ]]; then
             git commit -m "chore: update portfolio metrics (full scan) [automated]"
           else
             git commit -m "chore: update portfolio metrics (incremental) [automated]"
           fi
-          
+
           git push
-          
+
           echo "✅ Metrics committed and pushed"
           echo "🚀 Deployment workflow will trigger automatically"
-      
+
       - name: Summary
         if: always()
         run: |
@@ -109,7 +109,7 @@ jobs:
           echo "**Scan Type:** ${{ steps.scan_type.outputs.type }}" >> $GITHUB_STEP_SUMMARY
           echo "**Changes:** ${{ steps.check_changes.outputs.changes || 'N/A' }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          
+
           if [[ "${{ steps.check_changes.outputs.changes }}" == "true" ]]; then
             echo "✅ Metrics updated and committed" >> $GITHUB_STEP_SUMMARY
             echo "🚀 Deployment workflow triggered" >> $GITHUB_STEP_SUMMARY
