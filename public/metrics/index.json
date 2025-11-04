@@ -1,155 +1,473 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2025-10-03T15:44:03.766Z",
+  "generatedAt": "2025-11-04T07:18:02.741Z",
   "lastFullScan": "2025-10-01T08:13:04.189Z",
-  "lastIncrementalScan": "2025-10-03T15:44:03.766Z",
-  "reposScannedThisRun": 6,
-  "totalPublicRepos": 0,
-  "totalPrivateRepos": 6,
-  "totalRepos": 6,
+  "lastIncrementalScan": "2025-11-04T07:18:02.741Z",
+  "reposScannedThisRun": 19,
+  "totalPublicRepos": 9,
+  "totalPrivateRepos": 10,
+  "totalRepos": 19,
   "portfolioTotals": {
-    "totalLines": 27141,
-    "totalCode": 22575,
-    "totalComments": 1527,
-    "totalBlanks": 3039,
-    "totalFiles": 96,
-    "totalBytes": 972731,
-    "totalComplexity": 716,
+    "totalLines": 243209,
+    "totalCode": 210234,
+    "totalComments": 10512,
+    "totalBlanks": 22463,
+    "totalFiles": 728,
+    "totalBytes": 9635376,
+    "totalComplexity": 6259,
     "estimatedValue": {
-      "standardCost": 281735,
-      "totalEffort": 60.06,
-      "avgTime": 10.01,
+      "standardCost": 2803042,
+      "totalEffort": 597.59,
+      "avgTime": 31.45,
       "avgPeople": 0
     },
     "soloDeveloper": {
-      "fullTimeMonths": 60.06,
-      "fullTimeYears": 5,
-      "fullTimeWeeks": 260,
+      "fullTimeMonths": 597.59,
+      "fullTimeYears": 50,
+      "fullTimeWeeks": 2588,
       "description": "Total time if developed alone, full-time"
     },
     "languages": {
+      "JSON": {
+        "repos": 10,
+        "totalLines": 9683,
+        "totalCode": 9683,
+        "percentOfTotal": 4,
+        "averagePerRepo": 968
+      },
+      "Svelte": {
+        "repos": 1,
+        "totalLines": 2883,
+        "totalCode": 2427,
+        "percentOfTotal": 1.2,
+        "averagePerRepo": 2883
+      },
       "Markdown": {
-        "repos": 6,
-        "totalLines": 7255,
-        "totalCode": 5555,
-        "percentOfTotal": 26.7,
-        "averagePerRepo": 1209
+        "repos": 18,
+        "totalLines": 51711,
+        "totalCode": 40754,
+        "percentOfTotal": 21.3,
+        "averagePerRepo": 2873
+      },
+      "JavaScript": {
+        "repos": 8,
+        "totalLines": 16921,
+        "totalCode": 12968,
+        "percentOfTotal": 7,
+        "averagePerRepo": 2115
+      },
+      "HTML": {
+        "repos": 5,
+        "totalLines": 1144,
+        "totalCode": 990,
+        "percentOfTotal": 0.5,
+        "averagePerRepo": 229
+      },
+      "YAML": {
+        "repos": 2,
+        "totalLines": 196,
+        "totalCode": 163,
+        "percentOfTotal": 0.1,
+        "averagePerRepo": 98
+      },
+      "CSS": {
+        "repos": 7,
+        "totalLines": 2268,
+        "totalCode": 1916,
+        "percentOfTotal": 0.9,
+        "averagePerRepo": 324
+      },
+      "License": {
+        "repos": 10,
+        "totalLines": 584,
+        "totalCode": 483,
+        "percentOfTotal": 0.2,
+        "averagePerRepo": 58
+      },
+      "Plain Text": {
+        "repos": 10,
+        "totalLines": 74110,
+        "totalCode": 73566,
+        "percentOfTotal": 30.5,
+        "averagePerRepo": 7411
+      },
+      "Python": {
+        "repos": 11,
+        "totalLines": 40737,
+        "totalCode": 28772,
+        "percentOfTotal": 16.7,
+        "averagePerRepo": 3703
+      },
+      "Jupyter": {
+        "repos": 4,
+        "totalLines": 18284,
+        "totalCode": 18284,
+        "percentOfTotal": 7.5,
+        "averagePerRepo": 4571
+      },
+      "TeX": {
+        "repos": 1,
+        "totalLines": 1591,
+        "totalCode": 1210,
+        "percentOfTotal": 0.7,
+        "averagePerRepo": 1591
       },
       "Cuda": {
         "repos": 1,
-        "totalLines": 1804,
-        "totalCode": 1091,
-        "percentOfTotal": 6.6,
-        "averagePerRepo": 1804
+        "totalLines": 2372,
+        "totalCode": 1445,
+        "percentOfTotal": 1,
+        "averagePerRepo": 2372
       },
-      "Python": {
+      "TypeScript": {
         "repos": 3,
-        "totalLines": 6015,
-        "totalCode": 3970,
-        "percentOfTotal": 22.2,
-        "averagePerRepo": 2005
+        "totalLines": 17839,
+        "totalCode": 15883,
+        "percentOfTotal": 7.3,
+        "averagePerRepo": 5946
       },
-      "License": {
-        "repos": 3,
-        "totalLines": 243,
-        "totalCode": 203,
-        "percentOfTotal": 0.9,
-        "averagePerRepo": 81
-      },
-      "Jupyter": {
+      "SQL": {
         "repos": 2,
-        "totalLines": 11443,
-        "totalCode": 11443,
-        "percentOfTotal": 42.2,
-        "averagePerRepo": 5722
-      },
-      "Plain Text": {
-        "repos": 2,
-        "totalLines": 141,
-        "totalCode": 111,
-        "percentOfTotal": 0.5,
-        "averagePerRepo": 71
-      },
-      "JSON": {
-        "repos": 2,
-        "totalLines": 34,
-        "totalCode": 34,
-        "percentOfTotal": 0.1,
-        "averagePerRepo": 17
-      },
-      "CSS": {
-        "repos": 1,
-        "totalLines": 110,
-        "totalCode": 98,
+        "totalLines": 1012,
+        "totalCode": 714,
         "percentOfTotal": 0.4,
-        "averagePerRepo": 110
+        "averagePerRepo": 506
+      },
+      "TOML": {
+        "repos": 2,
+        "totalLines": 714,
+        "totalCode": 284,
+        "percentOfTotal": 0.3,
+        "averagePerRepo": 357
+      },
+      "Shell": {
+        "repos": 4,
+        "totalLines": 253,
+        "totalCode": 178,
+        "percentOfTotal": 0.1,
+        "averagePerRepo": 63
+      },
+      "SVG": {
+        "repos": 4,
+        "totalLines": 13,
+        "totalCode": 13,
+        "percentOfTotal": 0,
+        "averagePerRepo": 3
+      },
+      "Docker ignore": {
+        "repos": 1,
+        "totalLines": 165,
+        "totalCode": 86,
+        "percentOfTotal": 0.1,
+        "averagePerRepo": 165
+      },
+      "Dockerfile": {
+        "repos": 1,
+        "totalLines": 33,
+        "totalCode": 13,
+        "percentOfTotal": 0,
+        "averagePerRepo": 33
+      },
+      "TypeScript Typings": {
+        "repos": 1,
+        "totalLines": 1,
+        "totalCode": 0,
+        "percentOfTotal": 0,
+        "averagePerRepo": 1
+      },
+      "Swift": {
+        "repos": 1,
+        "totalLines": 650,
+        "totalCode": 361,
+        "percentOfTotal": 0.3,
+        "averagePerRepo": 650
       },
       "JSX": {
         "repos": 1,
         "totalLines": 45,
         "totalCode": 41,
-        "percentOfTotal": 0.2,
+        "percentOfTotal": 0,
         "averagePerRepo": 45
-      },
-      "JavaScript": {
-        "repos": 1,
-        "totalLines": 36,
-        "totalCode": 14,
-        "percentOfTotal": 0.1,
-        "averagePerRepo": 36
-      },
-      "HTML": {
-        "repos": 1,
-        "totalLines": 13,
-        "totalCode": 13,
-        "percentOfTotal": 0,
-        "averagePerRepo": 13
-      },
-      "SVG": {
-        "repos": 1,
-        "totalLines": 2,
-        "totalCode": 2,
-        "percentOfTotal": 0,
-        "averagePerRepo": 2
       }
     }
   },
   "repos": [
     {
+      "id": "jamesemerson112-github-io",
+      "name": "jamesemerson112.github.io",
+      "url": "https://github.com/jamesEmerson112/jamesemerson112.github.io",
+      "description": "James Emerson Vo's personal portfolio",
+      "lastUpdated": "2025-11-03T05:11:40Z",
+      "primaryLanguage": "JSON",
+      "isPrivate": false,
+      "isAnonymized": false,
+      "languages": [
+        {
+          "name": "JSON",
+          "lines": 5603,
+          "code": 5603,
+          "comments": 0,
+          "blanks": 0,
+          "bytes": 133832,
+          "files": 24,
+          "complexity": 0,
+          "percentOfLines": 44,
+          "percentOfCode": 50.2,
+          "percentOfBytes": 38.3
+        },
+        {
+          "name": "Svelte",
+          "lines": 2883,
+          "code": 2427,
+          "comments": 87,
+          "blanks": 369,
+          "bytes": 66106,
+          "files": 14,
+          "complexity": 31,
+          "percentOfLines": 22.7,
+          "percentOfCode": 21.8,
+          "percentOfBytes": 18.9
+        },
+        {
+          "name": "Markdown",
+          "lines": 1780,
+          "code": 1284,
+          "comments": 0,
+          "blanks": 496,
+          "bytes": 72707,
+          "files": 5,
+          "complexity": 0,
+          "percentOfLines": 14,
+          "percentOfCode": 11.5,
+          "percentOfBytes": 20.8
+        },
+        {
+          "name": "JavaScript",
+          "lines": 1281,
+          "code": 858,
+          "comments": 263,
+          "blanks": 160,
+          "bytes": 38678,
+          "files": 9,
+          "complexity": 63,
+          "percentOfLines": 10.1,
+          "percentOfCode": 7.7,
+          "percentOfBytes": 11.1
+        },
+        {
+          "name": "HTML",
+          "lines": 861,
+          "code": 748,
+          "comments": 5,
+          "blanks": 108,
+          "bytes": 28781,
+          "files": 3,
+          "complexity": 0,
+          "percentOfLines": 6.8,
+          "percentOfCode": 6.7,
+          "percentOfBytes": 8.2
+        },
+        {
+          "name": "YAML",
+          "lines": 161,
+          "code": 129,
+          "comments": 5,
+          "blanks": 27,
+          "bytes": 4852,
+          "files": 2,
+          "complexity": 0,
+          "percentOfLines": 1.3,
+          "percentOfCode": 1.2,
+          "percentOfBytes": 1.4
+        },
+        {
+          "name": "CSS",
+          "lines": 147,
+          "code": 100,
+          "comments": 23,
+          "blanks": 24,
+          "bytes": 3251,
+          "files": 2,
+          "complexity": 0,
+          "percentOfLines": 1.2,
+          "percentOfCode": 0.9,
+          "percentOfBytes": 0.9
+        },
+        {
+          "name": "License",
+          "lines": 9,
+          "code": 5,
+          "comments": 0,
+          "blanks": 4,
+          "bytes": 1099,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 0.1,
+          "percentOfCode": 0,
+          "percentOfBytes": 0.3
+        }
+      ],
+      "summary": {
+        "lines": 12725,
+        "code": 11154,
+        "files": 60,
+        "complexity": 94,
+        "traditionalCost": 141655,
+        "aiCost": 36122,
+        "traditionalMonths": 30.2,
+        "aiMonths": 7.7
+      },
+      "detailsFile": "repos/jamesemerson112-github-io.json"
+    },
+    {
       "id": "private-001",
       "name": "Private Project 1",
       "url": null,
       "description": "Private repository",
-      "lastUpdated": "2025-10-02T19:55:44Z",
+      "lastUpdated": "2025-10-27T18:18:05Z",
+      "primaryLanguage": "Plain Text",
+      "isPrivate": true,
+      "isAnonymized": true,
+      "languages": [
+        {
+          "name": "Plain Text",
+          "lines": 71900,
+          "code": 71828,
+          "comments": 0,
+          "blanks": 72,
+          "bytes": 3396792,
+          "files": 11,
+          "complexity": 0,
+          "percentOfLines": 87,
+          "percentOfCode": 90.2,
+          "percentOfBytes": 89
+        },
+        {
+          "name": "Python",
+          "lines": 4594,
+          "code": 2689,
+          "comments": 1009,
+          "blanks": 896,
+          "bytes": 171021,
+          "files": 36,
+          "complexity": 211,
+          "percentOfLines": 5.6,
+          "percentOfCode": 3.4,
+          "percentOfBytes": 4.5
+        },
+        {
+          "name": "Markdown",
+          "lines": 2945,
+          "code": 2305,
+          "comments": 0,
+          "blanks": 640,
+          "bytes": 99042,
+          "files": 13,
+          "complexity": 0,
+          "percentOfLines": 3.6,
+          "percentOfCode": 2.9,
+          "percentOfBytes": 2.6
+        },
+        {
+          "name": "Jupyter",
+          "lines": 1354,
+          "code": 1354,
+          "comments": 0,
+          "blanks": 0,
+          "bytes": 64261,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 1.6,
+          "percentOfCode": 1.7,
+          "percentOfBytes": 1.7
+        },
+        {
+          "name": "TeX",
+          "lines": 1591,
+          "code": 1210,
+          "comments": 7,
+          "blanks": 374,
+          "bytes": 73518,
+          "files": 3,
+          "complexity": 103,
+          "percentOfLines": 1.9,
+          "percentOfCode": 1.5,
+          "percentOfBytes": 1.9
+        },
+        {
+          "name": "License",
+          "lines": 227,
+          "code": 190,
+          "comments": 0,
+          "blanks": 37,
+          "bytes": 12766,
+          "files": 2,
+          "complexity": 0,
+          "percentOfLines": 0.3,
+          "percentOfCode": 0.2,
+          "percentOfBytes": 0.3
+        },
+        {
+          "name": "YAML",
+          "lines": 35,
+          "code": 34,
+          "comments": 1,
+          "blanks": 0,
+          "bytes": 553,
+          "files": 2,
+          "complexity": 0,
+          "percentOfLines": 0,
+          "percentOfCode": 0,
+          "percentOfBytes": 0
+        }
+      ],
+      "summary": {
+        "lines": 82646,
+        "code": 79610,
+        "files": 68,
+        "complexity": 314,
+        "traditionalCost": 1115440,
+        "aiCost": 284437,
+        "traditionalMonths": 237.81,
+        "aiMonths": 60.64
+      },
+      "detailsFile": "repos/private-001.json"
+    },
+    {
+      "id": "private-002",
+      "name": "Private Project 2",
+      "url": null,
+      "description": "Private repository",
+      "lastUpdated": "2025-10-25T16:29:33Z",
       "primaryLanguage": "Markdown",
       "isPrivate": true,
       "isAnonymized": true,
       "languages": [
         {
           "name": "Markdown",
-          "lines": 3112,
-          "code": 2388,
+          "lines": 3559,
+          "code": 2740,
           "comments": 0,
-          "blanks": 724,
-          "bytes": 101759,
-          "files": 10,
+          "blanks": 819,
+          "bytes": 117068,
+          "files": 11,
           "complexity": 0,
-          "percentOfLines": 58.2,
-          "percentOfCode": 62.3,
-          "percentOfBytes": 53.2
+          "percentOfLines": 54.9,
+          "percentOfCode": 58.9,
+          "percentOfBytes": 50.3
         },
         {
           "name": "Cuda",
-          "lines": 1804,
-          "code": 1091,
-          "comments": 372,
-          "blanks": 341,
-          "bytes": 68039,
-          "files": 8,
-          "complexity": 176,
-          "percentOfLines": 33.7,
-          "percentOfCode": 28.4,
-          "percentOfBytes": 35.6
+          "lines": 2372,
+          "code": 1445,
+          "comments": 469,
+          "blanks": 458,
+          "bytes": 88136,
+          "files": 10,
+          "complexity": 239,
+          "percentOfLines": 36.6,
+          "percentOfCode": 31,
+          "percentOfBytes": 37.8
         },
         {
           "name": "Python",
@@ -160,9 +478,9 @@
           "bytes": 10005,
           "files": 1,
           "complexity": 35,
-          "percentOfLines": 4.4,
-          "percentOfCode": 4.9,
-          "percentOfBytes": 5.2
+          "percentOfLines": 3.6,
+          "percentOfCode": 4,
+          "percentOfBytes": 4.3
         },
         {
           "name": "License",
@@ -173,29 +491,511 @@
           "bytes": 11324,
           "files": 1,
           "complexity": 0,
-          "percentOfLines": 3.8,
-          "percentOfCode": 4.4,
-          "percentOfBytes": 5.9
+          "percentOfLines": 3.1,
+          "percentOfCode": 3.6,
+          "percentOfBytes": 4.9
+        },
+        {
+          "name": "Plain Text",
+          "lines": 115,
+          "code": 114,
+          "comments": 0,
+          "blanks": 1,
+          "bytes": 6426,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 1.8,
+          "percentOfCode": 2.4,
+          "percentOfBytes": 2.8
         }
       ],
       "summary": {
-        "lines": 5351,
-        "code": 3835,
-        "files": 20,
-        "complexity": 211,
-        "traditionalCost": 46173,
-        "aiCost": 11774,
-        "traditionalMonths": 9.84,
-        "aiMonths": 2.51
+        "lines": 6481,
+        "code": 4655,
+        "files": 24,
+        "complexity": 274,
+        "traditionalCost": 56591,
+        "aiCost": 14431,
+        "traditionalMonths": 12.06,
+        "aiMonths": 3.08
       },
-      "detailsFile": "repos/private-001.json"
+      "detailsFile": "repos/private-002.json"
     },
     {
-      "id": "private-002",
-      "name": "Private Project 2",
+      "id": "voicereach",
+      "name": "voicereach",
+      "url": "https://github.com/jasonyi33/voicereach",
+      "description": "",
+      "lastUpdated": "2025-10-14T05:32:29Z",
+      "primaryLanguage": "Markdown",
+      "isPrivate": false,
+      "isAnonymized": false,
+      "languages": [
+        {
+          "name": "Markdown",
+          "lines": 15500,
+          "code": 12458,
+          "comments": 0,
+          "blanks": 3042,
+          "bytes": 600108,
+          "files": 35,
+          "complexity": 0,
+          "percentOfLines": 35.9,
+          "percentOfCode": 36.2,
+          "percentOfBytes": 38.8
+        },
+        {
+          "name": "Python",
+          "lines": 10259,
+          "code": 7571,
+          "comments": 1331,
+          "blanks": 1357,
+          "bytes": 393022,
+          "files": 55,
+          "complexity": 871,
+          "percentOfLines": 23.8,
+          "percentOfCode": 22,
+          "percentOfBytes": 25.4
+        },
+        {
+          "name": "TypeScript",
+          "lines": 8421,
+          "code": 7492,
+          "comments": 279,
+          "blanks": 650,
+          "bytes": 250223,
+          "files": 31,
+          "complexity": 764,
+          "percentOfLines": 19.5,
+          "percentOfCode": 21.8,
+          "percentOfBytes": 16.2
+        },
+        {
+          "name": "JavaScript",
+          "lines": 7079,
+          "code": 5503,
+          "comments": 973,
+          "blanks": 603,
+          "bytes": 234961,
+          "files": 27,
+          "complexity": 253,
+          "percentOfLines": 16.4,
+          "percentOfCode": 16,
+          "percentOfBytes": 15.2
+        },
+        {
+          "name": "JSON",
+          "lines": 516,
+          "code": 516,
+          "comments": 0,
+          "blanks": 0,
+          "bytes": 13595,
+          "files": 7,
+          "complexity": 0,
+          "percentOfLines": 1.2,
+          "percentOfCode": 1.5,
+          "percentOfBytes": 0.9
+        },
+        {
+          "name": "SQL",
+          "lines": 506,
+          "code": 357,
+          "comments": 80,
+          "blanks": 69,
+          "bytes": 27685,
+          "files": 8,
+          "complexity": 0,
+          "percentOfLines": 1.2,
+          "percentOfCode": 1,
+          "percentOfBytes": 1.8
+        },
+        {
+          "name": "CSS",
+          "lines": 345,
+          "code": 287,
+          "comments": 10,
+          "blanks": 48,
+          "bytes": 5984,
+          "files": 2,
+          "complexity": 0,
+          "percentOfLines": 0.8,
+          "percentOfCode": 0.8,
+          "percentOfBytes": 0.4
+        },
+        {
+          "name": "TOML",
+          "lines": 357,
+          "code": 142,
+          "comments": 171,
+          "blanks": 44,
+          "bytes": 12898,
+          "files": 3,
+          "complexity": 0,
+          "percentOfLines": 0.8,
+          "percentOfCode": 0.4,
+          "percentOfBytes": 0.8
+        },
+        {
+          "name": "Shell",
+          "lines": 120,
+          "code": 85,
+          "comments": 15,
+          "blanks": 20,
+          "bytes": 3989,
+          "files": 3,
+          "complexity": 8,
+          "percentOfLines": 0.3,
+          "percentOfCode": 0.2,
+          "percentOfBytes": 0.3
+        },
+        {
+          "name": "Plain Text",
+          "lines": 16,
+          "code": 16,
+          "comments": 0,
+          "blanks": 0,
+          "bytes": 715,
+          "files": 5,
+          "complexity": 0,
+          "percentOfLines": 0,
+          "percentOfCode": 0,
+          "percentOfBytes": 0
+        },
+        {
+          "name": "SVG",
+          "lines": 5,
+          "code": 5,
+          "comments": 0,
+          "blanks": 0,
+          "bytes": 3314,
+          "files": 5,
+          "complexity": 0,
+          "percentOfLines": 0,
+          "percentOfCode": 0,
+          "percentOfBytes": 0.2
+        }
+      ],
+      "summary": {
+        "lines": 43124,
+        "code": 34432,
+        "files": 181,
+        "complexity": 1896,
+        "traditionalCost": 462637,
+        "aiCost": 117973,
+        "traditionalMonths": 98.63,
+        "aiMonths": 25.15
+      },
+      "detailsFile": "repos/voicereach.json"
+    },
+    {
+      "id": "private-003",
+      "name": "Private Project 3",
       "url": null,
       "description": "Private repository",
-      "lastUpdated": "2025-09-30T06:22:11Z",
+      "lastUpdated": "2025-10-14T05:32:27Z",
+      "primaryLanguage": "Markdown",
+      "isPrivate": true,
+      "isAnonymized": true,
+      "languages": [
+        {
+          "name": "Markdown",
+          "lines": 15500,
+          "code": 12458,
+          "comments": 0,
+          "blanks": 3042,
+          "bytes": 600108,
+          "files": 35,
+          "complexity": 0,
+          "percentOfLines": 35.9,
+          "percentOfCode": 36.2,
+          "percentOfBytes": 38.8
+        },
+        {
+          "name": "Python",
+          "lines": 10259,
+          "code": 7571,
+          "comments": 1331,
+          "blanks": 1357,
+          "bytes": 393022,
+          "files": 55,
+          "complexity": 871,
+          "percentOfLines": 23.8,
+          "percentOfCode": 22,
+          "percentOfBytes": 25.4
+        },
+        {
+          "name": "TypeScript",
+          "lines": 8421,
+          "code": 7492,
+          "comments": 279,
+          "blanks": 650,
+          "bytes": 250223,
+          "files": 31,
+          "complexity": 764,
+          "percentOfLines": 19.5,
+          "percentOfCode": 21.8,
+          "percentOfBytes": 16.2
+        },
+        {
+          "name": "JavaScript",
+          "lines": 7079,
+          "code": 5503,
+          "comments": 973,
+          "blanks": 603,
+          "bytes": 234961,
+          "files": 27,
+          "complexity": 253,
+          "percentOfLines": 16.4,
+          "percentOfCode": 16,
+          "percentOfBytes": 15.2
+        },
+        {
+          "name": "JSON",
+          "lines": 516,
+          "code": 516,
+          "comments": 0,
+          "blanks": 0,
+          "bytes": 13595,
+          "files": 7,
+          "complexity": 0,
+          "percentOfLines": 1.2,
+          "percentOfCode": 1.5,
+          "percentOfBytes": 0.9
+        },
+        {
+          "name": "SQL",
+          "lines": 506,
+          "code": 357,
+          "comments": 80,
+          "blanks": 69,
+          "bytes": 27685,
+          "files": 8,
+          "complexity": 0,
+          "percentOfLines": 1.2,
+          "percentOfCode": 1,
+          "percentOfBytes": 1.8
+        },
+        {
+          "name": "CSS",
+          "lines": 345,
+          "code": 287,
+          "comments": 10,
+          "blanks": 48,
+          "bytes": 5984,
+          "files": 2,
+          "complexity": 0,
+          "percentOfLines": 0.8,
+          "percentOfCode": 0.8,
+          "percentOfBytes": 0.4
+        },
+        {
+          "name": "TOML",
+          "lines": 357,
+          "code": 142,
+          "comments": 171,
+          "blanks": 44,
+          "bytes": 12898,
+          "files": 3,
+          "complexity": 0,
+          "percentOfLines": 0.8,
+          "percentOfCode": 0.4,
+          "percentOfBytes": 0.8
+        },
+        {
+          "name": "Shell",
+          "lines": 120,
+          "code": 85,
+          "comments": 15,
+          "blanks": 20,
+          "bytes": 3989,
+          "files": 3,
+          "complexity": 8,
+          "percentOfLines": 0.3,
+          "percentOfCode": 0.2,
+          "percentOfBytes": 0.3
+        },
+        {
+          "name": "Plain Text",
+          "lines": 16,
+          "code": 16,
+          "comments": 0,
+          "blanks": 0,
+          "bytes": 715,
+          "files": 5,
+          "complexity": 0,
+          "percentOfLines": 0,
+          "percentOfCode": 0,
+          "percentOfBytes": 0
+        },
+        {
+          "name": "SVG",
+          "lines": 5,
+          "code": 5,
+          "comments": 0,
+          "blanks": 0,
+          "bytes": 3314,
+          "files": 5,
+          "complexity": 0,
+          "percentOfLines": 0,
+          "percentOfCode": 0,
+          "percentOfBytes": 0.2
+        }
+      ],
+      "summary": {
+        "lines": 43124,
+        "code": 34432,
+        "files": 181,
+        "complexity": 1896,
+        "traditionalCost": 462637,
+        "aiCost": 117973,
+        "traditionalMonths": 98.63,
+        "aiMonths": 25.15
+      },
+      "detailsFile": "repos/private-003.json"
+    },
+    {
+      "id": "mongodb-agentic-context-window",
+      "name": "MongoDB-Agentic-context-window",
+      "url": "https://github.com/jamesEmerson112/MongoDB-Agentic-context-window",
+      "description": "",
+      "lastUpdated": "2025-10-12T00:01:32Z",
+      "primaryLanguage": "Jupyter",
+      "isPrivate": false,
+      "isAnonymized": false,
+      "languages": [
+        {
+          "name": "Jupyter",
+          "lines": 5487,
+          "code": 5487,
+          "comments": 0,
+          "blanks": 0,
+          "bytes": 314487,
+          "files": 3,
+          "complexity": 0,
+          "percentOfLines": 62.9,
+          "percentOfCode": 68.4,
+          "percentOfBytes": 69.2
+        },
+        {
+          "name": "Python",
+          "lines": 2425,
+          "code": 1934,
+          "comments": 177,
+          "blanks": 314,
+          "bytes": 106999,
+          "files": 9,
+          "complexity": 285,
+          "percentOfLines": 27.8,
+          "percentOfCode": 24.1,
+          "percentOfBytes": 23.6
+        },
+        {
+          "name": "Markdown",
+          "lines": 797,
+          "code": 583,
+          "comments": 0,
+          "blanks": 214,
+          "bytes": 32219,
+          "files": 6,
+          "complexity": 0,
+          "percentOfLines": 9.1,
+          "percentOfCode": 7.3,
+          "percentOfBytes": 7.1
+        },
+        {
+          "name": "Plain Text",
+          "lines": 18,
+          "code": 18,
+          "comments": 0,
+          "blanks": 0,
+          "bytes": 561,
+          "files": 2,
+          "complexity": 0,
+          "percentOfLines": 0.2,
+          "percentOfCode": 0.2,
+          "percentOfBytes": 0.1
+        }
+      ],
+      "summary": {
+        "lines": 8727,
+        "code": 8022,
+        "files": 20,
+        "complexity": 285,
+        "traditionalCost": 100214,
+        "aiCost": 25554,
+        "traditionalMonths": 21.37,
+        "aiMonths": 5.45
+      },
+      "detailsFile": "repos/mongodb-agentic-context-window.json"
+    },
+    {
+      "id": "class-mp4-merger",
+      "name": "class-mp4-merger",
+      "url": "https://github.com/jamesEmerson112/class-mp4-merger",
+      "description": "",
+      "lastUpdated": "2025-10-08T02:03:25Z",
+      "primaryLanguage": "Python",
+      "isPrivate": false,
+      "isAnonymized": false,
+      "languages": [
+        {
+          "name": "Python",
+          "lines": 223,
+          "code": 136,
+          "comments": 42,
+          "blanks": 45,
+          "bytes": 6489,
+          "files": 1,
+          "complexity": 30,
+          "percentOfLines": 90.7,
+          "percentOfCode": 88.3,
+          "percentOfBytes": 85.6
+        },
+        {
+          "name": "License",
+          "lines": 21,
+          "code": 17,
+          "comments": 0,
+          "blanks": 4,
+          "bytes": 1072,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 8.5,
+          "percentOfCode": 11,
+          "percentOfBytes": 14.1
+        },
+        {
+          "name": "Markdown",
+          "lines": 2,
+          "code": 1,
+          "comments": 0,
+          "blanks": 1,
+          "bytes": 20,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 0.8,
+          "percentOfCode": 0.6,
+          "percentOfBytes": 0.3
+        }
+      ],
+      "summary": {
+        "lines": 246,
+        "code": 154,
+        "files": 3,
+        "complexity": 30,
+        "traditionalCost": 1579,
+        "aiCost": 403,
+        "traditionalMonths": 0.34,
+        "aiMonths": 0.09
+      },
+      "detailsFile": "repos/class-mp4-merger.json"
+    },
+    {
+      "id": "private-004",
+      "name": "Private Project 4",
+      "url": null,
+      "description": "Private repository",
+      "lastUpdated": "2025-10-06T03:54:13Z",
       "primaryLanguage": "Markdown",
       "isPrivate": true,
       "isAnonymized": true,
@@ -224,11 +1024,340 @@
         "traditionalMonths": 0,
         "aiMonths": 0
       },
-      "detailsFile": "repos/private-002.json"
+      "detailsFile": "repos/private-004.json"
     },
     {
-      "id": "private-003",
-      "name": "Private Project 3",
+      "id": "burning-heroes-hackathon",
+      "name": "Burning-Heroes-hackathon",
+      "url": "https://github.com/jamesEmerson112/Burning-Heroes-hackathon",
+      "description": "october 4th - apify utilisation",
+      "lastUpdated": "2025-10-05T17:31:40Z",
+      "primaryLanguage": "JSON",
+      "isPrivate": false,
+      "isAnonymized": false,
+      "languages": [
+        {
+          "name": "JSON",
+          "lines": 2192,
+          "code": 2192,
+          "comments": 0,
+          "blanks": 0,
+          "bytes": 141213,
+          "files": 7,
+          "complexity": 0,
+          "percentOfLines": 29.6,
+          "percentOfCode": 36.2,
+          "percentOfBytes": 42.4
+        },
+        {
+          "name": "Markdown",
+          "lines": 2003,
+          "code": 1547,
+          "comments": 0,
+          "blanks": 456,
+          "bytes": 56798,
+          "files": 8,
+          "complexity": 0,
+          "percentOfLines": 27,
+          "percentOfCode": 25.5,
+          "percentOfBytes": 17.1
+        },
+        {
+          "name": "Plain Text",
+          "lines": 1882,
+          "code": 1445,
+          "comments": 0,
+          "blanks": 437,
+          "bytes": 91031,
+          "files": 4,
+          "complexity": 0,
+          "percentOfLines": 25.4,
+          "percentOfCode": 23.8,
+          "percentOfBytes": 27.3
+        },
+        {
+          "name": "Python",
+          "lines": 851,
+          "code": 577,
+          "comments": 149,
+          "blanks": 125,
+          "bytes": 28853,
+          "files": 10,
+          "complexity": 64,
+          "percentOfLines": 11.5,
+          "percentOfCode": 9.5,
+          "percentOfBytes": 8.7
+        },
+        {
+          "name": "JavaScript",
+          "lines": 247,
+          "code": 175,
+          "comments": 28,
+          "blanks": 44,
+          "bytes": 9619,
+          "files": 1,
+          "complexity": 26,
+          "percentOfLines": 3.3,
+          "percentOfCode": 2.9,
+          "percentOfBytes": 2.9
+        },
+        {
+          "name": "Docker ignore",
+          "lines": 165,
+          "code": 86,
+          "comments": 48,
+          "blanks": 31,
+          "bytes": 2934,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 2.2,
+          "percentOfCode": 1.4,
+          "percentOfBytes": 0.9
+        },
+        {
+          "name": "License",
+          "lines": 21,
+          "code": 17,
+          "comments": 0,
+          "blanks": 4,
+          "bytes": 1072,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 0.3,
+          "percentOfCode": 0.3,
+          "percentOfBytes": 0.3
+        },
+        {
+          "name": "Dockerfile",
+          "lines": 33,
+          "code": 13,
+          "comments": 15,
+          "blanks": 5,
+          "bytes": 1299,
+          "files": 1,
+          "complexity": 7,
+          "percentOfLines": 0.4,
+          "percentOfCode": 0.2,
+          "percentOfBytes": 0.4
+        },
+        {
+          "name": "Shell",
+          "lines": 12,
+          "code": 7,
+          "comments": 2,
+          "blanks": 3,
+          "bytes": 226,
+          "files": 1,
+          "complexity": 1,
+          "percentOfLines": 0.2,
+          "percentOfCode": 0.1,
+          "percentOfBytes": 0.1
+        }
+      ],
+      "summary": {
+        "lines": 7406,
+        "code": 6059,
+        "files": 34,
+        "complexity": 98,
+        "traditionalCost": 74637,
+        "aiCost": 19032,
+        "traditionalMonths": 15.91,
+        "aiMonths": 4.06
+      },
+      "detailsFile": "repos/burning-heroes-hackathon.json"
+    },
+    {
+      "id": "sglang-and-dynamo-example",
+      "name": "SGLang-and-Dynamo-example",
+      "url": "https://github.com/jamesEmerson112/SGLang-and-Dynamo-example",
+      "description": "",
+      "lastUpdated": "2025-10-04T18:11:49Z",
+      "primaryLanguage": "Markdown",
+      "isPrivate": false,
+      "isAnonymized": false,
+      "languages": [
+        {
+          "name": "Markdown",
+          "lines": 4703,
+          "code": 3625,
+          "comments": 0,
+          "blanks": 1078,
+          "bytes": 152822,
+          "files": 9,
+          "complexity": 0,
+          "percentOfLines": 99.6,
+          "percentOfCode": 99.5,
+          "percentOfBytes": 99.3
+        },
+        {
+          "name": "License",
+          "lines": 21,
+          "code": 17,
+          "comments": 0,
+          "blanks": 4,
+          "bytes": 1071,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 0.4,
+          "percentOfCode": 0.5,
+          "percentOfBytes": 0.7
+        }
+      ],
+      "summary": {
+        "lines": 4724,
+        "code": 3642,
+        "files": 10,
+        "complexity": 0,
+        "traditionalCost": 43736,
+        "aiCost": 11153,
+        "traditionalMonths": 9.32,
+        "aiMonths": 2.38
+      },
+      "detailsFile": "repos/sglang-and-dynamo-example.json"
+    },
+    {
+      "id": "jiraoptimizer",
+      "name": "JiraOptimizer",
+      "url": "https://github.com/T-DEV16/JiraOptimizer",
+      "description": "",
+      "lastUpdated": "2025-10-02T02:18:29Z",
+      "primaryLanguage": "TypeScript",
+      "isPrivate": false,
+      "isAnonymized": false,
+      "languages": [
+        {
+          "name": "TypeScript",
+          "lines": 997,
+          "code": 899,
+          "comments": 19,
+          "blanks": 79,
+          "bytes": 31422,
+          "files": 6,
+          "complexity": 129,
+          "percentOfLines": 45.7,
+          "percentOfCode": 45.2,
+          "percentOfBytes": 51.2
+        },
+        {
+          "name": "JSON",
+          "lines": 649,
+          "code": 649,
+          "comments": 0,
+          "blanks": 0,
+          "bytes": 15035,
+          "files": 4,
+          "complexity": 0,
+          "percentOfLines": 29.7,
+          "percentOfCode": 32.6,
+          "percentOfBytes": 24.5
+        },
+        {
+          "name": "CSS",
+          "lines": 390,
+          "code": 352,
+          "comments": 2,
+          "blanks": 36,
+          "bytes": 7109,
+          "files": 3,
+          "complexity": 0,
+          "percentOfLines": 17.9,
+          "percentOfCode": 17.7,
+          "percentOfBytes": 11.6
+        },
+        {
+          "name": "JavaScript",
+          "lines": 54,
+          "code": 39,
+          "comments": 3,
+          "blanks": 12,
+          "bytes": 1222,
+          "files": 1,
+          "complexity": 1,
+          "percentOfLines": 2.5,
+          "percentOfCode": 2,
+          "percentOfBytes": 2
+        },
+        {
+          "name": "Markdown",
+          "lines": 46,
+          "code": 26,
+          "comments": 0,
+          "blanks": 20,
+          "bytes": 2117,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 2.1,
+          "percentOfCode": 1.3,
+          "percentOfBytes": 3.4
+        },
+        {
+          "name": "HTML",
+          "lines": 43,
+          "code": 20,
+          "comments": 23,
+          "blanks": 0,
+          "bytes": 1721,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 2,
+          "percentOfCode": 1,
+          "percentOfBytes": 2.8
+        },
+        {
+          "name": "Plain Text",
+          "lines": 3,
+          "code": 3,
+          "comments": 0,
+          "blanks": 0,
+          "bytes": 67,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 0.1,
+          "percentOfCode": 0.2,
+          "percentOfBytes": 0.1
+        },
+        {
+          "name": "SVG",
+          "lines": 1,
+          "code": 1,
+          "comments": 0,
+          "blanks": 0,
+          "bytes": 2632,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 0,
+          "percentOfCode": 0.1,
+          "percentOfBytes": 4.3
+        },
+        {
+          "name": "TypeScript Typings",
+          "lines": 1,
+          "code": 0,
+          "comments": 1,
+          "blanks": 0,
+          "bytes": 40,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 0,
+          "percentOfCode": 0,
+          "percentOfBytes": 0.1
+        }
+      ],
+      "summary": {
+        "lines": 2184,
+        "code": 1989,
+        "files": 19,
+        "complexity": 130,
+        "traditionalCost": 23174,
+        "aiCost": 5909,
+        "traditionalMonths": 4.94,
+        "aiMonths": 1.26
+      },
+      "detailsFile": "repos/jiraoptimizer.json"
+    },
+    {
+      "id": "private-005",
+      "name": "Private Project 5",
       "url": null,
       "description": "Private repository",
       "lastUpdated": "2025-09-21T18:18:13Z",
@@ -325,11 +1454,11 @@
         "traditionalMonths": 30.44,
         "aiMonths": 7.76
       },
-      "detailsFile": "repos/private-003.json"
+      "detailsFile": "repos/private-005.json"
     },
     {
-      "id": "private-004",
-      "name": "Private Project 4",
+      "id": "private-006",
+      "name": "Private Project 6",
       "url": null,
       "description": "Private repository",
       "lastUpdated": "2025-09-16T03:31:30Z",
@@ -400,11 +1529,236 @@
         "traditionalMonths": 19.29,
         "aiMonths": 4.92
       },
-      "detailsFile": "repos/private-004.json"
+      "detailsFile": "repos/private-006.json"
     },
     {
-      "id": "private-005",
-      "name": "Private Project 5",
+      "id": "private-007",
+      "name": "Private Project 7",
+      "url": null,
+      "description": "Private repository",
+      "lastUpdated": "2025-09-15T22:22:29Z",
+      "primaryLanguage": "Python",
+      "isPrivate": true,
+      "isAnonymized": true,
+      "languages": [
+        {
+          "name": "Python",
+          "lines": 3504,
+          "code": 2235,
+          "comments": 738,
+          "blanks": 531,
+          "bytes": 135056,
+          "files": 11,
+          "complexity": 348,
+          "percentOfLines": 99.2,
+          "percentOfCode": 98.9,
+          "percentOfBytes": 98.9
+        },
+        {
+          "name": "License",
+          "lines": 21,
+          "code": 17,
+          "comments": 0,
+          "blanks": 4,
+          "bytes": 1069,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 0.6,
+          "percentOfCode": 0.8,
+          "percentOfBytes": 0.8
+        },
+        {
+          "name": "JSON",
+          "lines": 7,
+          "code": 7,
+          "comments": 0,
+          "blanks": 0,
+          "bytes": 452,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 0.2,
+          "percentOfCode": 0.3,
+          "percentOfBytes": 0.3
+        },
+        {
+          "name": "Markdown",
+          "lines": 2,
+          "code": 1,
+          "comments": 0,
+          "blanks": 1,
+          "bytes": 31,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 0.1,
+          "percentOfCode": 0,
+          "percentOfBytes": 0
+        }
+      ],
+      "summary": {
+        "lines": 3534,
+        "code": 2260,
+        "files": 14,
+        "complexity": 348,
+        "traditionalCost": 26500,
+        "aiCost": 6757,
+        "traditionalMonths": 5.65,
+        "aiMonths": 1.44
+      },
+      "detailsFile": "repos/private-007.json"
+    },
+    {
+      "id": "eye-to-home",
+      "name": "Eye-to-home",
+      "url": "https://github.com/jamesEmerson112/Eye-to-home",
+      "description": "HackDavis2025",
+      "lastUpdated": "2025-09-15T18:53:27Z",
+      "primaryLanguage": "Swift",
+      "isPrivate": false,
+      "isAnonymized": false,
+      "languages": [
+        {
+          "name": "Swift",
+          "lines": 650,
+          "code": 361,
+          "comments": 218,
+          "blanks": 71,
+          "bytes": 23870,
+          "files": 4,
+          "complexity": 31,
+          "percentOfLines": 77.6,
+          "percentOfCode": 66.9,
+          "percentOfBytes": 84.9
+        },
+        {
+          "name": "JSON",
+          "lines": 138,
+          "code": 138,
+          "comments": 0,
+          "blanks": 0,
+          "bytes": 2466,
+          "files": 9,
+          "complexity": 0,
+          "percentOfLines": 16.5,
+          "percentOfCode": 25.6,
+          "percentOfBytes": 8.8
+        },
+        {
+          "name": "Markdown",
+          "lines": 29,
+          "code": 24,
+          "comments": 0,
+          "blanks": 5,
+          "bytes": 707,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 3.5,
+          "percentOfCode": 4.4,
+          "percentOfBytes": 2.5
+        },
+        {
+          "name": "License",
+          "lines": 21,
+          "code": 17,
+          "comments": 0,
+          "blanks": 4,
+          "bytes": 1072,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 2.5,
+          "percentOfCode": 3.1,
+          "percentOfBytes": 3.8
+        }
+      ],
+      "summary": {
+        "lines": 838,
+        "code": 540,
+        "files": 15,
+        "complexity": 31,
+        "traditionalCost": 5894,
+        "aiCost": 1503,
+        "traditionalMonths": 1.26,
+        "aiMonths": 0.32
+      },
+      "detailsFile": "repos/eye-to-home.json"
+    },
+    {
+      "id": "virtual-cursor",
+      "name": "virtual-cursor",
+      "url": "https://github.com/jamesEmerson112/virtual-cursor",
+      "description": "",
+      "lastUpdated": "2025-08-31T01:11:08Z",
+      "primaryLanguage": "Python",
+      "isPrivate": false,
+      "isAnonymized": false,
+      "languages": [
+        {
+          "name": "Python",
+          "lines": 2607,
+          "code": 2089,
+          "comments": 211,
+          "blanks": 307,
+          "bytes": 95007,
+          "files": 6,
+          "complexity": 269,
+          "percentOfLines": 78.3,
+          "percentOfCode": 79.1,
+          "percentOfBytes": 78.9
+        },
+        {
+          "name": "Markdown",
+          "lines": 702,
+          "code": 535,
+          "comments": 0,
+          "blanks": 167,
+          "bytes": 24750,
+          "files": 2,
+          "complexity": 0,
+          "percentOfLines": 21.1,
+          "percentOfCode": 20.3,
+          "percentOfBytes": 20.5
+        },
+        {
+          "name": "Plain Text",
+          "lines": 19,
+          "code": 15,
+          "comments": 0,
+          "blanks": 4,
+          "bytes": 657,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 0.6,
+          "percentOfCode": 0.6,
+          "percentOfBytes": 0.5
+        },
+        {
+          "name": "Shell",
+          "lines": 1,
+          "code": 1,
+          "comments": 0,
+          "blanks": 0,
+          "bytes": 25,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 0,
+          "percentOfCode": 0,
+          "percentOfBytes": 0
+        }
+      ],
+      "summary": {
+        "lines": 3329,
+        "code": 2640,
+        "files": 10,
+        "complexity": 269,
+        "traditionalCost": 31197,
+        "aiCost": 7955,
+        "traditionalMonths": 6.65,
+        "aiMonths": 1.7
+      },
+      "detailsFile": "repos/virtual-cursor.json"
+    },
+    {
+      "id": "private-008",
+      "name": "Private Project 8",
       "url": null,
       "description": "Private repository",
       "lastUpdated": "2025-08-30T23:16:51Z",
@@ -514,18 +1868,70 @@
         "traditionalMonths": 0.45,
         "aiMonths": 0.11
       },
-      "detailsFile": "repos/private-005.json"
+      "detailsFile": "repos/private-008.json"
     },
     {
-      "id": "private-007",
-      "name": "Private Project 7",
+      "id": "private-010",
+      "name": "Private Project 10",
       "url": null,
       "description": "Private repository",
-      "lastUpdated": "2025-08-16T21:15:51Z",
-      "primaryLanguage": "License",
+      "lastUpdated": "2025-08-25T05:45:27Z",
+      "primaryLanguage": "JavaScript",
       "isPrivate": true,
       "isAnonymized": true,
       "languages": [
+        {
+          "name": "JavaScript",
+          "lines": 821,
+          "code": 617,
+          "comments": 61,
+          "blanks": 143,
+          "bytes": 27483,
+          "files": 5,
+          "complexity": 61,
+          "percentOfLines": 46.2,
+          "percentOfCode": 42.7,
+          "percentOfBytes": 54.8
+        },
+        {
+          "name": "CSS",
+          "lines": 699,
+          "code": 593,
+          "comments": 3,
+          "blanks": 103,
+          "bytes": 12344,
+          "files": 2,
+          "complexity": 0,
+          "percentOfLines": 39.4,
+          "percentOfCode": 41,
+          "percentOfBytes": 24.6
+        },
+        {
+          "name": "HTML",
+          "lines": 205,
+          "code": 189,
+          "comments": 0,
+          "blanks": 16,
+          "bytes": 8548,
+          "files": 2,
+          "complexity": 0,
+          "percentOfLines": 11.5,
+          "percentOfCode": 13.1,
+          "percentOfBytes": 17.1
+        },
+        {
+          "name": "JSON",
+          "lines": 28,
+          "code": 28,
+          "comments": 0,
+          "blanks": 0,
+          "bytes": 659,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 1.6,
+          "percentOfCode": 1.9,
+          "percentOfBytes": 1.3
+        },
         {
           "name": "License",
           "lines": 21,
@@ -535,9 +1941,9 @@
           "bytes": 1072,
           "files": 1,
           "complexity": 0,
-          "percentOfLines": 91.3,
-          "percentOfCode": 94.4,
-          "percentOfBytes": 98
+          "percentOfLines": 1.2,
+          "percentOfCode": 1.2,
+          "percentOfBytes": 2.1
         },
         {
           "name": "Markdown",
@@ -545,25 +1951,87 @@
           "code": 1,
           "comments": 0,
           "blanks": 1,
-          "bytes": 22,
+          "bytes": 14,
           "files": 1,
           "complexity": 0,
-          "percentOfLines": 8.7,
-          "percentOfCode": 5.6,
-          "percentOfBytes": 2
+          "percentOfLines": 0.1,
+          "percentOfCode": 0.1,
+          "percentOfBytes": 0
         }
       ],
       "summary": {
-        "lines": 23,
-        "code": 18,
-        "files": 2,
-        "complexity": 0,
-        "traditionalCost": 166,
-        "aiCost": 42,
-        "traditionalMonths": 0.04,
-        "aiMonths": 0.01
+        "lines": 1776,
+        "code": 1445,
+        "files": 12,
+        "complexity": 61,
+        "traditionalCost": 16569,
+        "aiCost": 4225,
+        "traditionalMonths": 3.53,
+        "aiMonths": 0.9
       },
-      "detailsFile": "repos/private-007.json"
+      "detailsFile": "repos/private-010.json"
+    },
+    {
+      "id": "private-011",
+      "name": "Private Project 11",
+      "url": null,
+      "description": "Private repository",
+      "lastUpdated": "2025-08-24T18:46:56Z",
+      "primaryLanguage": "JavaScript",
+      "isPrivate": true,
+      "isAnonymized": true,
+      "languages": [
+        {
+          "name": "JavaScript",
+          "lines": 324,
+          "code": 259,
+          "comments": 20,
+          "blanks": 45,
+          "bytes": 10959,
+          "files": 1,
+          "complexity": 28,
+          "percentOfLines": 56.1,
+          "percentOfCode": 54.2,
+          "percentOfBytes": 67.5
+        },
+        {
+          "name": "CSS",
+          "lines": 232,
+          "code": 199,
+          "comments": 9,
+          "blanks": 24,
+          "bytes": 4612,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 40.1,
+          "percentOfCode": 41.6,
+          "percentOfBytes": 28.4
+        },
+        {
+          "name": "HTML",
+          "lines": 22,
+          "code": 20,
+          "comments": 1,
+          "blanks": 1,
+          "bytes": 657,
+          "files": 1,
+          "complexity": 0,
+          "percentOfLines": 3.8,
+          "percentOfCode": 4.2,
+          "percentOfBytes": 4
+        }
+      ],
+      "summary": {
+        "lines": 578,
+        "code": 478,
+        "files": 3,
+        "complexity": 28,
+        "traditionalCost": 5186,
+        "aiCost": 1322,
+        "traditionalMonths": 1.11,
+        "aiMonths": 0.28
+      },
+      "detailsFile": "repos/private-011.json"
     }
   ]
 }
