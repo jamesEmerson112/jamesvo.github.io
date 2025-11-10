@@ -1,6 +1,6 @@
 {
   "id": "samdu-news",
-  "scannedAt": "2025-10-03T15:35:33.954Z",
+  "scannedAt": "2025-11-10T02:41:17.556Z",
   "metadata": {
     "name": "samdu-news",
     "fullName": "jamesEmerson112/samdu-news",
@@ -23,10 +23,10 @@
       "Bytes": 58392,
       "CodeBytes": 0,
       "Lines": 1587,
-      "Code": 1424,
+      "Code": 1461,
       "Comment": 13,
-      "Blank": 150,
-      "Complexity": 73,
+      "Blank": 113,
+      "Complexity": 44,
       "Count": 14,
       "WeightedComplexity": 0,
       "Files": [],
@@ -127,28 +127,28 @@
   "computed": {
     "summary": {
       "totalLines": 1758,
-      "totalCode": 1566,
+      "totalCode": 1603,
       "totalComments": 13,
-      "totalBlanks": 179,
+      "totalBlanks": 142,
       "totalBytes": 66472,
       "totalFiles": 27,
       "totalLanguages": 7,
-      "totalComplexity": 73,
+      "totalComplexity": 44,
       "primaryLanguage": "TypeScript",
-      "primaryLanguagePercent": 90.9
+      "primaryLanguagePercent": 91.1
     },
     "languages": [
       {
         "name": "TypeScript",
         "lines": 1587,
-        "code": 1424,
+        "code": 1461,
         "comments": 13,
-        "blanks": 150,
+        "blanks": 113,
         "bytes": 58392,
         "files": 14,
-        "complexity": 73,
+        "complexity": 44,
         "percentOfLines": 90.3,
-        "percentOfCode": 90.9,
+        "percentOfCode": 91.1,
         "percentOfBytes": 87.8
       },
       {
@@ -161,7 +161,7 @@
         "files": 2,
         "complexity": 0,
         "percentOfLines": 3.1,
-        "percentOfCode": 3.5,
+        "percentOfCode": 3.4,
         "percentOfBytes": 1.8
       },
       {
@@ -232,21 +232,21 @@
     ],
     "cocomo": {
       "traditional": {
-        "kloc": 1.566,
-        "effort": 3.84,
-        "time": 4.17,
-        "people": 0.92,
-        "cost": 18029,
+        "kloc": 1.603,
+        "effort": 3.94,
+        "time": 4.21,
+        "people": 0.94,
+        "cost": 18476,
         "avgWage": 56286,
         "model": "organic",
         "description": "Traditional COCOMO estimate"
       },
       "aiAssisted": {
         "effectiveMultiplier": 0.255,
-        "effort": 0.98,
-        "time": 2.48,
+        "effort": 1,
+        "time": 2.5,
         "people": 0.4,
-        "cost": 4597,
+        "cost": 4711,
         "description": "With AI assistance (~3.9x faster)",
         "taskBreakdown": {
           "boilerplate": "20x faster (10% of work)",
@@ -266,33 +266,33 @@
       "singleDeveloper": {
         "traditional": {
           "fullTime": {
-            "months": 3.84,
-            "weeks": 16.6,
-            "days": 83,
-            "cost": 18029,
+            "months": 3.94,
+            "weeks": 17.1,
+            "days": 85,
+            "cost": 18476,
             "description": "Traditional full-time solo development"
           },
           "partTime": {
-            "months": 4.17,
-            "hoursPerWeek": 36.9,
-            "totalHours": 665,
-            "cost": 18029,
+            "months": 4.21,
+            "hoursPerWeek": 37.4,
+            "totalHours": 681,
+            "cost": 18476,
             "description": "Traditional part-time to match COCOMO schedule"
           }
         },
         "aiAssisted": {
           "fullTime": {
-            "months": 0.98,
-            "weeks": 4.2,
-            "days": 21,
-            "cost": 4597,
+            "months": 1,
+            "weeks": 4.3,
+            "days": 22,
+            "cost": 4711,
             "description": "AI-assisted full-time solo development"
           },
           "partTime": {
-            "months": 2.48,
-            "hoursPerWeek": 15.8,
-            "totalHours": 170,
-            "cost": 4597,
+            "months": 2.5,
+            "hoursPerWeek": 16,
+            "totalHours": 174,
+            "cost": 4711,
             "description": "AI-assisted part-time development"
           }
         }
