@@ -1,6 +1,6 @@
 {
   "id": "jiraoptimizer",
-  "scannedAt": "2025-11-04T07:17:54.305Z",
+  "scannedAt": "2025-11-17T02:40:06.031Z",
   "metadata": {
     "name": "JiraOptimizer",
     "fullName": "T-DEV16/JiraOptimizer",
@@ -26,7 +26,7 @@
       "Code": 899,
       "Comment": 19,
       "Blank": 79,
-      "Complexity": 129,
+      "Complexity": 89,
       "Count": 6,
       "WeightedComplexity": 0,
       "Files": [],
@@ -163,7 +163,7 @@
       "totalBytes": 61365,
       "totalFiles": 19,
       "totalLanguages": 9,
-      "totalComplexity": 130,
+      "totalComplexity": 90,
       "primaryLanguage": "TypeScript",
       "primaryLanguagePercent": 45.2
     },
@@ -176,7 +176,7 @@
         "blanks": 79,
         "bytes": 31422,
         "files": 6,
-        "complexity": 129,
+        "complexity": 89,
         "percentOfLines": 45.7,
         "percentOfCode": 45.2,
         "percentOfBytes": 51.2
