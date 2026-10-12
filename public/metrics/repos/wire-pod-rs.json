@@ -1,6 +1,6 @@
 {
   "id": "wire-pod-rs",
-  "scannedAt": "2026-10-01T09:36:55.914Z",
+  "scannedAt": "2026-10-12T08:54:55.820Z",
   "metadata": {
     "name": "wire-pod-rs",
     "fullName": "jamesEmerson112/wire-pod-rs",
@@ -8,7 +8,7 @@
     "url": "https://github.com/jamesEmerson112/wire-pod-rs",
     "homepage": null,
     "topics": [],
-    "lastUpdated": "2026-10-01T04:53:10Z",
+    "lastUpdated": "2026-10-07T10:45:34Z",
     "createdAt": "2026-09-08T07:34:50Z",
     "stars": 0,
     "language": "Rust",
@@ -36,14 +36,14 @@
     },
     {
       "Name": "Markdown",
-      "Bytes": 589520,
+      "Bytes": 601328,
       "CodeBytes": 0,
-      "Lines": 7557,
-      "Code": 5996,
+      "Lines": 7687,
+      "Code": 6082,
       "Comment": 0,
-      "Blank": 1561,
+      "Blank": 1605,
       "Complexity": 0,
-      "Count": 33,
+      "Count": 34,
       "WeightedComplexity": 0,
       "Files": [],
       "LineLength": null,
@@ -232,16 +232,16 @@
   ],
   "computed": {
     "summary": {
-      "totalLines": 105342,
-      "totalCode": 76182,
+      "totalLines": 105472,
+      "totalCode": 76268,
       "totalComments": 19093,
-      "totalBlanks": 10067,
-      "totalBytes": 4478420,
-      "totalFiles": 345,
+      "totalBlanks": 10111,
+      "totalBytes": 4490228,
+      "totalFiles": 346,
       "totalLanguages": 14,
       "totalComplexity": 5219,
       "primaryLanguage": "Rust",
-      "primaryLanguagePercent": 66.7
+      "primaryLanguagePercent": 66.6
     },
     "languages": [
       {
@@ -253,22 +253,22 @@
         "bytes": 2800952,
         "files": 215,
         "complexity": 4001,
-        "percentOfLines": 69.6,
-        "percentOfCode": 66.7,
-        "percentOfBytes": 62.5
+        "percentOfLines": 69.5,
+        "percentOfCode": 66.6,
+        "percentOfBytes": 62.4
       },
       {
         "name": "Markdown",
-        "lines": 7557,
-        "code": 5996,
+        "lines": 7687,
+        "code": 6082,
         "comments": 0,
-        "blanks": 1561,
-        "bytes": 589520,
-        "files": 33,
+        "blanks": 1605,
+        "bytes": 601328,
+        "files": 34,
         "complexity": 0,
-        "percentOfLines": 7.2,
-        "percentOfCode": 7.9,
-        "percentOfBytes": 13.2
+        "percentOfLines": 7.3,
+        "percentOfCode": 8,
+        "percentOfBytes": 13.4
       },
       {
         "name": "JavaScript",
@@ -359,7 +359,7 @@
         "complexity": 0,
         "percentOfLines": 0.7,
         "percentOfCode": 0.9,
-        "percentOfBytes": 1.6
+        "percentOfBytes": 1.5
       },
       {
         "name": "TOML",
@@ -439,21 +439,21 @@
     ],
     "cocomo": {
       "traditional": {
-        "kloc": 76.182,
-        "effort": 227.07,
-        "time": 19.65,
-        "people": 11.56,
-        "cost": 1065063,
+        "kloc": 76.268,
+        "effort": 227.34,
+        "time": 19.66,
+        "people": 11.57,
+        "cost": 1066326,
         "avgWage": 56286,
         "model": "organic",
         "description": "Traditional COCOMO estimate"
       },
       "aiAssisted": {
         "effectiveMultiplier": 0.255,
-        "effort": 57.9,
+        "effort": 57.97,
         "time": 11.69,
-        "people": 4.95,
-        "cost": 271591,
+        "people": 4.96,
+        "cost": 271913,
         "description": "With AI assistance (~3.9x faster)",
         "taskBreakdown": {
           "boilerplate": "20x faster (10% of work)",
@@ -473,33 +473,33 @@
       "singleDeveloper": {
         "traditional": {
           "fullTime": {
-            "months": 227.07,
-            "weeks": 983.2,
-            "days": 4927,
-            "cost": 1065063,
+            "months": 227.34,
+            "weeks": 984.4,
+            "days": 4933,
+            "cost": 1066326,
             "description": "Traditional full-time solo development"
           },
           "partTime": {
-            "months": 19.65,
-            "hoursPerWeek": 462.3,
-            "totalHours": 39283,
-            "cost": 1065063,
+            "months": 19.66,
+            "hoursPerWeek": 462.7,
+            "totalHours": 39329,
+            "cost": 1066326,
             "description": "Traditional part-time to match COCOMO schedule"
           }
         },
         "aiAssisted": {
           "fullTime": {
-            "months": 57.9,
-            "weeks": 250.7,
-            "days": 1256,
-            "cost": 271591,
+            "months": 57.97,
+            "weeks": 251,
+            "days": 1258,
+            "cost": 271913,
             "description": "AI-assisted full-time solo development"
           },
           "partTime": {
             "months": 11.69,
-            "hoursPerWeek": 198.1,
-            "totalHours": 10017,
-            "cost": 271591,
+            "hoursPerWeek": 198.3,
+            "totalHours": 10029,
+            "cost": 271913,
             "description": "AI-assisted part-time development"
           }
         }

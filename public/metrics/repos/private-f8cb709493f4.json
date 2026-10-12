@@ -1,6 +1,6 @@
 {
   "id": "private-f8cb709493f4",
-  "scannedAt": "2026-10-01T09:37:07.381Z",
+  "scannedAt": "2026-10-12T08:54:54.598Z",
   "metadata": {
     "name": "Private Project 107",
     "fullName": null,
@@ -8,7 +8,7 @@
     "url": null,
     "homepage": null,
     "topics": [],
-    "lastUpdated": "2026-09-15T04:51:13Z",
+    "lastUpdated": "2026-10-08T20:21:59Z",
     "createdAt": null,
     "stars": 0,
     "language": "HTML",
@@ -21,14 +21,14 @@
   "sccRaw": [
     {
       "Name": "TypeScript",
-      "Bytes": 2929760,
+      "Bytes": 2946241,
       "CodeBytes": 0,
-      "Lines": 62064,
-      "Code": 47167,
-      "Comment": 9557,
-      "Blank": 5340,
-      "Complexity": 4768,
-      "Count": 342,
+      "Lines": 62427,
+      "Code": 47427,
+      "Comment": 9632,
+      "Blank": 5368,
+      "Complexity": 4772,
+      "Count": 347,
       "WeightedComplexity": 0,
       "Files": [],
       "LineLength": null,
@@ -36,10 +36,10 @@
     },
     {
       "Name": "Markdown",
-      "Bytes": 1222106,
+      "Bytes": 1222253,
       "CodeBytes": 0,
-      "Lines": 16668,
-      "Code": 12753,
+      "Lines": 16670,
+      "Code": 12755,
       "Comment": 0,
       "Blank": 3915,
       "Complexity": 0,
@@ -277,30 +277,30 @@
   ],
   "computed": {
     "summary": {
-      "totalLines": 159017,
-      "totalCode": 126430,
-      "totalComments": 20302,
-      "totalBlanks": 12285,
-      "totalBytes": 21079051,
-      "totalFiles": 546,
+      "totalLines": 159382,
+      "totalCode": 126692,
+      "totalComments": 20377,
+      "totalBlanks": 12313,
+      "totalBytes": 21095679,
+      "totalFiles": 551,
       "totalLanguages": 17,
-      "totalComplexity": 15793,
+      "totalComplexity": 15797,
       "primaryLanguage": "TypeScript",
-      "primaryLanguagePercent": 37.3
+      "primaryLanguagePercent": 37.4
     },
     "languages": [
       {
         "name": "TypeScript",
-        "lines": 62064,
-        "code": 47167,
-        "comments": 9557,
-        "blanks": 5340,
-        "bytes": 2929760,
-        "files": 342,
-        "complexity": 4768,
-        "percentOfLines": 39,
-        "percentOfCode": 37.3,
-        "percentOfBytes": 13.9
+        "lines": 62427,
+        "code": 47427,
+        "comments": 9632,
+        "blanks": 5368,
+        "bytes": 2946241,
+        "files": 347,
+        "complexity": 4772,
+        "percentOfLines": 39.2,
+        "percentOfCode": 37.4,
+        "percentOfBytes": 14
       },
       {
         "name": "JavaScript",
@@ -311,8 +311,8 @@
         "bytes": 1285870,
         "files": 12,
         "complexity": 9013,
-        "percentOfLines": 19.7,
-        "percentOfCode": 23.8,
+        "percentOfLines": 19.6,
+        "percentOfCode": 23.7,
         "percentOfBytes": 6.1
       },
       {
@@ -324,17 +324,17 @@
         "bytes": 1617745,
         "files": 41,
         "complexity": 1842,
-        "percentOfLines": 21.7,
+        "percentOfLines": 21.6,
         "percentOfCode": 18.6,
         "percentOfBytes": 7.7
       },
       {
         "name": "Markdown",
-        "lines": 16668,
-        "code": 12753,
+        "lines": 16670,
+        "code": 12755,
         "comments": 0,
         "blanks": 3915,
-        "bytes": 1222106,
+        "bytes": 1222253,
         "files": 62,
         "complexity": 0,
         "percentOfLines": 10.5,
@@ -523,21 +523,21 @@
     ],
     "cocomo": {
       "traditional": {
-        "kloc": 126.43,
-        "effort": 386.5,
-        "time": 24.05,
-        "people": 16.07,
-        "cost": 1812897,
+        "kloc": 126.692,
+        "effort": 387.34,
+        "time": 24.07,
+        "people": 16.09,
+        "cost": 1816841,
         "avgWage": 56286,
         "model": "organic",
         "description": "Traditional COCOMO estimate"
       },
       "aiAssisted": {
         "effectiveMultiplier": 0.255,
-        "effort": 98.56,
-        "time": 14.31,
-        "people": 6.89,
-        "cost": 462289,
+        "effort": 98.77,
+        "time": 14.32,
+        "people": 6.9,
+        "cost": 463295,
         "description": "With AI assistance (~3.9x faster)",
         "taskBreakdown": {
           "boilerplate": "20x faster (10% of work)",
@@ -549,7 +549,7 @@
         }
       },
       "comparison": {
-        "effortReduction": "74%",
+        "effortReduction": "75%",
         "timeReduction": "41%",
         "costReduction": "75%",
         "speedup": "3.9x"
@@ -557,33 +557,33 @@
       "singleDeveloper": {
         "traditional": {
           "fullTime": {
-            "months": 386.5,
-            "weeks": 1673.6,
-            "days": 8387,
-            "cost": 1812897,
+            "months": 387.34,
+            "weeks": 1677.2,
+            "days": 8405,
+            "cost": 1816841,
             "description": "Traditional full-time solo development"
           },
           "partTime": {
-            "months": 24.05,
-            "hoursPerWeek": 642.9,
-            "totalHours": 66865,
-            "cost": 1812897,
+            "months": 24.07,
+            "hoursPerWeek": 643.8,
+            "totalHours": 67011,
+            "cost": 1816841,
             "description": "Traditional part-time to match COCOMO schedule"
           }
         },
         "aiAssisted": {
           "fullTime": {
-            "months": 98.56,
-            "weeks": 426.8,
-            "days": 2139,
-            "cost": 462289,
+            "months": 98.77,
+            "weeks": 427.7,
+            "days": 2143,
+            "cost": 463295,
             "description": "AI-assisted full-time solo development"
           },
           "partTime": {
-            "months": 14.31,
-            "hoursPerWeek": 275.6,
-            "totalHours": 17051,
-            "cost": 462289,
+            "months": 14.32,
+            "hoursPerWeek": 275.9,
+            "totalHours": 17088,
+            "cost": 463295,
             "description": "AI-assisted part-time development"
           }
         }
